@@ -8,9 +8,9 @@ const projects = [
         title: "Portfolio Website",
         description: "A personal portfolio website displaying my skills and projects. This project showcases my ability to create responsive and visually appealing web applications.",
         year: 2025,
-        technologies: ["React", "Tailwind CSS", "Figma"],
+        technologies: ["Vite", "React", "Tailwind CSS", "Figma"],
         id: "2000",
-        image: "/src/assets/logo-text-with-desc.png",
+        image: "/src/assets/images/logos/logo-text-with-desc.png",
     }
 ].reverse();
 

@@ -7,4 +7,5 @@ This is my personal portfolio showcasing my projects, work experience, and skill
 - **Vite**
 - **React**
 - **TypeScript**
+- **Tailwind CSS**
 - **Figma** (mostly design)

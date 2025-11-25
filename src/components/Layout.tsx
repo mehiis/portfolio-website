@@ -3,7 +3,7 @@ import gitHubLogo from '../assets//images/icons/gh.png'
 import linkedInLogo from '../assets/images/icons/li.png'
 import instagramLogo from '../assets/images/icons/ig.png'
 import resumedl from '../assets/images/misc/resume-dl.png'
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 const Layout = () => {
     const { pathname } = useLocation();
@@ -12,13 +12,53 @@ const Layout = () => {
         window.scrollTo(0, 0);
     }, [pathname]);
 
+    const [isVisible, setIsVisible] = useState(true);
+
+    const [bttVisible, setBttVisible] = useState(false);
+
+    useEffect(() => {
+        const toggleBttVisibility = () => {
+            if (window.scrollY > 415) {
+                setBttVisible(true);
+            } else {
+                setBttVisible(false);
+            }
+        };
+
+        window.addEventListener('scroll', toggleBttVisibility);
+
+        return () => {
+            window.removeEventListener('scroll', toggleBttVisibility);
+        };
+    }, []);
+
+    useEffect(() => {
+        let lastScrollY = window.scrollY;
+
+        const controlNavbar = () => {
+            const currentScrollY = window.scrollY;
+
+            if (currentScrollY > lastScrollY && currentScrollY > 100) {
+                setIsVisible(false);
+            } else {
+                setIsVisible(true);
+            }
+
+            lastScrollY = currentScrollY;
+        };
+
+        window.addEventListener('scroll', controlNavbar);
+
+        return () => { window.removeEventListener('scroll', controlNavbar); };
+    }, []);
+
   return (
     <>
-            <header className='bg-[var(--primary-color)] sticky top-0 z-50 min-w-[360px]'>
-                <div className="max-w-[1440px] min-w-[360px] mx-auto flex items-center justify-between ">
-                    <Link to="/"><img src="/src/assets/images/logos/logo-text-with-desc.png" alt="Logo" className="w-35 h-auto hover:scale-110 transition-transform duration-150"/></Link>
+            <header className='bg-[var(--primary-color)] min-w-[360px] pb-2 shadow-sm sticky top-0 z-50 transition-transform duration-200 position-absolute' style={{ transform: isVisible ? 'translateY(0)' : 'translateY(-100%)' }}>
+                <div className="max-w-[1440px] min-w-[360px] mx-auto flex items-center justify-between bg-[var(--primary-color)]" >
+                    <Link to="/"><img src="/src/assets/images/logos/logo-text-with-desc.png" alt="Logo" className="w-35 h-auto hover:scale-105 transition-transform duration-150"/></Link>
 
-                    <nav className='flex justify-between items-center min-h-[80px] mb-3'>
+                    <nav className='flex justify-between items-center min-h-[80px] mb-3 bg-[var(--primary-color)]'>
                         {/*<ul className='flex justify-around items-center m-3 p-4'>
                             <li className='text-[1.5vw] font-[header] mr-5 text-white shadow-md px-5 py-1 bg-[var(--secondary-color)] hover:scale-110 transition-transform duration-300'><button><Link to="/">Home</Link></button></li>
                             <li className='text-[1.5vw] font-[header] mr-5 text-white shadow-md px-5 py-1 bg-[var(--secondary-color)] hover:scale-110 transition-transform duration-300'><button><Link to="/blogs">Blog</Link></button></li>
@@ -32,7 +72,7 @@ const Layout = () => {
                             }
                         </div>
                     </nav>
-                </div>
+                </div>                
             </header>
 
         <main className='mx-auto min-h-screen  min-w-[360px]'>
@@ -40,14 +80,22 @@ const Layout = () => {
         </main>
 
 
-        <footer mt-10>
+        <button 
+        className='fixed bottom-5 right-1/2 translate-x-1/2 w-18 h-auto hover:scale-110 transition-transform duration-200' 
+        style={{ transform: bttVisible ? 'translateY(0%)' : 'translateY(150%)' }} 
+        onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
+            <img src="/src/assets/images/icons/btt-icon.svg" 
+            alt="Scroll to top button"/>
+        </button>
+
+        <footer className='mt-10 '>
             <img src="/src/assets/images/style/bottom-wave.svg" alt="Wave Top" className="w-full"/>
-            <div className='bg-[var(--primary-color)] p-15 justify-center items-center min-w-[360px]'>
+            <div className='bg-[var(--primary-color)] p-15 justify-center items-center min-w-[360px] pb-25'>
                 <img src="/src/assets/images/logos/full-name.png" alt="Image of stylized full name, small flower and text 'niko mehiläinen'." className="w-80 h-auto mx-auto mb-3"/>
                 <div className='flex justify-center'>
-                    <a href="https://github.com/mehiis" target="_blank"><img src={gitHubLogo} alt="GitHub Logo 2025" className="w-8 h-8 mx-3" /></a>
-                    <a href="https://fi.linkedin.com/in/nikomehilainen" target="_blank"><img src={linkedInLogo} alt="LinkedIn Logo 2025" className="w-8 h-8 mx-3" /></a>
-                    <a href="https://www.instagram.com/nikomehilainen/" target="_blank"><img src={instagramLogo} alt="Instagram Logo 2025" className="w-8 h-8 mx-3" /></a>
+                    <a href="https://github.com/mehiis" target="_blank"><img src={gitHubLogo} alt="GitHub Logo 2025" className="w-8 h-auto mx-3 hover:scale-115 transition-transform duration-150" /></a>
+                    <a href="https://fi.linkedin.com/in/nikomehilainen" target="_blank"><img src={linkedInLogo} alt="LinkedIn Logo 2025" className="w-8 h-auto mx-3 hover:scale-115 transition-transform duration-150" /></a>
+                    <a href="https://www.instagram.com/nikomehilainen/" target="_blank"><img src={instagramLogo} alt="Instagram Logo 2025" className="w-8 h-auto mx-3 hover:scale-115 transition-transform duration-150" /></a>
                 </div>
             </div>
         </footer>

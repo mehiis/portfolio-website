@@ -12,7 +12,7 @@ const CustomProjectView: React.FC<Props> = ({title, description, year, tech, ima
   return (
     <div className="bg-[var(--primary-color)] p-8 text-shadow-sm rounded-xl">
         <div className=" items-center md:grid md:grid-cols-[260px_1fr]">
-            <img src={image} alt={"Cover image of the job place " + title} className="w-auto h-[150px] object-contain md:mx-auto md:mx-0"/>
+            <img src={image} alt={"Cover image of the job place " + title} className="w-auto max-h-[150px] object-contain mx-auto"/>
             
             <div className="text-[var(--black-color)] p-4">
                 <div className="flex gap-2 items-bottom">
@@ -25,7 +25,7 @@ const CustomProjectView: React.FC<Props> = ({title, description, year, tech, ima
                     <p>Implemented with:</p>
                     {tech.map((skill, index) => (
                         <span key={index} className="bg-[var(--secondary-color)] text-[var(--black-color)] text-[1.4vh] px-4 py-1 clip-path-custom">{skill}</span>
-                    ))}
+                    )).sort()}
                 </div>
             </div>
 
