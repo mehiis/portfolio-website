@@ -28,7 +28,7 @@ const Personal = () => {
                     className="p-4 m-4 max-w-[1440px] hover:scale-105 transition-transform duration-300 cursor-pointer"
                     onClick={() => navigate(`/blogs/${project.id}`)}
                 >
-                    <CustomProjectView title={project.title} description={project.description} year={project.year} tech={project.technologies} image={project.image} />
+                    <CustomProjectView title={project.title} description={project.description} year={project.year} tech={project.technologies.sort()} image={project.image} />
                 </li>
             ))}
         </ul>

@@ -28,7 +28,7 @@ const CustomListView: React.FC<Props> = ({title, description, role, duration, sk
                     <p>Skills:</p>
                     {skills.map((skill, index) => (
                         <span key={index} className="bg-[var(--secondary-color)] text-[var(--black-color)] text-[1.4vh] px-4 py-1 clip-path-custom">{skill}</span>
-                    )).sort()}
+                    ))}
                 </div>
             </div>
 

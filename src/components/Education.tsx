@@ -19,8 +19,8 @@ const Education = () => {
                     
                     {[...education].reverse().map((edu, index) => (
                         <li key={index} className="bg-[var(--secondary-color)] text-shadow-sm max-w-[730px] clip-path-custom p-10">
-                            <h3 className="text-[120%] font-[arial-black]">{edu.institution}</h3>
-                            <p className="text-[130%] font-[arial]">{edu.degree}</p>
+                            <h3 className="text-[110%] font-[arial-black]">{edu.institution}</h3>
+                            <p className="text-[120%] font-[arial]">{edu.degree}</p>
                         </li>
                     ))}
 

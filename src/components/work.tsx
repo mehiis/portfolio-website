@@ -1,7 +1,5 @@
-import { useNavigate } from "react-router";
 import CustomListView from "./CustomListView";
 import CustomH2Title from "./CustomH2Title";
-
 
 const jobs = [
     {
@@ -16,8 +14,6 @@ const jobs = [
 ].reverse();
 
 const Work = () => {
-    const navigate = useNavigate();
-
     return(
         <div className="max-w-[1440px] min-w-[360px] mx-auto">
             <CustomH2Title name="work-h2" alt="Work Experience" />
@@ -25,9 +21,8 @@ const Work = () => {
             {[...jobs].map((job, index) => (
                 <li 
                     key={index} 
-                    className="p-4 m-4 max-w-[1440px] hover:scale-105 transition-transform duration-300 cursor-pointer"
-                    onClick={() => navigate(`/blogs/${job.id}`)}>
-                    <CustomListView title={job.title} role={job.role} description={job.description} duration={job.duration} skills={job.skills} image={job.image}  />
+                    className="p-4 m-4 max-w-[1440px]">
+                    <CustomListView title={job.title} role={job.role} description={job.description} duration={job.duration} skills={job.skills.sort()} image={job.image}  />
                 </li>
             ))}
         </ul>
