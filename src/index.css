@@ -1,0 +1,65 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'header';
+  src: url(./assets/fonts/US101.TTF);
+}
+
+@font-face {
+  font-family: 'inter';
+  src: url(./assets/fonts/RobotoFlex-Regular.ttf);
+}
+
+@font-face {
+  font-family:'arial-black';
+  src: url(./assets/fonts/arial_black.ttf);
+}
+
+@font-face {
+  font-family: mochi;
+  src: url(./assets/fonts/mochi.ttf);
+}
+
+@layer base {
+  :root {
+    font-family: 'arial-black', sans-serif;
+
+    --primary-color: #FFF292;
+    --secondary-color: #FFD633;
+    --white-color: #FFFFFF;
+    --black-color: #24292F;
+
+    color: var(--black-color);
+    background-color: var(--white-color);
+  }
+  
+  .clip-path-custom {
+clip-path: polygon(
+  /* TOP — left → right */
+  2.5% 2%,
+  30% 0%,
+  50% 0%,
+  75% 0%,
+  97% 8%,
+
+  /* RIGHT — top → bottom */
+  99% 25%,
+  99% 30%,
+  98% 80%,
+  97% 100%,
+  10% 100%,
+
+  /* BOTTOM — right → left */
+  50% 100%,
+  20% 95%,
+  85% 97%,
+  10% 100%,
+  2% 95%,
+
+  /* LEFT — bottom → top */
+  1.5% 75%,
+  0.5% 50%,
+  1% 25%
+);
+  }
+}
