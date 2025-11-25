@@ -12,7 +12,7 @@ function Hero() {
                 src="/src/assets/images/misc/hero-image.png" 
                 />
 
-                <p className="text-[2.5vh] font-[arial] font-bold bg-[var(--white-color)] text-[var(--black-color)] shadow-sm rounded-lg my-auto  mx-10 p-8">What I love most about programming is its creative power to turn ideas into immersive, meaningful experiences. <br></br> <br></br>It brings together various forms of art and has the unique ability to connect people.</p>
+                <p className="text-[180%] font-[arial] font-bold bg-[var(--white-color)] text-[var(--black-color)] shadow-sm rounded-lg my-auto  mx-10 p-8">What I love most about programming is its creative power to turn ideas into immersive, meaningful experiences. <br></br> <br></br>It brings together various forms of art and has the unique ability to connect people.</p>
             </div>
         </div>
 
