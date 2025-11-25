@@ -1,8 +1,8 @@
 import { Link, Outlet, useLocation } from 'react-router'
-import gitHubLogo from '../assets/gh.png'
-import linkedInLogo from '../assets/li.png'
-import instagramLogo from '../assets/ig.png'
-import resumedl from '../assets/resume-dl.png'
+import gitHubLogo from '../assets//images/icons/gh.png'
+import linkedInLogo from '../assets/images/icons/li.png'
+import instagramLogo from '../assets/images/icons/ig.png'
+import resumedl from '../assets/images/misc/resume-dl.png'
 import { useEffect } from 'react';
 
 const Layout = () => {
@@ -16,7 +16,7 @@ const Layout = () => {
     <>
             <header className='bg-[var(--primary-color)] sticky top-0 z-50 min-w-[360px]'>
                 <div className="max-w-[1440px] min-w-[360px] mx-auto flex items-center justify-between ">
-                    <Link to="/"><img src="/src/assets/logo-text-with-desc.png" alt="Logo" className="w-35 h-auto hover:scale-110 transition-transform duration-150"/></Link>
+                    <Link to="/"><img src="/src/assets/images/logos/logo-text-with-desc.png" alt="Logo" className="w-35 h-auto hover:scale-110 transition-transform duration-150"/></Link>
 
                     <nav className='flex justify-between items-center min-h-[80px] mb-3'>
                         {/*<ul className='flex justify-around items-center m-3 p-4'>
@@ -41,9 +41,9 @@ const Layout = () => {
 
 
         <footer mt-10>
-            <img src="/src/assets/bottom-wave.svg" alt="Wave Top" className="w-full"/>
+            <img src="/src/assets/images/style/bottom-wave.svg" alt="Wave Top" className="w-full"/>
             <div className='bg-[var(--primary-color)] p-15 justify-center items-center min-w-[360px]'>
-                <img src="/src/assets/full-name.png" alt="Image of stylized full name, small flower and text 'niko mehiläinen'." className="w-80 h-auto mx-auto mb-3"/>
+                <img src="/src/assets/images/logos/full-name.png" alt="Image of stylized full name, small flower and text 'niko mehiläinen'." className="w-80 h-auto mx-auto mb-3"/>
                 <div className='flex justify-center'>
                     <a href="https://github.com/mehiis" target="_blank"><img src={gitHubLogo} alt="GitHub Logo 2025" className="w-8 h-8 mx-3" /></a>
                     <a href="https://fi.linkedin.com/in/nikomehilainen" target="_blank"><img src={linkedInLogo} alt="LinkedIn Logo 2025" className="w-8 h-8 mx-3" /></a>
