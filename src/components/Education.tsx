@@ -4,32 +4,26 @@ const education = [
     {
         degree: "Information Technology, Bachelor of engineering",
         institution: "Metropolia University of Applied Sciences (2024 - 2028)",
-    },
-        {
-        degree: "Information Technology, Bachelor of engineering",
-        institution: "Metropolia University of Applied Sciences (2024 - 2028)",
-    },
-        {
-        degree: "Information Technology, Bachelor of engineering",
-        institution: "Metropolia University of Applied Sciences (2024 - 2028)",
-    },
+    }
     
 ]
 
 const Education = () => {
   return (
-        <div className="max-w-[1440px] min-w-[360px] mx-auto">
+        <div className="max-w-[1440px] min-w-[360px] mx-auto p-2">
             <CustomH2Title name="education-h2" alt="Education" />
             
-            <div className='flex flex-col'>
+            <div className='p-4 m-4'>
                 
-                <ul className="bg-[var(--primary-color)] gap-10 rounded-xl grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 max-w-[1440px] mx-auto p-5">
+                <ul className="bg-[var(--primary-color)] w-full rounded-lg grid grid-cols-1 md:grid-cols-2 gap-4 px-4 py-10">
+                    
                     {[...education].reverse().map((edu, index) => (
                         <li key={index} className="bg-[var(--secondary-color)] text-shadow-sm max-w-[730px] clip-path-custom p-10">
                             <h3 className="text-[1.4vh] font-[arial-black]">{edu.institution}</h3>
                             <p className="text-[1.4vh] font-[arial]">{edu.degree}</p>
                         </li>
                     ))}
+
                 </ul>
             </div>
 

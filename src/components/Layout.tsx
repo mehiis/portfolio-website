@@ -54,11 +54,12 @@ const Layout = () => {
 
   return (
     <>
-            <header className='bg-[var(--primary-color)] min-w-[360px] pb-2 shadow-sm sticky top-0 z-50 transition-transform duration-200 position-absolute' style={{ transform: isVisible ? 'translateY(0)' : 'translateY(-100%)' }}>
-                <div className="max-w-[1440px] min-w-[360px] mx-auto flex items-center justify-between bg-[var(--primary-color)]" >
+            <header className='bg-[var(--primary-color)] min-w-[360px] pb-2 shadow-sm sticky top-0 z-50 transition-transform duration-200 position-absolute px-5' style={{ transform: isVisible ? 'translateY(0)' : 'translateY(-100%)' }}>
+                
+                <div className="max-w-[1440px] min-w-[360px] mx-auto flex items-center justify-between bg-[var(--primary-color)] hidden md:flex" >
                     <Link to="/"><img src="/src/assets/images/logos/logo-text-with-desc.png" alt="Logo" className="w-35 h-auto hover:scale-105 transition-transform duration-150"/></Link>
 
-                    <nav className='flex justify-between items-center min-h-[80px] mb-3 bg-[var(--primary-color)]'>
+                        <nav className='flex justify-between items-center my-3 bg-[var(--primary-color)'>
                         {/*<ul className='flex justify-around items-center m-3 p-4'>
                             <li className='text-[1.5vw] font-[header] mr-5 text-white shadow-md px-5 py-1 bg-[var(--secondary-color)] hover:scale-110 transition-transform duration-300'><button><Link to="/">Home</Link></button></li>
                             <li className='text-[1.5vw] font-[header] mr-5 text-white shadow-md px-5 py-1 bg-[var(--secondary-color)] hover:scale-110 transition-transform duration-300'><button><Link to="/blogs">Blog</Link></button></li>
@@ -72,7 +73,18 @@ const Layout = () => {
                             }
                         </div>
                     </nav>
-                </div>                
+                </div>
+
+                    <div className="flex items-center justify-between bg-[var(--primary-color)] flex md:hidden" >
+                        <Link to="/"><img src="/src/assets/images/logos/logo-text-with-desc.png" alt="Logo" className="w-35 h-auto hover:scale-105 transition-transform duration-150"/></Link>
+
+                        <nav className='flex justify-between items-center my-3 bg-[var(--primary-color)'>
+                            <div className='flex justify-around items-center'>
+                                <button className='w-[50px] h-auto'><img src="/src/assets/images/misc/mobile-menu.svg" alt="Mobile Menu button"/></button>
+                        </div>
+                    </nav>
+                </div> 
+
             </header>
 
         <main className='mx-auto min-h-screen  min-w-[360px]'>
