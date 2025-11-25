@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-        <footer className='mt-10 '>
+        <footer className='mt-[-125px]'>
             <img src="/src/assets/images/style/bottom-wave.svg" alt="Wave Top" className="w-full"/>
             <div className='bg-[var(--primary-color)] p-15 justify-center items-center min-w-[360px] pb-25'>
                 <img src="/src/assets/images/logos/full-name.png" alt="Image of stylized full name, small flower and text 'niko mehiläinen'." className="w-80 h-auto mx-auto mb-3"/>
