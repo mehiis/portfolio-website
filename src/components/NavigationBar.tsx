@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 
 type NavigationBarProps = {
@@ -40,7 +39,7 @@ const NavigationBar = ({ isVisible, mobileMenuOpen, setMobileMenuOpen }: Navigat
                                     </a>
                                 </button>
                             </li>*/}
-                            
+
                             <li>
                                 <button className='text-[1.5vw] font-[header] mr-5shadow-md px-5 py-1 hover:scale-115 transition-transform duration-300'>
                                     <a href="/resume">
