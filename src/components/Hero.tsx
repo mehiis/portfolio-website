@@ -1,12 +1,12 @@
 function Hero() {
     return (
         <>
-        <div className="py-20 items-center bg-[var(--primary-color)]">
+        <div className="py-10 items-center bg-[var(--primary-color)]">
             <div 
-            className="max-w-[1440px] min-w-[360px] mx-auto md:flex md:justify-between sm:center">
+            className="max-w-[1440px] min-w-[360px] m-auto md:flex md:justify-between sm:center items-center justify-center">
                 <img 
                 className="object-contain mx-auto md:mx-0 mb-10" 
-                width={"40%"}
+                width={"30%"}
                 height="auto" 
                 alt="Hero Image 2025"
                 src="/src/assets/images/misc/hero-image.png" 
