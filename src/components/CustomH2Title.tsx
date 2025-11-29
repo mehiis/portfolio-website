@@ -1,12 +1,12 @@
     type Props = {
-        name: string,
-        alt: string
+        source: string
+        alt: string,
     }
 
-const CustomH2Title = ({ name, alt }: Props) => {
+const CustomH2Title = ({source, alt }: Props) => {
     return (
     <h2>
-        <img src={"/src/assets/images/h2/" + name + ".svg"} alt={"A topic title with text " + alt + "."} className="w-auto px-8 pt-15"/>
+        <img src={source} alt={"A topic title with text " + alt + "."} className="w-auto px-8 pt-15"/>
     </h2>
   )
 }

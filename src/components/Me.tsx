@@ -3,9 +3,8 @@ const Me = () => {
 
   return (
     <>
-      <img src="/src/assets/images/style/wave-secondary.svg" alt="Wave Top" className="w-full mt-10"/>
       <div className='bg-[var(--secondary-color)] mx-auto py-5 m-full pb-40'>
-          
+
           <div className='max-w-[1440px] min-w-[360px] mx-auto p-2'>
             <div className="text-[140%] font-[arial] text-gray-700 p-10 py-12 px-11 bg-[var(--white-color)] rounded-lg shadow-sm">
                 <h3 className="font-[arial-black]">Hello there,</h3>

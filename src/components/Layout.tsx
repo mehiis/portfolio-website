@@ -50,11 +50,11 @@ const Layout = () => {
         window.addEventListener('scroll', controlNavbar);
         window.addEventListener('scroll', toggleBttVisibility);
 
-        return () => { 
+        return () => {
             window.removeEventListener('scroll', controlNavbar);
             window.removeEventListener('scroll', toggleBttVisibility);
          };
-        
+
     }, []);
 
   return (

@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-    <BrowserRouter>
+    <BrowserRouter basename='/~nikomeh/portfolio'>
     <Routes>
       <Route element={<Layout />}>
         {/* Define the routes for the application */}

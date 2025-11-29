@@ -1,5 +1,6 @@
 import CustomListView from "./CustomListView";
 import CustomH2Title from "./CustomH2Title";
+import titleIcon from "@/assets/images/h2/work-h2.svg";
 
 const jobs = [
     {
@@ -16,11 +17,11 @@ const jobs = [
 const Work = () => {
     return(
         <div className="max-w-[1440px] min-w-[360px] mx-auto">
-            <CustomH2Title name="work-h2" alt="Work Experience" />
+            <CustomH2Title source={titleIcon} alt="Work Experience" />
         <ul className="flex flex-col">
             {[...jobs].map((job, index) => (
-                <li 
-                    key={index} 
+                <li
+                    key={index}
                     className="p-4 m-4 max-w-[1440px]">
                     <CustomListView title={job.title} role={job.role} description={job.description} duration={job.duration} skills={job.skills.sort()} image={job.image}  />
                 </li>
