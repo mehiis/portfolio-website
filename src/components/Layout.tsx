@@ -7,28 +7,47 @@ import MobileMenu from './MobileMenu'
 
 const Layout = () => {
     const { pathname } = useLocation();
+    const [isVisible, setIsVisible] = useState(true);
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [bttVisible, setBttVisible] = useState(false);
+    const [width, setWidth] = useState(window.innerWidth);
 
+    // Scroll to top on route change
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [pathname]);
 
-    const [isVisible, setIsVisible] = useState(true);
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-    const [bttVisible, setBttVisible] = useState(false);
+    // Update width on window resize
+    useEffect(() => {
+        const handleResize = () => setWidth(window.innerWidth);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
+    // Close mobile menu if entering desktop size
+    useEffect(() => {
+        if (width >= 767) { 
+            setMobileMenuOpen(false);
+        } 
+    }, [width]);
+
+    // Handle body overflow and navbar visibility when mobile menu is toggled
     useEffect(() => {
         if (mobileMenuOpen) {
             setIsVisible(true);
             document.body.style.overflow = 'hidden';
-        } else {
+        }
+        else {
             document.body.style.overflow = 'auto';
         }
-    }, [mobileMenuOpen]);
+    }, [mobileMenuOpen, window.innerWidth]);
 
+    // Handle navbar visibility on scroll
     useEffect(() => {
         let lastScrollY = window.scrollY;
 
-            const toggleBttVisibility = () => {
+        // Toggle Back to Top button visibility
+        const toggleBttVisibility = () => {
             if (window.scrollY > 415 && !mobileMenuOpen) {
                 setBttVisible(true);
             } else {
@@ -36,6 +55,7 @@ const Layout = () => {
             }
         };
 
+        // Control navbar visibility based on scroll direction and position
         const controlNavbar = () => {
             const currentScrollY = window.scrollY;
             if (currentScrollY > lastScrollY && currentScrollY > 100 && !mobileMenuOpen) {
@@ -47,9 +67,11 @@ const Layout = () => {
             lastScrollY = currentScrollY;
         };
 
+        // Add scroll event listeners
         window.addEventListener('scroll', controlNavbar);
         window.addEventListener('scroll', toggleBttVisibility);
 
+        // Cleanup event listeners on unmount
         return () => {
             window.removeEventListener('scroll', controlNavbar);
             window.removeEventListener('scroll', toggleBttVisibility);
