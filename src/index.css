@@ -32,7 +32,15 @@
     color: var(--black-color);
     background-color: var(--white-color);
   }
-  
+
+  .wavy {
+  background: #8ec5fc;
+  padding: 40px;
+  clip-path: path(
+    "M0,40 Q50,0 100,40 T200,40 T300,40 V200 H0 Z"
+  );
+}
+
   .clip-path-custom {
 clip-path: polygon(
   /* TOP — left → right */

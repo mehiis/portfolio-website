@@ -5,7 +5,7 @@ import fullNameLogo from "@/assets/images/logos/full-name.png"
 
 const Footer = () => {
   return (
-        <footer className='mt-[-125px]'>
+        <footer className='mt-0'>
             <div className='bg-[var(--primary-color)] p-15 justify-center items-center min-w-[360px] pb-25'>
                 <img src={fullNameLogo} alt="Image of stylized full name, small flower and text 'niko mehiläinen'." className="w-80 h-auto mx-auto mb-3"/>
                 <div className='flex justify-center'>
