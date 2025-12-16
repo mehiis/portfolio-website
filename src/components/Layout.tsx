@@ -58,7 +58,7 @@ const Layout = () => {
         // Control navbar visibility based on scroll direction and position
         const controlNavbar = () => {
             const currentScrollY = window.scrollY;
-            if (currentScrollY > lastScrollY && !mobileMenuOpen) {
+            if (currentScrollY > lastScrollY && currentScrollY > 50 && !mobileMenuOpen) {
                 setIsVisible(false);
             } else {
                 setIsVisible(true);
