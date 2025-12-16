@@ -4,6 +4,7 @@ import Blog from './views/Blog'
 import Blogs from './views/Blogs'
 import NotFound from './views/NotFound'
 import Layout from './components/Layout'
+import Project from './views/Project'
 
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
         {/* Define the routes for the application */}
         <Route path="/" element={<Home />} />
         <Route path="/blog/:id" element={<Blog />} />
-        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/project/:id" element={<Project />} />
+        {/*<Route path="/blogs" element={<Blogs />} />*/}
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>

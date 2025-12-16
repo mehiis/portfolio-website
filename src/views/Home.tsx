@@ -1,5 +1,5 @@
-import { Tools } from '../components/Tools'
-import { Hero } from '../components/Hero'
+import Hero  from '../components/Hero'
+import Tools from '../components/Tools'
 import Personal from '../components/Personal'
 import Me from '../components/Me'
 import Education from '../components/Education'

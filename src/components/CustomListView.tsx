@@ -24,10 +24,10 @@ const CustomListView: React.FC<Props> = ({title, description, role, duration, sk
                 <p className="text-[100%] mb-4">{role}</p>
                 <p className="text-[120%] font-[arial] mt-3 mb-8">{description}</p>
                 
-                <div className="mt-4 flex flex-wrap gap-2">
-                    <p>Skills:</p>
+                <div className="mt-2 flex flex-wrap gap-1 text-md">
+                    <p>Key skills:</p>
                     {skills.map((skill, index) => (
-                        <span key={index} className="bg-[var(--secondary-color)] text-[var(--black-color)] text-[90%] px-4 py-1 clip-path-custom">{skill}</span>
+                        <span key={index} className="text-[var(--black-color)] text-md m-1 border px-2 rounded-sm my-auto">{skill}</span>
                     ))}
                 </div>
             </div>

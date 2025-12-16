@@ -48,7 +48,7 @@ const Layout = () => {
 
         // Toggle Back to Top button visibility
         const toggleBttVisibility = () => {
-            if (window.scrollY > 415 && !mobileMenuOpen) {
+            if (window.scrollY > 50 && !mobileMenuOpen) {
                 setBttVisible(true);
             } else {
                 setBttVisible(false);
@@ -58,7 +58,7 @@ const Layout = () => {
         // Control navbar visibility based on scroll direction and position
         const controlNavbar = () => {
             const currentScrollY = window.scrollY;
-            if (currentScrollY > lastScrollY && currentScrollY > 100 && !mobileMenuOpen) {
+            if (currentScrollY > lastScrollY && !mobileMenuOpen) {
                 setIsVisible(false);
             } else {
                 setIsVisible(true);

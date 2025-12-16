@@ -12,11 +12,13 @@ function Hero() {
                   src={heroImg}
                   />
 
-                  <p className="text-3xl lg:text-3xl md:text-3xl sm:text-lg font-[arial] font-bold bg-[var(--white-color)] text-[var(--black-color)] shadow-sm rounded-lg my-auto  mx-10 p-8">What I love most about programming is its creative power to turn ideas into immersive, meaningful experiences. <br></br> <br></br>It brings together various forms of art and has the unique ability to connect people.</p>
+                  <p className="text-md  md:text-2xl lg:text-2xl font-[arial] font-bold bg-[var(--white-color)] text-[var(--black-color)] shadow-sm rounded-lg my-auto  mx-10 p-8">
+                    What I love most about programming is its <b>creative power</b> to turn ideas into immersive, meaningful experiences. <br></br> <br></br>It brings together various forms of art and has the <b>unique ability to connect people</b>.
+                  </p>
               </div>
           </section>
 </>
         );
 }
 
-export { Hero };
+export default Hero;

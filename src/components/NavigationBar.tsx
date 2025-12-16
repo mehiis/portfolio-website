@@ -6,6 +6,7 @@ import github from "@/assets/images/icons/gh.png";
 import linkedin from "@/assets/images/icons/li.png";
 import mobilemenuclosed from "@/assets/images/misc/close-menu.svg"
 import mobilemenuopenicon from "@/assets/images/misc/mobile-menu.svg"
+import resume from "@/assets/resume.pdf"
 
 type NavigationBarProps = {
     isVisible: boolean;
@@ -19,14 +20,12 @@ const NavigationBar = ({ isVisible, mobileMenuOpen, setMobileMenuOpen }: Navigat
                 <div className="max-w-[1440px] min-w-[360px] mx-auto flex items-center justify-between bg-[var(--primary-color)] hidden md:flex" >
                     <Link to="/"><img src={logo} alt="Logo" className="w-35 h-auto hover:scale-105 transition-transform duration-150"/></Link>
 
-                        <nav className='flex justify-between items-center my-1'>
-                        <ul className='flex justify-around items-center m-3 p-4'>
-                            <li>
-                                <button className='text-[1.5vw] font-[header] mr-5 px-4 py-1 hover:scale-115 transition-transform duration-300'>
-                                    <Link to="/">
-                                        <img src={homebutton} alt="Home button"/>
+                        <nav className='flex justify-between items-center'>
+                        <ul className='flex justify-around items-center mr-10'>
+                            <li className="mr-10">
+                                    <Link to="/" className="py-1">
+                                        <img src={homebutton} alt="Home button" className="hover:scale-115 transition-transform duration-300"/>
                                     </Link>
-                                </button>
                             </li>
 
                             {/* COMING SOON...
@@ -40,18 +39,16 @@ const NavigationBar = ({ isVisible, mobileMenuOpen, setMobileMenuOpen }: Navigat
                                 </button>
                             </li>*/}
 
-                            <li>
-                                <button className='text-[1.5vw] font-[header] mr-5 px-4 py-1 hover:scale-115 transition-transform duration-300'>
-                                    <Link to="/resume">
-                                        <img src={resumebutton} alt="Resume button"/>
-                                    </Link>
-                                </button>
+                            <li className="mr-10">
+                                        <a href={resume} target="_blank" rel="noopener noreferrer" className="py-1">
+                                            <img src={resumebutton} alt="Resume button" className="hover:scale-115 transition-transform duration-300"/>
+                                        </a>
                             </li>
 
                         </ul>
                         <div className='flex justify-around items-center'>
-                            <button><a href="https://github.com/mehiis" target="_blank"><img src={github} alt="GitHub Logo 2025" className="w-11 h-11 mx-2 hover:scale-120 transition-transform duration-300" /></a></button>
-                            <button><a href="https://fi.linkedin.com/in/nikomehilainen" target="_blank"><img src={linkedin} alt="LinkedIn Logo 2025" className="w-11 h-11 mx-2 hover:scale-120 transition-transform duration-300" /></a></button>
+                            <a href="https://github.com/mehiis" target="_blank"><img src={github} alt="GitHub Logo 2025" className="w-11 h-11 mx-2 hover:scale-120 transition-transform duration-300" /></a>
+                            <a href="https://fi.linkedin.com/in/nikomehilainen" target="_blank"><img src={linkedin} alt="LinkedIn Logo 2025" className="w-11 h-11 mx-2 hover:scale-120 transition-transform duration-300" /></a>
                         </div>
                     </nav>
                 </div>

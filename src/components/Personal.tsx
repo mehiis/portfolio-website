@@ -1,18 +1,9 @@
 import CustomProjectView from "./CustomProjectView";
 import CustomH2Title from "./CustomH2Title";
 import titleIcon from "@/assets/images/h2/personal-h2.svg";
-import porfolioIcon from "@/assets/images/logos/logo-text-with-desc.png"
+import project from "../data/projects";
 
-const projects = [
-    {
-        title: "Portfolio Website",
-        description: "A personal portfolio website displaying my skills and projects. This project showcases my ability to create responsive and visually appealing web applications.",
-        year: 2025,
-        technologies: ["Vite", "React", "Tailwind CSS", "Figma"],
-        id: "2000",
-        image: porfolioIcon,
-    }
-].reverse();
+const projects = project.reverse();
 
 const Personal = () => {
     return(
@@ -25,7 +16,7 @@ const Personal = () => {
                     key={index}
                     className="p-4 m-4 max-w-[1440px]"
                 >
-                    <CustomProjectView title={project.title} description={project.description} year={project.year} tech={project.technologies.sort()} image={project.image} />
+                    <CustomProjectView id={project.id} title={project.title} description={project.description} year={project.year} tech={project.technologies.sort()} image={project.image} />
                 </li>
             ))}
         </ul>

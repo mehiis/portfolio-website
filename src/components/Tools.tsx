@@ -19,4 +19,4 @@ function Tools(){
     );
 }
 
-export { Tools };
+export default Tools;
