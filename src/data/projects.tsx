@@ -1,13 +1,17 @@
 import porfolioIcon from "@/assets/images/logos/logo-text-with-desc.png"
+import project0headerImg from "@/assets/images/projects/0_portfolio/project-0-header-img.jpg"
 
 const Projects = [
     {
         id: 0,
         title: "Portfolio Website",
         description: "A personal portfolio website displaying my skills and projects. This project showcases my ability to create responsive and visually appealing web applications.",
+        author: "Niko Mehiläinen",
+        date: "17 Dec 2025",
         year: 2025,
         technologies: ["Vite", "React", "Tailwind CSS", "Figma"],
-        image: porfolioIcon,
+        icon: porfolioIcon,
+        headerImage: project0headerImg,
         chapters: [
             {
                 title: "Introduction",
