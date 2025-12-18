@@ -1,5 +1,5 @@
 import CustomH2Title from "./CustomH2Title";
-import titleIcon from "@/assets/images/h2/tools-h2.svg";
+import titleIcon from "@/assets/images/h2/familiar-tools-h2.png";
 
 function Tools(){
     const tools = ["Java", "C#", "Python", "JavaScript / TypeScript", "Unity Game Engine", "Godot", "React", ".NET MAUI", "JavaFX", "Express.js", "Tailwind CSS", "Node.js", "HTML+CSS", "SonarQube", "Jenkins", "Expo", "Figma", "MariaDB", "Dockers", "StarUML", "Trello", "Miro"].sort();

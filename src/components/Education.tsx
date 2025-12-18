@@ -1,5 +1,5 @@
 import CustomH2Title from './CustomH2Title';
-import titleIcon from "@/assets/images/h2/education-h2.svg";
+import titleIcon from "@/assets/images/h2/education-h2.png";
 
 const education = [
     {
@@ -24,8 +24,8 @@ const Education = () => {
                             <p className="text-[120%] font-[arial]">{edu.degree}</p>
                         </li>
                     ))}
-
                 </ul>
+                
             </div>
 
         </div>

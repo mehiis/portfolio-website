@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "@/assets/images/logos/logo-text-with-desc.png";
-import homebutton from "@/assets/images/buttons/home-button.svg";
-import resumebutton from "@/assets/images/buttons/resume-button.svg"
+import homebutton from "@/assets/images/buttons/home-button.png";
+import resumebutton from "@/assets/images/buttons/resume-button.png"
 import github from "@/assets/images/icons/gh.png";
 import linkedin from "@/assets/images/icons/li.png";
 import mobilemenuclosed from "@/assets/images/misc/close-menu.svg"
