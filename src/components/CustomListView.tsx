@@ -13,7 +13,7 @@ type Props = {
 const CustomListView: React.FC<Props> = ({title, description, role, duration, skills, image}) => {
   return (
     <div className="bg-[var(--primary-color)] px-8 py-4 rounded-xl shadow-sm">
-        <div className=" items-center md:grid md:grid-cols-[260px_1fr]">
+        <div className="items-center md:grid md:grid-cols-[260px_1fr]">
             <img src={image} alt={"Cover image of the job place " + title} className="w-auto max-h-[150px] object-contain mx-auto"/>
             
             <div className="text-[var(--black-color)] p-4">
