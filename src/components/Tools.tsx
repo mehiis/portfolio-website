@@ -9,7 +9,7 @@ function Tools(){
             <CustomH2Title source={titleIcon} alt="Tools and Technologies" />
 
         <div className="p-4 m-4">
-                <ul className="bg-[var(--primary-color)] w-full rounded-lg flex flex-wrap gap-4 px-6 py-8">
+                <ul className="bg-[var(--primary-color)] w-full rounded-lg flex flex-wrap gap-4 px-6 py-8 shadow-sm">
                     {tools.map(
                         (tool) => (<li className="bg-[var(--secondary-color)] px-4 py-1 font-[arial-black] text-[100%] clip-path-custom" key={tool}>{tool}</li>))
                         }

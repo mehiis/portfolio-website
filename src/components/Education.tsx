@@ -16,7 +16,7 @@ const Education = () => {
 
             <div className='p-4 m-4'>
 
-                <ul className="bg-[var(--primary-color)] w-full rounded-lg grid grid-cols-1 md:grid-cols-2 gap-4 px-4 py-10">
+                <ul className="bg-[var(--primary-color)] w-full rounded-lg grid grid-cols-1 md:grid-cols-2 gap-4 px-4 py-10 shadow-sm">
 
                     {[...education].reverse().map((edu, index) => (
                         <li key={index} className="bg-[var(--secondary-color)] text-shadow-sm max-w-[730px] clip-path-custom p-10">

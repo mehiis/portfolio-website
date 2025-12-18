@@ -12,7 +12,7 @@ type Props = {
 
 const CustomListView: React.FC<Props> = ({title, description, role, duration, skills, image}) => {
   return (
-    <div className="bg-[var(--primary-color)] px-8 py-4  text-shadow-sm rounded-xl">
+    <div className="bg-[var(--primary-color)] px-8 py-4 rounded-xl shadow-sm">
         <div className=" items-center md:grid md:grid-cols-[260px_1fr]">
             <img src={image} alt={"Cover image of the job place " + title} className="w-auto max-h-[150px] object-contain mx-auto"/>
             
@@ -27,7 +27,7 @@ const CustomListView: React.FC<Props> = ({title, description, role, duration, sk
                 <div className="mt-2 flex flex-wrap gap-1 text-md">
                     <p>Key skills:</p>
                     {skills.map((skill, index) => (
-                        <span key={index} className="text-[var(--black-color)] text-md m-1 border px-2 rounded-sm my-auto">{skill}</span>
+                        <span key={index} className="text-[var(--black-color)] text-md m-1 border px-2 rounded-sm my-auto shadow-sm">{skill}</span>
                     ))}
                 </div>
             </div>

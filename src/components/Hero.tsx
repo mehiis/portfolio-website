@@ -3,7 +3,7 @@ import heroImg from "@/assets/images/misc/hero-image.png";
 function Hero() {
     return (
           <>
-          <section className="py-10 items-center bg-[var(--primary-color)] md:px-30">
+          <section className="py-10 items-center bg-[var(--primary-color)] md:px-30 shadow-sm">
               <div
               className="max-w-[1440px] min-w-[360px] m-auto md:flex md:justify-between sm:center items-center justify-center">
                   <img
