@@ -9,3 +9,7 @@ This is my personal portfolio showcasing my projects, work experience, and skill
 - **TypeScript**
 - **Tailwind CSS**
 - **Figma** (mostly design)
+
+## Screenshots
+
+![HOMEPAGE](docs/screenshots/screenshot_0.jpg)
