@@ -11,7 +11,7 @@ const education = [
 
 const Education = () => {
   return (
-        <div className="max-w-[1440px] min-w-[360px] mx-auto p-2">
+        <div className="max-w-[1440px] min-w-[360px] mx-auto p-2 md:px-10 2xl:px-0">
             <CustomH2Title source={titleIcon} alt="Education" />
 
             <div className='p-4 m-4'>

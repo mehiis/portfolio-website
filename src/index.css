@@ -27,7 +27,7 @@
     --primary-color: #FFF292;
     --secondary-color: #FFE063;
     --white-color: #FAFAFA;
-    --black-color: #24292F;
+    --black-color: #2B2B2B;
 
     color: var(--black-color);
     background-color: var(--white-color);

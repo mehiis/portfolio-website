@@ -16,7 +16,7 @@ const jobs = [
 
 const Work = () => {
     return(
-        <div className="max-w-[1440px] min-w-[360px] mx-auto">
+        <div className="max-w-[1440px] min-w-[360px] mx-auto p-2 md:px-10 2xl:px-0">
             <CustomH2Title source={titleIcon} alt="Work Experience" />
         <ul className="flex flex-col">
             {[...jobs].map((job, index) => (

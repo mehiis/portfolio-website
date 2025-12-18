@@ -11,7 +11,7 @@ type Props = {
 
 const CustomProjectView = ({id, title, description, year, tech, icon}: Props) => {
   return (
-    <div className="bg-[var(--primary-color)] p-8 text-shadow-sm rounded-xl">
+    <div className="bg-[var(--primary-color)] px-8 py-4 text-shadow-sm rounded-xl">
         <div className="items-center md:grid md:grid-cols-[260px_1fr]">
             <img src={icon} alt={"Icon of the project " + title} className="w-auto max-h-[150px] object-contain mx-auto"/>
             <div className="text-[var(--black-color)] p-4">
@@ -30,7 +30,7 @@ const CustomProjectView = ({id, title, description, year, tech, icon}: Props) =>
                 </div>
 
                 <Link to={`/project/${id}`} className="bg-[var(--secondary-color)] text-md text-[var(--black-color)] px-4 py-2 rounded-lg hover:scale-105 transition-transform duration-200 mt-5 inline-block shadow-sm">
-                        Click here to read more...
+                        Read more &#10140;
                 </Link>
             </div>
                     

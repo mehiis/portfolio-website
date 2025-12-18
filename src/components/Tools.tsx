@@ -5,7 +5,7 @@ function Tools(){
     const tools = ["Java", "C#", "Python", "JavaScript / TypeScript", "Unity Game Engine", "Godot", "React", ".NET MAUI", "JavaFX", "Express.js", "Tailwind CSS", "Node.js", "HTML+CSS", "SonarQube", "Jenkins", "Expo", "Figma", "MariaDB", "Dockers", "StarUML", "Trello", "Miro"].sort();
 
     return(
-        <div className="max-w-[1440px] min-w-[360px] mx-auto p-2">
+        <div className="max-w-[1440px] min-w-[360px] mx-auto p-2 md:px-10 2xl:px-0">
             <CustomH2Title source={titleIcon} alt="Tools and Technologies" />
 
         <div className="p-4 m-4">

@@ -9,14 +9,21 @@ type Props = {
 
 const ArticleHeader = (props: Props) => {
   return (
-    <header className="py-5 items-center bg-[var(--primary-color)]">
-      <div className="max-w-[1440px] min-w-[360px] m-auto px-10 py-3">
+    <header className="py-5 items-center bg-[var(--secondary-color)] text-[var(--black-color)] shadow-sm">
+      <div className="max-w-[1440px] min-w-[360px] m-auto px-10 py-3 md:px-30">
+        <button 
+        className="bg-[#E74C3C] text-md text-[var(--black-color)]  px-4 py-2 rounded-lg hover:scale-105 transition-transform duration-200 mb-5 inline-block shadow-sm" 
+        onClick={() => { 
+          window.history.back()
+          }
+          }>&#8617; Back to previous page</button>
+
         <h1 className="text-3xl font-bold">{props.title}</h1>
         <p className="py-2 font-[arial] text-md md:text-xl">{props.desc}</p>
-        <img className="mx-auto my-10 w-full h-auto shadow-sm rounded-sm" src={props.img} alt={props.title} />
+        {/*<img className="mx-auto my-10 w-full h-auto shadow-sm rounded-sm" src={props.img} alt={props.title} />*/}
         <hr className="border-black/10"/>
 
-        <div className="md:flex md:justify-between md:items-center mt-6">
+        <div className="md:flex md:justify-between md:items-center mt-4">
           <p className="text-md font-[arial]">{props.author} - {props.date}</p>
           
           {props.resources && ( 

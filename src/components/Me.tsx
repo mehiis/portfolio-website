@@ -4,7 +4,7 @@ const Me = () => {
 
   return (
     <div className="bg-[var(--secondary-color)]">
-      <section className='max-w-[1440px] min-w-[360px] mx-auto p-2'>
+      <section className='max-w-[1440px] min-w-[360px] mx-auto p-2 md:px-10 2xl:px-0'>
 
           <div className='p-4 m-4'>
             <div className="bg-[var(--white-color)] w-full rounded-lg flex flex-wrap gap-4 lg:px-15 p-8 md:p-15 lg:p-15">

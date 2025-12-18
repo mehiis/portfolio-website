@@ -22,7 +22,9 @@ const Projects = [
                     "The most important thing for me when building this portfolio was making it simple and personal with no clutter, heavy animations, or videos like I’ve seen in a lot of other portfolios. Honestly, in my opinion, those kinds of things just makes the site feel hard to navigate and a bit unpleasant to use.",
                     "I really wanted to build this portfolio from scratch, even though there are plenty of no-code portfolio builders out there. I felt like doing it myself gave me a chance to show off my skills as a developer. Plus, I learned a ton and refreshed a lot of web development skills while working on it. It was a ton of fun!",
                 ],
-                image: project0img1
+                image: project0img1,
+                imageAlt: "A screenshot of Figma components designed for the portfolio website.",
+                imageFigcaption: "A screenshot of the portfolio website's design in Figma."
             },
             {
                 title: "Design and Development",
@@ -31,7 +33,9 @@ const Projects = [
                     "I first created simple idea using Figma and played around with different colors and created a few mockups and few components. I didn't want to spend too much time on Figma since I wanted to focus more on the development side of things and I was the only one working on this.",
                     "Figma as a desing tool was really powerful for a free tool and the ability to export assets as SVG or PNG directly from Figma made the development process a lot faster.",
                 ],
-                image: project0img2
+                image: project0img2,
+                imageAlt: "A screenshot of the first design of the portfolio website.",
+                imageFigcaption: "A screenshot of the first design of the portfolio website."
             },
             {
                 title: "Post mortem",
