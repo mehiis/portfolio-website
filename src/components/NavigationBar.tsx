@@ -14,9 +14,9 @@ type NavigationBarProps = {
     setMobileMenuOpen: (open: boolean) => void;
 }
 
-const NavigationBar = ({ isVisible, mobileMenuOpen, setMobileMenuOpen }: NavigationBarProps) => {
+const NavigationBar = (navProps: NavigationBarProps) => {
   return (
-            <div className='bg-[var(--primary-color)] min-w-[360px] shadow-sm sticky top-0 z-50 transition-transform duration-200 position-absolute px-5 py-2' style={{ transform: isVisible ? 'translateY(0)' : 'translateY(-100%)' }}>
+            <div className='bg-[var(--primary-color)] min-w-[360px] shadow-sm sticky top-0 z-50 transition-transform duration-200 position-absolute px-5 py-2' style={{ transform: navProps.isVisible ? 'translateY(0)' : 'translateY(-100%)' }}>
                 <div className="max-w-[1440px] min-w-[360px] mx-auto flex items-center justify-between bg-[var(--primary-color)] hidden md:flex md:px-10" >
                     <Link to="/"><img src={logo} alt="Logo" className="w-35 h-auto hover:scale-115 transition-transform duration-150 w-auto max-h-[65px]"/></Link>
 
@@ -60,10 +60,10 @@ const NavigationBar = ({ isVisible, mobileMenuOpen, setMobileMenuOpen }: Navigat
                             <div className='flex justify-around items-center'>
                           <button
                             className="w-[50px] h-[50px]"
-                            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                            onClick={() => navProps.setMobileMenuOpen(!navProps.mobileMenuOpen)}
                           >
                             <img
-                              src={mobileMenuOpen ? mobilemenuclosed : mobilemenuopenicon}
+                              src={navProps.mobileMenuOpen ? mobilemenuclosed : mobilemenuopenicon}
                               alt="Mobile Menu button"
                             />
                           </button>

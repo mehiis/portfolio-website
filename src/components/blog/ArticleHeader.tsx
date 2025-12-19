@@ -12,11 +12,11 @@ const ArticleHeader = (props: Props) => {
     <header className="py-5 items-center bg-[var(--secondary-color)] text-[var(--black-color)] shadow-sm">
       <div className="max-w-[1440px] min-w-[360px] m-auto px-10 py-3 md:px-30">
         <button 
-        className="bg-[#E74C3C] text-md text-[var(--black-color)]  px-4 py-2 rounded-lg hover:scale-105 transition-transform duration-200 mb-5 inline-block shadow-sm" 
+        className="bg-[var(--primary-color)] text-md text-[var(--black-color)]  px-4 py-2 rounded-lg hover:scale-105 transition-transform duration-200 mb-5 inline-block shadow-sm" 
         onClick={() => { 
           window.history.back()
           }
-          }>&#8617; Back to previous page</button>
+          }>&#10229; Back to previous page</button>
 
         <h1 className="text-3xl font-bold">{props.title}</h1>
         <p className="py-2 font-[arial] text-md md:text-xl">{props.desc}</p>

@@ -3,10 +3,10 @@
         alt: string,
     }
 
-const CustomH2Title = ({source, alt }: Props) => {
+const CustomH2Title = (props: Props) => {
     return (
     <h2>
-        <img src={source} alt={"A topic title with text " + alt + "."} className="w-auto px-8 pt-15 max-h-[98px]"/>
+        <img src={props.source} alt={"A topic title with text " + props.alt + "."} className="w-auto px-7 pt-10 max-h-[85px]"/>
     </h2>
   )
 }
