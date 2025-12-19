@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import logo from "@/assets/images/logos/logo-text-with-desc.png";
 import homebutton from "@/assets/images/buttons/home-button.png";
 import resumebutton from "@/assets/images/buttons/resume-button.png"
-import github from "@/assets/images/icons/gh.png";
-import linkedin from "@/assets/images/icons/li.png";
+import github from "@/assets/images/icons/github-mark.svg";
+import linkedin from "@/assets/images/icons/inBug-Black.png";
 import mobilemenuclosed from "@/assets/images/misc/close-menu.svg"
 import mobilemenuopenicon from "@/assets/images/misc/mobile-menu.svg"
 import resume from "@/assets/resume.pdf"

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import github from "@/assets/images/icons/gh.png";
-import linkedin from "@/assets/images/icons/li.png";
+import github from "@/assets/images/icons/github-mark.svg";
+import linkedin from "@/assets/images/icons/inBug-Black.png";
 import instagram from "@/assets/images/icons/ig.png";
 import homeIcon from "@/assets/images/icons/home-icon.svg"
 import resumeIcon from "@/assets/images/icons/resume-icon.svg"
