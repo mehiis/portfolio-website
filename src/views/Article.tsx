@@ -1,22 +1,22 @@
 import {useParams } from "react-router-dom"
-import projects from "../data/projects";
+import Articles from "../data/articles";
 import NotFound from "./NotFound";
 import ArticleHeader from "../components/blog/ArticleHeader";
 
-const Project = () => {
+const Article = () => {
   const { id } = useParams<{ id: string }>();
-  const project = projects.find(p => p.id === Number(id));
+  const article = Articles.find(currentArticle => currentArticle.id === Number(id));
   let figureIndex:number = 0;
   
   return (
     <>
       <div>
-        {project ? (
+        {article ? (
           <div>
-            <ArticleHeader title={project.title} desc={project.description} author={project.author} date={project.date} img={project.headerImage} resources={project.resources} />
+            <ArticleHeader title={article.title} desc={article.description} author={article.author} date={article.date} img={article.headerImage} resources={article.resources} />
 
             <article className="mt-6 max-w-[1440px] mx-auto py-4 px-5 mx-auto md:px-30">
-              {project.chapters.map((chapter, index) => (
+              {article.chapters.map((chapter, index) => (
                 <div key={index} className="mt-4 mb-15">
                   <h2 className="text-xl font-semibold mb-2">{chapter.title}</h2>
                   
@@ -44,4 +44,4 @@ const Project = () => {
   )
 }
 
-export default Project
+export default Article

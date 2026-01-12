@@ -29,7 +29,7 @@ const CustomProjectView = (props: Props) => {
                             <span key={index} className="text-[var(--black-color)] text-md mx-1 border px-2 rounded-sm my-auto shadow-sm">{skill}</span>
                         ))}
                     </div>
-                        <Link to={`/project/${props.id}`} className="mt-5 md:mt-0 bg-[var(--secondary-color)] text-md text-[var(--black-color)] inline-block px-4 py-2 rounded-lg hover:scale-105 transition-transform duration-200 shadow-sm flex-none max-h-[40px]">
+                        <Link to={`/article/${props.id}`} className="mt-5 md:mt-0 bg-[var(--secondary-color)] text-md text-[var(--black-color)] inline-block px-4 py-2 rounded-lg hover:scale-110 transition-transform duration-300 shadow-sm flex-none max-h-[40px]">
                                 Read more &#10230;
                         </Link>
                 </div>

@@ -1,7 +1,7 @@
 import CustomProjectView from "./CustomProjectView";
 import CustomH2Title from "./CustomH2Title";
 import titleIcon from "@/assets/images/h2/personal-projects-h2.png";
-import project from "../data/projects";
+import project from "../data/articles";
 
 const projects = project.reverse();
 

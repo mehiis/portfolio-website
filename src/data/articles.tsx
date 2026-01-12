@@ -3,15 +3,15 @@ import project0headerImg from "@/assets/images/projects/0_portfolio/project-0-he
 import project0img1 from "@/assets/images/projects/0_portfolio/project0-img-1.jpg"
 import project0img2 from "@/assets/images/projects/0_portfolio/project0-img-2.jpg"
 
-const Projects = [
+const Articles = [
     {
         id: 0,
         title: "Portfolio Website",
         description: "A personal portfolio website displaying my skills and projects. This project showcases my ability to create responsive and visually appealing web applications.",
         author: "Niko Mehiläinen",
-        date: "17 Dec 2025",
-        year: 2025,
+        date: new Date("2026-01-15"),
         technologies: ["Vite", "React", "Tailwind CSS", "Figma"],
+        tags: ["Web Development", "Frontend", "Personal Project"],
         icon: porfolioIcon,
         headerImage: project0headerImg,
         chapters: [
@@ -59,4 +59,4 @@ const Projects = [
     },
 ];
 
-export default Projects;
+export default Articles ;

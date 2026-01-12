@@ -3,6 +3,7 @@ import github from "@/assets/images/icons/github-mark.svg";
 import linkedin from "@/assets/images/icons/inBug-Black.png";
 import instagram from "@/assets/images/icons/ig.png";
 import homeIcon from "@/assets/images/icons/home-icon.svg"
+import blogIcon from "@/assets/images/icons/blog-icon.svg"
 import resumeIcon from "@/assets/images/icons/resume-icon.svg"
 import resume from "@/assets/resume.pdf"
 
@@ -22,11 +23,12 @@ const MobileMenu = ({ mobileMenuOpen, setMobileMenuOpen }: MobileMenuProps) => {
                     </div>
                 </Link>
 
-                {/* COMING SOON...
-                <button className='flex items-center space-x-2 pl-4 my-3' onClick={() => setMobileMenuOpen(false)}>
-                    <img src="/src/assets/images/icons/blog-icon.svg" alt="Blog icon" className="w-8 h-8"/>
-                    <a href="/blog" className='text-[115%] font-[arial-black]'>Blog</a>
-                </button>*/}
+                <Link className='flex items-center space-x-2 pl-4 my-3' to="/blogs" onClick={() => setMobileMenuOpen(false)}>
+                    <div className="flex">
+                        <img src={blogIcon} alt="Blogs icon" className="w-8 h-8"/>
+                        <p className='text-[115%] font-[arial-black] px-2'>Blogs</p>
+                    </div>
+                </Link>
 
                 <a href={resume} className='flex items-center space-x-2 pl-4 my-3' onClick={() => setMobileMenuOpen(false)} target="_blank" rel="noopener noreferrer">
                     <div className="flex">

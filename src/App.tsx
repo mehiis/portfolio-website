@@ -1,9 +1,9 @@
 import { BrowserRouter, Route, Routes } from 'react-router'
 import Home from './views/Home'
-import Blog from './views/Blog'
+import Blogs from './views/Blogs'
 import NotFound from './views/NotFound'
 import Layout from './components/Layout'
-import Project from './views/Project'
+import Article from './views/Article'
 
 function App() {
 
@@ -14,9 +14,8 @@ function App() {
       <Route element={<Layout />}>
         {/* Define the routes for the application */}
         <Route path="/" element={<Home />} />
-        <Route path="/blog/:id" element={<Blog />} />
-        <Route path="/project/:id" element={<Project />} />
-        {/*<Route path="/blogs" element={<Blogs />} />*/}
+        <Route path="/article/:id" element={<Article />} />
+        <Route path="/blogs" element={<Blogs />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>

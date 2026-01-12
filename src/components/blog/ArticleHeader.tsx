@@ -1,8 +1,10 @@
+import CustomHR from "../CustomHR"
+
 type Props = {
     title: string,
     desc: string,
     author: string,
-    date: string,
+    date: Date,
     img: string
     resources?: {name: string, url: string}[]
 }
@@ -21,10 +23,10 @@ const ArticleHeader = (props: Props) => {
         <h1 className="text-3xl font-bold">{props.title}</h1>
         <p className="py-2 font-[arial] text-md md:text-xl">{props.desc}</p>
         {/*<img className="mx-auto my-10 w-full h-auto shadow-sm rounded-sm" src={props.img} alt={props.title} />*/}
-        <hr className="border-black/10"/>
+        <CustomHR />
 
         <div className="md:flex md:justify-between md:items-center mt-4">
-          <p className="text-md font-[arial]">{props.author} - {props.date}</p>
+          <p className="text-md font-[arial]">{props.author} - {props.date.toLocaleDateString()}</p>
           
           {props.resources && ( 
             <div className="mt-3 md:mt-0 md:ml-10">
