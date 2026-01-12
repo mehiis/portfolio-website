@@ -34,7 +34,7 @@ const CustomProjectView = (props: Props) => {
                         </Link>
                 </div>
             </div>
-                    
+
         </div>
     </div>
   )

@@ -16,7 +16,7 @@ const Personal = () => {
                     key={index}
                     className="p-4 m-4 max-w-[1440px]"
                 >
-                    <CustomProjectView id={project.id} title={project.title} description={project.description} year={project.year} tech={project.technologies.sort()} icon={project.icon} />
+                    <CustomProjectView id={project.id} title={project.title} description={project.description} year={project.date.getFullYear()} tech={project.technologies.sort()} icon={project.icon} />
                 </li>
             ))}
         </ul>
