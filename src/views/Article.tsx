@@ -21,7 +21,7 @@ const Article = () => {
                   <h2 className="text-xl font-semibold mb-2">{chapter.title}</h2>
 
                   {chapter.paragraphs.map((paragraph, pIndex) => (
-                    <p key={pIndex} className="text-base font-[arial] mb-8 text-gray-700">{paragraph}</p>
+                    <p key={pIndex} className="text-xl md:text-2xl font-[arial] mb-8 text-gray-700">{paragraph}</p>
                   ))}
 
                   {chapter.image &&
