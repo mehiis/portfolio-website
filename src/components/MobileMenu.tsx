@@ -41,9 +41,9 @@ const MobileMenu = ({ mobileMenuOpen, setMobileMenuOpen }: MobileMenuProps) => {
 
                 <p className='text-[100%] font-[arial-black] text-left items-left justify-left px-5 mb-2 '>My socials</p>
                 <div className='flex items-left pt-3 px-5 pb-5 justify-left '>
-                    <button><a href="https://github.com/mehiis" target="_blank"><img src={github} alt="GitHub Logo 2025" className="w-11 h-11 mx-4 hover:scale-120 transition-transform duration-300" /></a></button>
-                    <button><a href="https://fi.linkedin.com/in/nikomehilainen" target="_blank"><img src={linkedin} alt="LinkedIn Logo 2025" className="w-11 h-11 mx-4 hover:scale-120 transition-transform duration-300" /></a></button>
-                    <button><a href="https://www.instagram.com/nikomehilainen/" target="_blank"><img src={instagram} alt="Instagram Logo 2025" className="w-11 h-11 mx-4 hover:scale-120 transition-transform duration-300" /></a></button>
+                    <button><a href="https://github.com/mehiis" target="_blank"><img src={github} alt="GitHub Logo 2025" className="w-9 h-9 mx-4 hover:scale-120 transition-transform duration-300" /></a></button>
+                    <button><a href="https://fi.linkedin.com/in/nikomehilainen" target="_blank"><img src={linkedin} alt="LinkedIn Logo 2025" className="w-9 h-9 mx-4 hover:scale-120 transition-transform duration-300" /></a></button>
+                    <button><a href="https://www.instagram.com/nikomehilainen/" target="_blank"><img src={instagram} alt="Instagram Logo 2025" className="w-9 h-9 mx-4 hover:scale-120 transition-transform duration-300" /></a></button>
                 </div>
         </div>
     );

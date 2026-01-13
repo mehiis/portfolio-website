@@ -15,18 +15,21 @@ const Blogs = () => {
             <Link to={`/article/${article.id}`}>
 
               <li className="text-white shadow-sm rounded-md overflow-hidden flex-col md:flex-row border border-black/2 mb-11 md:grid md:grid-cols-[25%_75%] ">
-                  <img src={article.icon} alt={article.title} className="m-auto h-[100px] md:h-auto" />
+                  <div className='h-[180px] md:h-auto flex items-center'>
+                    <img src={article.icon} alt={article.title} className="mx-auto" />
+                  </div>
+                  
                   <div className="bg-black/4  w-full p-4 h-auto">
-                    <p className='font-[arial] text-sm text-[var(--black-color)] md:text-base overflow-hidden whitespace-nowrap overflow-ellipsis'>{article.date.toLocaleDateString()} / {article.tags.join(', ')}</p>
+                    <p className='font-[arial] text-sm text-[var(--black-color)] md:text-base line-clamp-1'>{article.date.toLocaleDateString()} / {article.tags.join(', ')}</p>
                     <CustomHR />
-                    <h2 className='text-black text-lg md:text-2xl'>{article.title}</h2>
-                    <p className='text-black font-[arial] text-[120%] max-h-[60px] overflow-hidden overflow-ellipsis'>{article.description}</p>
+                    <h2 className='text-black text-lg md:text-2xl line-clamp-1'>{article.title}</h2>
+                    <p className='text-black font-[arial] text-md md:text-lg max-h-[60px] line-clamp-2'>{article.description}</p>
 
                     <div className="flex md:justify-end my-3 md:my-1">
-                      <Link to={`/article/${article.id}`}
-                      className="bg-[var(--secondary-color)] text-md text-[var(--black-color)] inline-block px-4 py-2 rounded-lg hover:scale-110 transition-transform duration-300 shadow-sm flex-none max-h-[40px]">
-                      Read more &#10230;
-                      </Link>
+                      <div
+                        className="bg-[var(--secondary-color)] text-md text-[var(--black-color)] inline-block mt-2 md:mt-0 px-4 py-2 rounded-lg hover:scale-110 transition-transform duration-300 shadow-sm flex-none max-h-[40px]">
+                        Read more &#10230;
+                      </div>
                     </div>
                   </div>
               </li>

@@ -2,6 +2,7 @@ import CustomProjectView from "./CustomProjectView";
 import CustomH2Title from "./CustomH2Title";
 import titleIcon from "@/assets/images/h2/personal-projects-h2.png";
 import project from "../data/articles";
+import { Link } from "react-router-dom";
 
 const projects = project.reverse();
 
@@ -17,7 +18,9 @@ const Personal = () => {
                         key={index}
                         className="p-4 m-4 max-w-[1440px]"
                     >
-                        <CustomProjectView id={project.id} title={project.title} description={project.description} year={project.date.getFullYear()} tech={project.technologies.sort()} icon={project.icon} />
+                        <Link to={`/article/${project.id}`}>
+                            <CustomProjectView id={project.id} title={project.title} description={project.description} year={project.date.getFullYear()} tech={project.technologies.sort()} icon={project.icon} />
+                        </Link>
                     </li>)
                 ))}
             </ul>

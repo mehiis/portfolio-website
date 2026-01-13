@@ -1,5 +1,3 @@
-import { Link } from "react-router"
-
 type Props = {
     id: number | string,
     title: string,
@@ -16,22 +14,22 @@ const CustomProjectView = (props: Props) => {
             <img src={props.icon} alt={"Icon of the project " + props.title} className="w-auto max-h-[150px] object-contain mx-auto"/>
             <div className="text-[var(--black-color)] p-4">
                 <div className="md:flex md:gap-2">
-                    <h3 className="text-[140%] font-[arial-black]">{props.title}</h3>
-                    <p className="text-[80%]">{props.year}</p>
+                    <h3 className="text-lg md:text-2xl font-[arial-black]">{props.title}</h3>
+                    <p className="text-sm font-[arial]">{props.year}</p>
                 </div>
 
-                <p className="text-[120%] mt-4 font-[arial]">{props.description}</p>
+                <p className="text-md md:text-lg mt-4 font-[arial]">{props.description}</p>
 
                 <div className="mt-4 md:justify-between md:flex md:items-end">
                     <div className="flex flex-wrap gap-1">
-                        <p className="mt-2">Created using:</p>
+                        <p className="text-md mt-2 md:mt-0">Created using:</p>
                         {props.tech.map((skill, index) => (
-                            <span key={index} className="text-[var(--black-color)] text-md mx-1 border px-2 rounded-sm my-auto shadow-sm">{skill}</span>
+                            <span key={index} className="text-[var(--black-color)] text-sm mx-1 border px-2 rounded-sm my-auto shadow-sm">{skill}</span>
                         ))}
                     </div>
-                        <Link to={`/article/${props.id}`} className="mt-5 md:mt-0 bg-[var(--secondary-color)] text-md text-[var(--black-color)] inline-block px-4 py-2 rounded-lg hover:scale-110 transition-transform duration-300 shadow-sm flex-none max-h-[40px]">
+                        <div className="mt-5 md:mt-0 bg-[var(--secondary-color)] text-md text-[var(--black-color)] inline-block px-4 py-2 rounded-lg hover:scale-110 transition-transform duration-300 shadow-sm flex-none max-h-[40px]">
                                 Read more &#10230;
-                        </Link>
+                        </div>
                 </div>
             </div>
 

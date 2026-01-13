@@ -1,11 +1,15 @@
+import { Link } from 'react-router-dom';
 import CustomH2Title from './CustomH2Title';
 import titleIcon from "@/assets/images/h2/education-h2.png";
 
 const education = [
     {
-        degree: "Information Technology, Bachelor of engineering",
-        institution: "Metropolia University of Applied Sciences (2024 - 2028)",
-    }
+        degree: "Bachelor of Engineering, Information Technology and Communications",
+        institution: "Metropolia University of Applied Sciences",
+        location: "Helsinki, Finland",
+        time: "2024 - 2028",
+        website: "https://www.metropolia.fi/en"
+    },
 
 ]
 
@@ -19,10 +23,16 @@ const Education = () => {
                 <ul className="bg-[var(--primary-color)] w-full rounded-lg grid grid-cols-1 md:grid-cols-2 gap-4 px-4 py-10 shadow-sm">
 
                     {[...education].reverse().map((edu, index) => (
-                        <li key={index} className="bg-[var(--secondary-color)] text-shadow-sm max-w-[730px] clip-path-custom p-10">
-                            <h3 className="text-[110%] font-[arial-black]">{edu.institution}</h3>
-                            <p className="text-[120%] font-[arial]">{edu.degree}</p>
-                        </li>
+                        <Link to={edu.website} target="_blank" className="hover:scale-102 transition-transform duration-300" key={index}>  
+                            <li key={index} className="bg-[var(--secondary-color)] text-shadow-sm max-w-[730px] clip-path-custom p-10">
+                                <div className="flex md:flex-row flex-col md:items-top md:gap-2">
+                                    <h3 className="text-lg font-[arial-black]">{edu.institution}</h3>
+                                    <p className="text-sm font-[arial]">{edu.time}</p>
+                                </div>
+                                <p className="text-lg font-[arial] my-5 md:my-0">{edu.degree}</p>
+                                <p className="text-md font-[arial]">{edu.location}</p>
+                            </li>
+                        </Link>
                     ))}
                 </ul>
                 
