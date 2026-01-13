@@ -21,14 +21,14 @@ const Article = () => {
                   <h2 className="text-xl font-semibold mb-2">{chapter.title}</h2>
 
                   {chapter.paragraphs.map((paragraph, pIndex) => (
-                    <p key={pIndex} className="text-xl md:text-2xl font-[arial] mb-8 text-gray-700">{paragraph}</p>
+                    <p key={pIndex} className="text-lg 2xl:text-2xl font-[arial] mb-8 text-gray-700">{paragraph}</p>
                   ))}
 
                   {chapter.image &&
 
                     <figure>
                       <img className="mt-4 mx-auto shadow-sm rounded-md" src={chapter.image} alt={chapter.imageAlt} />
-                      <figcaption className="text-left text-md text-[var(--black-color)] p-3 font-[arial] md:text-xl">{figureIndex += 1}. {chapter.imageFigcaption}</figcaption>
+                      <figcaption className="text-left text-md text-[var(--black-color)] p-3 font-[arial] 2xl:text-xl italic">{figureIndex += 1}. {chapter.imageFigcaption}</figcaption>
                     </figure>
 
                   }

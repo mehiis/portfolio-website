@@ -11,6 +11,7 @@ const education = [
         website: "https://www.metropolia.fi/en"
     },
 
+
 ]
 
 const Education = () => {
@@ -23,19 +24,19 @@ const Education = () => {
                 <ul className="bg-[var(--primary-color)] w-full rounded-lg grid grid-cols-1 2xl:grid-cols-2 gap-4 px-4 py-10 shadow-sm">
 
                     {[...education].reverse().map((edu, index) => (
-                        <Link to={edu.website} target="_blank" className="hover:scale-102 transition-transform duration-300" key={index}>  
+                        <Link to={edu.website} target="_blank" className="hover:scale-102 transition-transform duration-300" key={index}>
                             <li key={index} className="bg-[var(--secondary-color)] text-shadow-sm max-w-[730px] clip-path-custom p-10">
                                 <div className="flex 2xl:flex-row flex-col 2xl:items-top 2xl:gap-2">
-                                    <h3 className="text-lg font-[arial-black]">{edu.institution}</h3>
+                                    <h3 className="text-md 2xl:text-lg font-[arial-black]">{edu.institution}</h3>
                                     <p className="text-sm font-[arial]">{edu.time}</p>
                                 </div>
-                                <p className="text-lg font-[arial] my-5 md:my-0">{edu.degree}</p>
+                                <p className="text-md 2xl:text-lg font-[arial] my-5 md:my-0">{edu.degree}</p>
                                 <p className="text-md font-[arial]">{edu.location}</p>
                             </li>
                         </Link>
                     ))}
                 </ul>
-                
+
             </div>
 
         </div>

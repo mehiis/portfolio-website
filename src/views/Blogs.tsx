@@ -18,16 +18,16 @@ const Blogs = () => {
                   <div className='h-[180px] md:h-auto flex items-center'>
                     <img src={article.icon} alt={article.title} className="mx-auto" />
                   </div>
-                  
+
                   <div className="bg-black/4  w-full p-4 h-auto">
                     <p className='font-[arial] text-sm text-[var(--black-color)] md:text-base line-clamp-1'>{article.date.toLocaleDateString()} / {article.tags.join(', ')}</p>
                     <CustomHR />
-                    <h2 className='text-black text-lg md:text-2xl line-clamp-1'>{article.title}</h2>
-                    <p className='text-black font-[arial] text-md md:text-lg max-h-[60px] line-clamp-2'>{article.description}</p>
+                    <h2 className='text-black text-lg 2xl:text-2xl line-clamp-1'>{article.title}</h2>
+                    <p className='text-black font-[arial] text-md 2xl:text-lg max-h-[60px] line-clamp-2'>{article.description}</p>
 
                     <div className="flex md:justify-end my-3 md:my-1">
                       <div
-                        className="bg-[var(--secondary-color)] text-md text-[var(--black-color)] inline-block mt-2 md:mt-0 px-4 py-2 rounded-lg hover:scale-110 transition-transform duration-300 shadow-sm flex-none max-h-[40px]">
+                        className="bg-[var(--secondary-color)] text-sm 2xl:text-md text-[var(--black-color)] inline-block mt-2 md:mt-0 px-4 py-2 rounded-lg hover:scale-110 transition-transform duration-300 shadow-sm flex-none max-h-[40px]">
                         Read more &#10230;
                       </div>
                     </div>
