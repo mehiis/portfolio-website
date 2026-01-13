@@ -20,12 +20,12 @@ const Education = () => {
 
             <div className='p-4 m-4'>
 
-                <ul className="bg-[var(--primary-color)] w-full rounded-lg grid grid-cols-1 md:grid-cols-2 gap-4 px-4 py-10 shadow-sm">
+                <ul className="bg-[var(--primary-color)] w-full rounded-lg grid grid-cols-1 2xl:grid-cols-2 gap-4 px-4 py-10 shadow-sm">
 
                     {[...education].reverse().map((edu, index) => (
                         <Link to={edu.website} target="_blank" className="hover:scale-102 transition-transform duration-300" key={index}>  
                             <li key={index} className="bg-[var(--secondary-color)] text-shadow-sm max-w-[730px] clip-path-custom p-10">
-                                <div className="flex md:flex-row flex-col md:items-top md:gap-2">
+                                <div className="flex 2xl:flex-row flex-col 2xl:items-top 2xl:gap-2">
                                     <h3 className="text-lg font-[arial-black]">{edu.institution}</h3>
                                     <p className="text-sm font-[arial]">{edu.time}</p>
                                 </div>
