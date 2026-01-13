@@ -11,9 +11,10 @@ const Blogs = () => {
 
       <ul>
         {[...Articles].reverse().map(article => (
-          <div className='mx-10 mb-10 my-10 md:my-0'>
+          <div className='mx-10 mb-10 my-10 md:my-0 '>
             <Link to={`/article/${article.id}`}>
-              <li className="text-white flex shadow-sm rounded-md overflow-hidden flex-col md:flex-row border border-black/2 mb-11 ">
+
+              <li className="text-white shadow-sm rounded-md overflow-hidden flex-col md:flex-row border border-black/2 mb-11 md:grid md:grid-cols-[25%_75%] ">
                   <img src={article.icon} alt={article.title} className="m-auto h-[100px] md:h-auto" />
                   <div className="bg-black/4  w-full p-4 h-auto">
                     <p className='font-[arial] text-sm text-[var(--black-color)] md:text-base overflow-hidden whitespace-nowrap overflow-ellipsis'>{article.date.toLocaleDateString()} / {article.tags.join(', ')}</p>

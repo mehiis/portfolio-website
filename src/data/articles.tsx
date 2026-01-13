@@ -13,6 +13,7 @@ const Articles = [
         technologies: ["Vite", "React", "Tailwind CSS", "Figma"],
         tags: ["Web Development", "Frontend", "Personal Project"],
         icon: porfolioIcon,
+        featureOnHomePage: true,
         headerImage: project0headerImg,
         chapters: [
             {
@@ -42,7 +43,7 @@ const Articles = [
                 title: "Post Mortem",
                 paragraphs: [
                     "All in all, I’m really happy with how my portfolio turned out. I feel like I managed to capture the essence of who I am as a person, and I was able to make it visually personal. I’m also thinking about possibly adding a blog page if I can come up with some ideas to write about.",
-                    
+
                     "The only thing I’m still a little unsure about is using Tailwind CSS. I feel like it can make the code harder to read, and the separation of concerns isn’t as clear as with traditional CSS, since it adds styles directly to the code.",
                     "That said, I was really hooked on how much faster development was with it. Next time, though, I’ll probably try sticking with traditional CSS because I think it’ll help me write more maintainable and easier-to-read code, even if the development speed is slower.",
 
