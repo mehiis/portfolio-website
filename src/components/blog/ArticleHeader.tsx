@@ -19,14 +19,8 @@ const ArticleHeader = (props: Props) => {
           }
           }>&#10229; Back to previous page</button>
 
-<<<<<<< HEAD
-        <h1 className="text-3xl font-bold">{props.title}</h1>
-        <p className="py-2 font-[arial] text-md md:text-xl">{props.desc}</p>
-=======
         <h1 className="text-xl 2xl:text-3xl font-bold">{props.title}</h1>
         <p className="py-2 font-[arial] text-md 2xl:text-xl">{props.desc}</p>
-        {/*<img className="mx-auto my-10 w-full h-auto shadow-sm rounded-sm" src={props.img} alt={props.title} />*/}
->>>>>>> 3d219385c8687b01b9af0005d6b994851ecf6de0
         <CustomHR />
 
         <div className="md:flex md:justify-between md:items-center mt-4">
