@@ -1,7 +1,9 @@
 import porfolioIcon from "@/assets/images/logos/logo-text-with-desc.png"
-import project0headerImg from "@/assets/images/projects/0_portfolio/project-0-header-img.jpg"
+import cover0 from "@/assets/images/blog/0/cover_0.jpg"
 import project0img1 from "@/assets/images/projects/0_portfolio/project0-img-1.jpg"
 import project0img2 from "@/assets/images/projects/0_portfolio/project0-img-2.jpg"
+
+import cover1 from "@/assets/images/blog/1/cover_1.jpg"
 
 const Articles = [
     {
@@ -9,12 +11,12 @@ const Articles = [
         title: "Portfolio Website",
         description: "A personal portfolio website displaying my skills and projects. This project showcases my ability to create responsive and visually appealing web applications.",
         author: "Niko Mehiläinen",
-        date: new Date("2026-01-15"),
+        date: new Date("2026-01-01"),
         technologies: ["Vite", "React", "Tailwind CSS", "Figma"],
         tags: ["Web Development", "Frontend", "Personal Project"],
         icon: porfolioIcon,
+        articleCover: cover0,
         featureOnHomePage: true,
-        headerImage: project0headerImg,
         chapters: [
             {
                 title: "From Scratch",
@@ -57,6 +59,30 @@ const Articles = [
                 url: "https://github.com/mehiis/portfolio-website"
             }
         ]
+    },
+    {
+        id: 1,
+        title: "SEOULTECH - Preparation for student exchange 2026",
+        description: "A detailed overview of my preparations for the student exchange program at Seoul National University of Science and Technology (SEOULTECH) in Spring 2026. In this blog I discuss application processes, cultural insights, and tips for future exchange students departing from Finland.",
+        author: "Niko Mehiläinen",
+        date: new Date("2026-01-13"),
+        technologies: [],
+        tags: ["SEOULTECH", "Student Exchange", "Spring 2026"],
+        icon: "",
+        articleCover: cover1,
+        featureOnHomePage: false,
+        chapters: [
+            {
+                title: "Preparation for SEOULTECH Exchange",
+                paragraphs: [
+                    " This article is currently under construction. Stay tuned for updates on my preparations for the student exchange program at SEOULTECH in Spring 2026!",
+                ],
+                image: "",
+                imageAlt: "",
+                imageFigcaption: ""
+            },
+        ],
+        resources: []
     },
 ];
 

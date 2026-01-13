@@ -13,22 +13,21 @@ const Article = () => {
       <div>
         {article ? (
           <div>
-            <ArticleHeader title={article.title} desc={article.description} author={article.author} date={article.date} img={article.headerImage} resources={article.resources} />
+            <ArticleHeader title={article.title} desc={article.description} author={article.author} date={article.date} resources={article.resources} />
 
             <article className="mt-6 max-w-[1440px] mx-auto py-4 px-5 md:px-30">
-              {article.chapters.map((chapter, index) => (
+              {article.chapters.map((article, index) => (
                 <div key={index} className="mt-4 mb-15">
-                  <h2 className="text-xl font-semibold mb-2">{chapter.title}</h2>
+                  <h2 className="text-xl font-semibold mb-2">{article.title}</h2>
 
-                  {chapter.paragraphs.map((paragraph, pIndex) => (
+                  {article.paragraphs.map((paragraph, pIndex) => (
                     <p key={pIndex} className="text-xl md:text-2xl font-[arial] mb-8 text-gray-700">{paragraph}</p>
                   ))}
 
-                  {chapter.image &&
-
+                  {article.image &&
                     <figure>
-                      <img className="mt-4 mx-auto shadow-sm rounded-md" src={chapter.image} alt={chapter.imageAlt} />
-                      <figcaption className="text-left text-md text-[var(--black-color)] p-3 font-[arial] md:text-xl">{figureIndex += 1}. {chapter.imageFigcaption}</figcaption>
+                      <img className="mt-4 mx-auto shadow-sm rounded-md" src={article.image} alt={article.imageAlt} />
+                      <figcaption className="text-left text-md text-[var(--black-color)] p-3 font-[arial] md:text-xl">{figureIndex += 1}. {article.imageFigcaption}</figcaption>
                     </figure>
 
                   }

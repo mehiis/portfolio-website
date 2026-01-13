@@ -10,13 +10,13 @@ const Blogs = () => {
       <div className="max-w-[1440px] mx-auto md:p-15">
 
       <ul>
-        {[...Articles].reverse().map(article => (
+        {[...Articles].map(article => (
           <div className='mx-10 mb-10 my-10 md:my-0 '>
             <Link to={`/article/${article.id}`}>
 
               <li className="text-white shadow-sm rounded-md overflow-hidden flex-col md:flex-row border border-black/2 mb-11 md:grid md:grid-cols-[25%_75%] ">
-                  <div className='h-[180px] md:h-auto flex items-center'>
-                    <img src={article.icon} alt={article.title} className="mx-auto" />
+                  <div className='h-[180px] md:h-auto flex items-center justify-center overflow-hidden'>
+                    <img src={article?.articleCover} alt={article.title} className="w-full h-full object-cover" />
                   </div>
                   
                   <div className="bg-black/4  w-full p-4 h-auto">
@@ -35,7 +35,7 @@ const Blogs = () => {
               </li>
 
             </Link>
-            { article.id !== Articles[0].id ? <CustomHR /> : null}
+            { article.id !== Articles[Articles.length - 1].id ? <hr className="border-black/10 my-10"/> : null}
           </div>
         ))}
 
