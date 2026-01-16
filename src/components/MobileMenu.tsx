@@ -19,27 +19,27 @@ const MobileMenu = ({ mobileMenuOpen, setMobileMenuOpen }: MobileMenuProps) => {
                 <Link className='flex items-center space-x-2 pl-4 my-3 mt-10' to="" onClick={() => setMobileMenuOpen(false)}>
                     <div className="flex">
                         <img src={homeIcon} alt="Homepage icon" className="w-8 h-8"/>
-                        <p className='text-[115%] font-[arial-black] px-2'>Home</p>
+                        <p className='text-2xl font-[LeagueSpartanBold] px-2'>Home</p>
                     </div>
                 </Link>
 
                 <Link className='flex items-center space-x-2 pl-4 my-3' to="/blogs" onClick={() => setMobileMenuOpen(false)}>
                     <div className="flex">
                         <img src={blogIcon} alt="Blogs icon" className="w-8 h-8"/>
-                        <p className='text-[115%] font-[arial-black] px-2'>Blogs</p>
+                        <p className='text-2xl font-[LeagueSpartanBold] px-2'>Blogs</p>
                     </div>
                 </Link>
 
                 <a href={resume} className='flex items-center space-x-2 pl-4 my-3' onClick={() => setMobileMenuOpen(false)} target="_blank" rel="noopener noreferrer">
                     <div className="flex">
                         <img src={resumeIcon} alt="Resume icon" className="w-8 h-8"/>
-                        <p className='text-[115%] font-[arial-black] px-2'>Resume</p>
+                        <p className='text-2xl font-[LeagueSpartanBold] px-2'>Resume</p>
                     </div>
                 </a>
 
                         <hr className="border-black/10 my-5"/>
 
-                <p className='text-[100%] font-[arial-black] text-left items-left justify-left px-5 mb-2 '>My socials</p>
+                <p className='text-xl font-[LeagueSpartanBold] text-left items-left justify-left px-5 mb-2 '>My socials</p>
                 <div className='flex items-left pt-3 px-5 pb-5 justify-left '>
                     <button><a href="https://github.com/mehiis" target="_blank"><img src={github} alt="GitHub Logo 2025" className="w-9 h-9 mx-4 hover:scale-120 transition-transform duration-300" /></a></button>
                     <button><a href="https://fi.linkedin.com/in/nikomehilainen" target="_blank"><img src={linkedin} alt="LinkedIn Logo 2025" className="w-9 h-9 mx-4 hover:scale-120 transition-transform duration-300" /></a></button>

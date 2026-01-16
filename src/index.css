@@ -20,6 +20,16 @@
   src: url(./assets/fonts/mochi.ttf);
 }
 
+@font-face {
+  font-family: LeagueSpartanRegular;
+  src: url(./assets/fonts/LeagueSpartan-Regular.ttf);
+}
+
+@font-face {
+  font-family: LeagueSpartanBold;
+  src: url(./assets/fonts/LeagueSpartan-Bold.ttf);
+}
+
 @layer base {
   :root {
     font-family: 'arial-black', sans-serif;

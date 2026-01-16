@@ -16,7 +16,7 @@ const education = [
 
 const Education = () => {
   return (
-        <div className="max-w-[1440px] min-w-[360px] mx-auto p-2 md:px-10 2xl:px-0">
+        <div className="max-w-[1440px] min-w-[360px] mx-auto p-2 md:px-10 2xl:px-30">
             <CustomH2Title source={titleIcon} alt="Education" />
 
             <div className='p-4 m-4'>
@@ -27,11 +27,11 @@ const Education = () => {
                         <Link to={edu.website} target="_blank" className="hover:scale-102 transition-transform duration-300" key={index}>
                             <li key={index} className="bg-[var(--secondary-color)] text-shadow-sm max-w-[730px] clip-path-custom p-10">
                                 <div className="flex 2xl:flex-row flex-col 2xl:items-top 2xl:gap-2">
-                                    <h3 className="text-md 2xl:text-lg font-[arial-black]">{edu.institution}</h3>
-                                    <p className="text-sm font-[arial]">{edu.time}</p>
+                                    <h3 className="text-md 2xl:text-lg font-[LeagueSpartanBold]">{edu.institution}</h3>
+                                    <p className="text-sm font-[LeagueSpartanRegular]">{edu.time}</p>
                                 </div>
-                                <p className="text-md 2xl:text-lg font-[arial] my-5 md:my-0">{edu.degree}</p>
-                                <p className="text-md font-[arial]">{edu.location}</p>
+                                <p className="text-md 2xl:text-lg font-[LeagueSpartanRegular] my-5 md:my-0">{edu.degree}</p>
+                                <p className="text-md font-[LeagueSpartanBold]">{edu.location}</p>
                             </li>
                         </Link>
                     ))}

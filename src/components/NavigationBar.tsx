@@ -18,27 +18,27 @@ type NavigationBarProps = {
 const NavigationBar = (navProps: NavigationBarProps) => {
   return (
             <div className='bg-[var(--primary-color)] min-w-[360px] shadow-sm sticky top-0 z-50 transition-transform duration-200 position-absolute px-5 py-2' style={{ transform: navProps.isVisible ? 'translateY(0)' : 'translateY(-100%)' }}>
-                <div className="max-w-[1440px] min-w-[360px] mx-auto flex items-center justify-between bg-[var(--primary-color)] hidden md:flex md:px-10" >
-                    <Link to="/"><img src={logo} alt="Logo" className="w-35 h-auto hover:scale-105 transition-transform duration-300 w-auto max-h-[65px]"/></Link>
+                <div className="max-w-[1440px] min-w-[360px] mx-auto flex items-center justify-between bg-[var(--primary-color)] hidden md:flex md:px-40" >
+                    <Link to="/"><img src={logo} alt="Logo" className="h-auto hover:scale-105 transition-transform duration-300 w-auto max-h-[50px]"/></Link>
 
                         <nav className='flex justify-between items-center'>
                         <ul className='flex justify-around items-center mr-10'>
                             <li className="mr-10">
                                     <Link to="/" className="py-1">
-                                        <img src={homebutton} alt="Home button" className="hover:scale-110 transition-transform duration-300 w-auto max-h-[28px]"/>
+                                        <img src={homebutton} alt="Home button" className="hover:scale-110 transition-transform duration-300 w-auto max-h-[22px]"/>
                                     </Link>
                             </li>
 
 
                             <li className="mr-10">
                                     <Link to="/blogs" className="py-1">
-                                        <img src={blogButton} alt="Blogs button" className="hover:scale-110 transition-transform duration-300 w-auto max-h-[32px]"/>
+                                        <img src={blogButton} alt="Blogs button" className="hover:scale-110 transition-transform duration-300 w-auto max-h-[26px]"/>
                                     </Link>
                             </li>
 
                             <li className="mr-10">
                                         <a href={resume} target="_blank" rel="noopener noreferrer" className="py-1">
-                                            <img src={resumebutton} alt="Resume button" className="hover:scale-110 transition-transform duration-300 w-auto max-h-[28px]"/>
+                                            <img src={resumebutton} alt="Resume button" className="hover:scale-110 transition-transform duration-300 w-auto max-h-[22px]"/>
                                         </a>
                             </li>
 
