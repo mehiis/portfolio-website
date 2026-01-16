@@ -7,7 +7,7 @@ const Blogs = () => {
   return (
     <>
      <BlogsHeader />
-      <div className="max-w-[1440px] mx-auto md:p-30">
+      <div className="max-w-[1440px] mx-auto md:px-30">
 
       <ul>
         {[...Articles].map(article => (
@@ -24,7 +24,7 @@ const Blogs = () => {
                     <CustomHR />
                     <h2 className='font-[LeagueSpartanBold] text-black text-lg 2xl:text-lg line-clamp-1'>{article.title}</h2>
                     <p className='text-black font-[LeagueSpartanRegular] text-md 2xl:text-md max-h-[60px] line-clamp-2'>{article.description}</p>
-          
+
                     <div className="flex md:justify-end my-3 md:my-1">
                       <div
                         className="bg-[var(--secondary-color)] text-sm text-[var(--black-color)] inline-block mt-2 px-4 py-2 rounded-lg hover:scale-110 transition-transform duration-300 shadow-sm flex-none max-h-[40px]">

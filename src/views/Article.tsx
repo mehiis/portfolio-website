@@ -41,7 +41,7 @@ const Article = () => {
                   <p className="text-xl font-[LeagueSpartanBold]">Table of contents</p>
                   <div className="mt-4 flex flex-col gap-3">
                     {article.chapters.map((chapter, index) => (
-                     <button key={index} className="text-md text-left text-blue-600 hover:underline font-[LeagueSpartanRegular]" onClick={() => 
+                     <button key={index} className="text-md text-left text-blue-600 hover:underline font-[LeagueSpartanRegular]" onClick={() =>
                       {
                         const element = document.getElementById(`chapter-${index}`);
                         element?.scrollIntoView({ behavior: 'smooth' });
@@ -50,7 +50,7 @@ const Article = () => {
                      </button>
                     ))}
                 </div>
-                <button className="mt-10 bg-[var(--primary-color)] text-sm 2xl:text-md text-[var(--black-color)]  px-4 py-2 rounded-lg hover:scale-105 transition-transform duration-200 inline-block shadow-sm"
+                <button className="mt-10 bg-[var(--primary-color)] font-[LeagueSpartanRegular] text-sm text-[var(--black-color)]  px-4 py-2 rounded-lg hover:scale-105 transition-transform duration-200 inline-block shadow-sm"
                 onClick={() => {
                   window.history.back()
                   }}>&#10229; Back to previous page</button>
