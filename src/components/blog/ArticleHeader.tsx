@@ -11,7 +11,7 @@ type Props = {
 const ArticleHeader = (props: Props) => {
   return (
     <header className="py-5 items-center bg-[var(--secondary-color)] text-[var(--black-color)] shadow-sm">
-      <div className="max-w-[1440px] min-w-[360px] m-auto px-10 py-10 md:px-40">
+      <div className="max-w-[1440px] min-w-[360px] m-auto px-10 py-10 md:px-50">
 
         <h1 className="text-xl font-bold font-[LeagueSpartanBold]">{props.title}</h1>
         <p className="py-2 font-[LeagueSpartanRegular] text-lg">{props.desc}</p>

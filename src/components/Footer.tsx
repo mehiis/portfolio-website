@@ -8,7 +8,12 @@ const Footer = () => {
   return (
         <footer className='mt-0'>
             <div className='bg-[var(--primary-color)] p-15 justify-center items-center min-w-[360px] pb-25'>
-                <Link to="/"><img src={fullNameLogo} alt="Image of stylized full name, small flower and text 'niko mehiläinen'." className="w-80 h-auto mx-auto mb-3 hover:scale-105 transition-transform duration-150"/></Link>
+                <Link to="/">
+                  <img src={fullNameLogo}
+                  alt="Image of stylized full name, small flower and text 'niko mehiläinen'."
+                  className="w-auto max-h-[35px] mx-auto mb-3 hover:scale-105 transition-transform duration-150"/>
+                </Link>
+
                 <div className='flex justify-center'>
                     <a href="https://github.com/mehiis" target="_blank"><img src={github} alt="GitHub Logo 2025" className="w-8 h-auto mx-3 hover:scale-115 transition-transform duration-150" /></a>
                     <a href="https://fi.linkedin.com/in/nikomehilainen" target="_blank"><img src={linkedin} alt="LinkedIn Logo 2025" className="w-8 h-auto mx-3 hover:scale-115 transition-transform duration-150" /></a>

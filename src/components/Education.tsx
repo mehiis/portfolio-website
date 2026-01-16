@@ -25,7 +25,7 @@ const Education = () => {
 
                     {[...education].reverse().map((edu, index) => (
                         <Link to={edu.website} target="_blank" className="hover:scale-102 transition-transform duration-300" key={index}>
-                            <li key={index} className="bg-[var(--secondary-color)] text-shadow-sm max-w-[730px] clip-path-custom p-10">
+                            <li key={index} className="bg-[var(--secondary-color)] max-w-[730px] clip-path-custom p-10">
                                 <div className="flex 2xl:flex-row flex-col 2xl:items-top 2xl:gap-2">
                                     <h3 className="text-md 2xl:text-lg font-[LeagueSpartanBold]">{edu.institution}</h3>
                                     <p className="text-sm font-[LeagueSpartanRegular]">{edu.time}</p>

@@ -44,8 +44,8 @@ const NavigationBar = (navProps: NavigationBarProps) => {
 
                         </ul>
                         <div className='flex justify-around items-center'>
-                            <a href="https://github.com/mehiis" target="_blank"><img src={github} alt="GitHub Logo 2025" className="w-9 h-9 mx-2 hover:scale-115 transition-transform duration-300" /></a>
-                            <a href="https://fi.linkedin.com/in/nikomehilainen" target="_blank"><img src={linkedin} alt="LinkedIn Logo 2025" className="w-9 h-9 mx-2 hover:scale-115 transition-transform duration-300" /></a>
+                            <a href="https://github.com/mehiis" target="_blank"><img src={github} alt="GitHub Logo 2025" className="w-8 h-8 mx-2 hover:scale-115 transition-transform duration-300" /></a>
+                            <a href="https://fi.linkedin.com/in/nikomehilainen" target="_blank"><img src={linkedin} alt="LinkedIn Logo 2025" className="w-8 h-8 mx-2 hover:scale-115 transition-transform duration-300" /></a>
                         </div>
                     </nav>
                 </div>

@@ -27,7 +27,7 @@ const Blogs = () => {
 
                     <div className="flex md:justify-end my-3 md:my-1">
                       <div
-                        className="bg-[var(--secondary-color)] text-sm text-[var(--black-color)] inline-block mt-2 px-4 py-2 rounded-lg hover:scale-110 transition-transform duration-300 shadow-sm flex-none max-h-[40px]">
+                        className="bg-[var(--secondary-color)] font-[LeagueSpartanRegular] text-sm text-[var(--black-color)] inline-block mt-2 px-4 py-2 rounded-lg hover:scale-110 transition-transform duration-300 shadow-sm flex-none max-h-[40px]">
                         Read more &#10230;
                       </div>
                     </div>

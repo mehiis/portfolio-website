@@ -12,7 +12,7 @@ function Hero() {
                   src={heroImg}
                   />
 
-                  <p className="text-md 2xl:text-2xl font-[LeagueSpartanRegular] bg-[var(--white-color)] text-[var(--black-color)] shadow-sm rounded-lg my-auto  mx-10 p-8">
+                  <p className="text-xl font-[LeagueSpartanRegular] bg-[var(--white-color)] text-[var(--black-color)] shadow-sm rounded-lg my-auto  mx-10 p-8">
                     What I love most about programming is its <b>creative power</b> to turn ideas into immersive, meaningful experiences. <br></br> <br></br>It brings together various forms of art and has the <b>unique ability to connect people</b>.
                   </p>
               </div>

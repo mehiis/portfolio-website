@@ -50,7 +50,7 @@ const Article = () => {
                      </button>
                     ))}
                 </div>
-                <button className="mt-10 bg-[var(--primary-color)] font-[LeagueSpartanRegular] text-sm text-[var(--black-color)]  px-4 py-2 rounded-lg hover:scale-105 transition-transform duration-200 inline-block shadow-sm"
+                <button className="mt-10 bg-[var(--secondary-color)] font-[LeagueSpartanRegular] text-sm text-[var(--black-color)]  px-4 py-2 rounded-lg hover:scale-105 transition-transform duration-200 inline-block shadow-sm"
                 onClick={() => {
                   window.history.back()
                   }}>&#10229; Back to previous page</button>
