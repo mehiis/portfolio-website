@@ -19,13 +19,13 @@ const CustomListView = (props: Props) => {
                     <h3 className="text-lg 2xl:text-xl font-[LeagueSpartanBold]">{props.title}</h3>
                     <p className="text-sm font-[LeagueSpartanRegular]">{props.duration}</p>
                 </div>
-                <p className="text-sm 2xl:text-md mb-4 font-[LeagueSpartanBold]">{props.role}</p>
-                <p className="text-md 2xl:text-lg font-[LeagueSpartanRegular] mt-3 mb-8">{props.description}</p>
+                <p className="text-sm 2xl:text-md font-[LeagueSpartanBold]">{props.role}</p>
+                <p className="text-md 2xl:text-lg font-[LeagueSpartanRegular] mt-2 mb-4 line-clamp-3">{props.description}</p>
 
                 <div className="flex flex-wrap gap-1 text-md">
                     <p className="text-md font-[LeagueSpartanBold]">Key skills:</p>
                     {props.skills.map((skill, index) => (
-                        <span key={index} className="text-[var(--black-color)] text-md mx-1 border px-2 rounded-sm my-auto shadow-sm font-[LeagueSpartanRegular]">{skill}</span>
+                        <span key={index} className="text-[var(--black-color)] text-sm mx-1 border px-2 rounded-sm my-auto shadow-sm font-[LeagueSpartanRegular]">{skill}</span>
                     ))}
                 </div>
             </div>

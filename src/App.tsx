@@ -15,7 +15,7 @@ function App() {
         {/* Define the routes for the application */}
         <Route path="/" element={<Home />} />
         <Route path="/article/:id" element={<Article />} />
-        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/blogs/:id" element={<Blogs />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>

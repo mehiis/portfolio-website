@@ -31,7 +31,7 @@ const NavigationBar = (navProps: NavigationBarProps) => {
 
 
                             <li className="mr-10">
-                                    <Link to="/blogs" className="py-1">
+                                    <Link to="/blogs/1" className="py-1">
                                         <img src={blogButton} alt="Blogs button" className="hover:scale-110 transition-transform duration-300 w-auto max-h-[26px]"/>
                                     </Link>
                             </li>

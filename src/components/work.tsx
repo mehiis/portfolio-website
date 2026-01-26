@@ -8,7 +8,7 @@ const jobs = [
         title: "Verkkokauppa.com",
         role: "Sales Specialist",
         duration: "2021 - Present",
-        description: "I worked with customers to find the best solutions for their needs. I represented the company on social media, hosted auctions and events, and appeared on the Finnish version of the international reality TV show Diili (\"The Apprentice\").",
+        description: "Sales Representative at Verkkokauppa.com. Represented the company on social media, hosted auctions and live events, and appeared on the international reality TV show The Apprentice.",
         skills: ["Customer service", "Retail", "Sales"],
         image: "https://images.ctfassets.net/nggsuamsum0l/74DAKbD8bNPFIMT4RW1qRY/af0436ec104196a607817eec3b701b1a/Logo-musta-teksti.png?q=90&fm=avif&w=384"
     },

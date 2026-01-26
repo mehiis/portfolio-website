@@ -23,7 +23,7 @@ const CustomProjectView = (props: Props) => {
                     <div className="flex flex-wrap gap-1">
                         <p className="text-md mt-2 md:mt-0 font-[LeagueSpartanBold]">Created using:</p>
                         {props.tech.map((skill, index) => (
-                            <span key={index} className="text-[var(--black-color)] text-md mx-1 border px-2 rounded-sm my-auto shadow-sm font-[LeagueSpartanRegular]">{skill}</span>
+                            <span key={index} className="text-[var(--black-color)] text-sm mx-1 border px-2 rounded-sm my-auto shadow-sm font-[LeagueSpartanRegular]">{skill}</span>
                         ))}
                     </div>
                         <div className="mt-5 md:mt-0 bg-[var(--secondary-color)] text-sm font-[LeagueSpartanRegular] text-[var(--black-color)] inline-block px-4 py-2 rounded-lg hover:scale-110 transition-transform duration-300 shadow-sm flex-none max-h-[40px]">

@@ -2,6 +2,7 @@ import {useParams } from "react-router-dom"
 import Articles from "../data/articles";
 import NotFound from "./NotFound";
 import ArticleHeader from "../components/blog/ArticleHeader";
+import LatestBlogs from "../components/LatestBlogs";
 
 const Article = () => {
   const { id } = useParams<{ id: string }>();
@@ -54,8 +55,6 @@ const Article = () => {
                 onClick={() => {
                   window.history.back()
                   }}>&#10229; Back to previous page</button>
-
-
                 </div>
               </div>
               </article>
@@ -64,6 +63,7 @@ const Article = () => {
           <NotFound />
         )}
       </div>
+      <LatestBlogs/>
     </>
   )
 }

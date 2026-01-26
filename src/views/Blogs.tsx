@@ -1,17 +1,26 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 import BlogsHeader from '../components/blog/BlogsHeader'
 import CustomHR from '../components/CustomHR'
 import Articles from '../data/articles'
 
 const Blogs = () => {
+  const { id } = useParams<{ id: string }>();
+  const navigate = useNavigate();
+  const postsPerPage:number = 6;
+  const currentPage:number = id ? Number(id) : 1;
+  const totalPages:number = Math.ceil(Articles.length / postsPerPage);
+  const startIndex:number = (currentPage - 1) * postsPerPage;
+  const endIndex:number = startIndex + postsPerPage;
+  const currentPosts = Articles.slice(startIndex, endIndex);
+
   return (
     <>
      <BlogsHeader />
-      <div className="max-w-[1440px] mx-auto md:px-30">
+     <div className="max-w-[1440px] mx-auto md:px-30">
 
       <ul>
-        {[...Articles].map(article => (
-          <div className='mx-10 mb-10 my-10 md:my-0 '>
+        {currentPosts.map(article => (
+          <div className='mx-10 mb-10 my-10 md:my-0 ' key={article.id}>
             <Link to={`/article/${article.id}`}>
 
               <li className="text-white shadow-sm rounded-md overflow-hidden flex-col md:flex-row border border-black/2 mb-11 md:grid md:grid-cols-[25%_75%] ">
@@ -35,11 +44,32 @@ const Blogs = () => {
               </li>
 
             </Link>
-            { article.id !== Articles[Articles.length - 1].id ? <hr className="border-black/10 my-10"/> : null}
+            { article.id !== currentPosts[currentPosts.length - 1].id ? <hr className="border-black/10 my-10"/> : null}
           </div>
         ))}
 
       </ul>
+      <div className="flex justify-center mb-10">
+        {Array.from({ length: totalPages }, (_, index) => index + 1).map(number => (
+          <button
+            key={number}
+
+            onClick={() =>
+              {
+                navigate(`/blogs/${number}`)
+
+          }}
+            className={`mx-2 px-4 py-2 rounded-lg font-[LeagueSpartanBold]
+              ${currentPage === number ? 'bg-[var(--primary-color)]'
+                :
+              'bg-[var(--secondary-color)] text-[var(--black-color)] hover:bg-[var(--primary-color)] hover:scale-105'}
+
+              transition-colors duration-300`}
+          >
+            {number}
+          </button>
+        ))}
+      </div>
     </div>
     </>
   )

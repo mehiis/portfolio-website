@@ -23,7 +23,7 @@ const MobileMenu = ({ mobileMenuOpen, setMobileMenuOpen }: MobileMenuProps) => {
                     </div>
                 </Link>
 
-                <Link className='flex items-center space-x-2 pl-4 my-3' to="/blogs" onClick={() => setMobileMenuOpen(false)}>
+                <Link className='flex items-center space-x-2 pl-4 my-3' to="/blogs/1" onClick={() => setMobileMenuOpen(false)}>
                     <div className="flex">
                         <img src={blogIcon} alt="Blogs icon" className="w-8 h-8"/>
                         <p className='text-2xl font-[LeagueSpartanBold] px-2'>Blogs</p>
