@@ -8,7 +8,7 @@ const LatestBlogs = () => {
 
   return (
     <section className=' bg-[var(--secondary-color)]'>
-      <div className='md:px-40 mx-10 py-5 md:my-0'>
+      <div className='md:px-285 mx-10 py-5 md:my-0'>
       <h2 className='mb-2 font-[LeagueSpartanBold] text-xl'>Recent Blogs</h2>
       <hr className='mb-5 border-black/10'/>
 
