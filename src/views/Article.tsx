@@ -58,12 +58,13 @@ const Article = () => {
                 </div>
               </div>
               </article>
+              <LatestBlogs/>
           </div>
         ) : (
           <NotFound />
         )}
       </div>
-      <LatestBlogs/>
+
     </>
   )
 }

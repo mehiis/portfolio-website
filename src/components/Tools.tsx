@@ -2,7 +2,7 @@ import CustomH2Title from "./CustomH2Title";
 import titleIcon from "@/assets/images/h2/familiar-tools-h2.png";
 
 function Tools(){
-    const tools = ["Java", "C#", "Python", "JavaScript / TypeScript", "Unity Game Engine", "Godot", "React", ".NET MAUI", "JavaFX", "Express.js", "Tailwind CSS", "Node.js", "HTML+CSS", "SonarQube", "Jenkins", "Expo", "Figma", "MariaDB", "Dockers", "StarUML", "Trello", "Miro"].sort();
+    const tools = ["Java", "C#", "Python", "JavaScript / TypeScript", "Unity Game Engine", "Godot", "React", ".NET MAUI", "JavaFX", "Express.js", "Tailwind CSS", "Node.js", "HTML+CSS", "SonarQube", "Jenkins", "Expo", "Figma", "MariaDB", "Docker", "StarUML", "Trello", "Miro"].sort();
 
     return(
         <div className="max-w-[1440px] min-w-[360px] mx-auto p-2 md:px-30">
