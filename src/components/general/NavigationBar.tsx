@@ -4,7 +4,7 @@ import homebutton from "@/assets/images/buttons/home-button.png";
 import resumebutton from "@/assets/images/buttons/resume-button.png"
 import blogButton from "@/assets/images/buttons/blog-button.png"
 import github from "@/assets/images/icons/github-mark.svg";
-import linkedin from "@/assets/images/icons/inBug-Black.png";
+{/*import linkedin from "@/assets/images/icons/inBug-Black.png";*/}
 import mobilemenuclosed from "@/assets/images/misc/close-menu.svg"
 import mobilemenuopenicon from "@/assets/images/misc/mobile-menu.svg"
 import resume from "@/assets/resume.pdf"
@@ -45,7 +45,7 @@ const NavigationBar = (navProps: NavigationBarProps) => {
                         </ul>
                         <div className='flex justify-around items-center'>
                             <a href="https://github.com/mehiis" target="_blank"><img src={github} alt="GitHub Logo 2025" className="w-8 h-8 mx-2 hover:scale-115 transition-transform duration-300" /></a>
-                            <a href="https://fi.linkedin.com/in/nikomehilainen" target="_blank"><img src={linkedin} alt="LinkedIn Logo 2025" className="w-8 h-8 mx-2 hover:scale-115 transition-transform duration-300" /></a>
+                            {/*<a href="https://fi.linkedin.com/in/nikomehilainen" target="_blank"><img src={linkedin} alt="LinkedIn Logo 2025" className="w-8 h-8 mx-2 hover:scale-115 transition-transform duration-300" /></a>*/}
                         </div>
                     </nav>
                 </div>
