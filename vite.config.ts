@@ -9,7 +9,7 @@ export default defineConfig({
     react()
   ],
 
-  base: './',
+  base: process.env.CI ? '/' : '/~nikomeh/portfolio/',
 
 resolve: {
     alias: {

@@ -1,3 +1,4 @@
+const baseName = import.meta.env.BASE_URL;
 import { BrowserRouter, Route, Routes } from 'react-router'
 import Home from './views/Home'
 import Blogs from './views/Blogs'
@@ -9,7 +10,7 @@ function App() {
 
   return (
     <>
-    <BrowserRouter basename='/~nikomeh/portfolio'>
+    <BrowserRouter basename={baseName}>
     <Routes>
       <Route element={<Layout />}>
         {/* Define the routes for the application */}
