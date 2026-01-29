@@ -3,6 +3,9 @@ export default {
     collect: {
       staticDistDir: './dist',
       url: ['/'],
+      settings: {
+        chromeFlags: '--no-sandbox --disable-dev-shm-usage --headless',
+      },
     },
 
     assert: {
