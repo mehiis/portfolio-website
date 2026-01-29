@@ -2,7 +2,7 @@ export default {
   ci: {
     collect: {
       staticDistDir: './dist',
-      url: ['/~nikomeh/portfolio/index.html'],
+      url: ['/index.html'],
     },
 
     assert: {
