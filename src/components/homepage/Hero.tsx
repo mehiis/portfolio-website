@@ -5,9 +5,9 @@ function Hero() {
           <>
           <section className="py-10 items-center bg-[var(--primary-color)] px-0 shadow-sm 2xl:py-25">
               <div
-              className="max-w-[1440px] min-w-[360px] m-auto md:flex md:justify-between sm:center items-center justify-center md:px-35">
+              className="max-w-[1440px] min-w-[360px] m-auto md:flex md:justify-between sm:center items-center justify-center md:px-10 lg:px-35">
                   <img
-                  className="object-contain w-2/3 sm:w-1/2 md:w-1/4 mx-auto md:mx-0"
+                  className="object-contain w-2/3 sm:w-1/2 md:w-1/4 mx-auto md:mx-0 mb-10 md:mb-0"
                   alt="Hero Image 2025"
                   src={heroImg}
                   />

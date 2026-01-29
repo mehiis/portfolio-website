@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
-import Articles from '../data/articles'
-import type BlogPost from '../types/BlogPost';
+import Articles from '../../data/articles'
+import type BlogPost from '../../types/BlogPost';
 
 const LatestBlogs = () => {
   const latestBlogsDesktop:BlogPost[] = Articles.slice(0,4);

@@ -26,7 +26,7 @@ const Layout = () => {
 
     // Close mobile menu if entering desktop size
     useEffect(() => {
-        if (width >= 1024) { 
+        if (width >= 768) { 
             setMobileMenuOpen(false);
         } 
     }, [width]);
@@ -40,7 +40,7 @@ const Layout = () => {
         else {
             document.body.style.overflow = 'auto';
         }
-    }, [mobileMenuOpen, window.innerWidth]);
+    }, [mobileMenuOpen, width]);
 
     // Handle navbar visibility on scroll
     useEffect(() => {

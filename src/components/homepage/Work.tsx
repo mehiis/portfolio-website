@@ -1,5 +1,5 @@
-import CustomListView from "./CustomListView";
-import CustomH2Title from "./CustomH2Title";
+import CustomListView from "./components/CustomListView";
+import CustomH2Title from "./components/CustomH2Title";
 import titleIcon from "@/assets/images/h2/work-experience-h2.png";
 
 const jobs = [

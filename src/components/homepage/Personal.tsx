@@ -1,7 +1,7 @@
-import CustomProjectView from "./CustomProjectView";
-import CustomH2Title from "./CustomH2Title";
+import CustomProjectView from "./components/CustomProjectView";
+import CustomH2Title from "./components/CustomH2Title";
 import titleIcon from "@/assets/images/h2/personal-projects-h2.png";
-import project from "../data/articles";
+import project from "../../data/articles";
 import { Link } from "react-router-dom";
 
 const projects = project.reverse();

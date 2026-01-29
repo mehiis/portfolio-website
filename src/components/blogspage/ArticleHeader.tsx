@@ -1,4 +1,4 @@
-import CustomHR from "../CustomHR"
+import CustomHR from "../misc/CustomHR"
 
 type Props = {
     title: string,

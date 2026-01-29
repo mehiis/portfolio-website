@@ -14,7 +14,7 @@ type MobileMenuProps = {
 
 const MobileMenu = ({ mobileMenuOpen, setMobileMenuOpen }: MobileMenuProps) => {
   return (
-        <div className='px-3 fixed right-0 flex flex-col items-left w-full h-[1000px] bg-[var(--primary-color)] top-17 transition-transform duration-300 overflow-hidden' style={{ transform: mobileMenuOpen ? 'translateX(0%)' : 'translateX(100%)'}}>
+        <div className='px-3 fixed right-0 flex flex-col items-left w-full h-screen bg-[var(--primary-color)] top-17 transition-transform duration-300 overflow-hidden' style={{ transform: mobileMenuOpen ? 'translateX(0%)' : 'translateX(100%)'}}>
 
                 <Link className='flex items-center space-x-2 pl-4 my-3 mt-10' to="" onClick={() => setMobileMenuOpen(false)}>
                     <div className="flex">

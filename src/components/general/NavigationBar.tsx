@@ -18,8 +18,8 @@ type NavigationBarProps = {
 const NavigationBar = (navProps: NavigationBarProps) => {
   return (
             <div className='bg-[var(--primary-color)] min-w-[360px] shadow-sm sticky top-0 z-50 transition-transform duration-200 position-absolute px-5 py-2' style={{ transform: navProps.isVisible ? 'translateY(0)' : 'translateY(-100%)' }}>
-                <div className="max-w-[1440px] min-w-[360px] mx-auto flex items-center justify-between bg-[var(--primary-color)] hidden md:flex md:px-40" >
-                    <Link to="/"><img src={logo} alt="Logo" className="h-auto hover:scale-105 transition-transform duration-300 w-auto max-h-[50px]"/></Link>
+                <div className="max-w-[1440px] min-w-[360px] mx-auto flex items-center justify-between bg-[var(--primary-color)] block hidden xl:flex lg:px-40" >
+                    <Link to="/"><img src={logo} alt="Logo" className="h-auto hover:scale-105 transition-transform duration-300 w-auto max-h-[5px] lg:max-h-[60px]"/></Link>
 
                         <nav className='flex justify-between items-center'>
                         <ul className='flex justify-around items-center mr-10'>
@@ -50,8 +50,8 @@ const NavigationBar = (navProps: NavigationBarProps) => {
                     </nav>
                 </div>
 
-                    <div className="flex items-center justify-between md:hidden" >
-                        <Link to="/"><img src={logo} alt="Logo" className="w-35 h-auto hover:scale-105 transition-transform duration-150"/></Link>
+                <div className="flex items-center justify-between xl:hidden" >
+                        <Link to="/"><img src={logo} alt="Logo" className="w-auto h-auto hover:scale-105 mx-2 transition-transform duration-150 max-h-[50px]"/></Link>
 
                         <nav className='flex justify-between items-center my-1'>
                             <div className='flex justify-around items-center'>

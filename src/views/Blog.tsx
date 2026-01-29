@@ -1,10 +1,10 @@
 import {useParams } from "react-router-dom"
 import Articles from "../data/articles";
-import NotFound from "./NotFound";
-import ArticleHeader from "../components/blog/ArticleHeader";
-import LatestBlogs from "../components/LatestBlogs";
+import NotFound from "../components/general/NotFound";
+import ArticleHeader from "../components/blogspage/ArticleHeader";
+import LatestBlogs from "../components/blog/LatestBlogs";
 
-const Article = () => {
+const Blog = () => {
   const { id } = useParams<{ id: string }>();
   const article = Articles.find(currentArticle => currentArticle.id === Number(id));
   let figureIndex:number = 0;
@@ -69,4 +69,4 @@ const Article = () => {
   )
 }
 
-export default Article
+export default Blog
