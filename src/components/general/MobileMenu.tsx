@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import github from "@/assets/images/icons/github-mark.svg";
-import linkedin from "@/assets/images/icons/inBug-Black.png";
+{/*import linkedin from "@/assets/images/icons/inBug-Black.png";*/}
 import instagram from "@/assets/images/icons/ig.png";
 import homeIcon from "@/assets/images/icons/home-icon.svg"
 import blogIcon from "@/assets/images/icons/blog-icon.svg"
@@ -42,7 +42,7 @@ const MobileMenu = ({ mobileMenuOpen, setMobileMenuOpen }: MobileMenuProps) => {
                 <p className='text-xl font-[LeagueSpartanBold] text-left items-left justify-left px-5 mb-2 '>My socials</p>
                 <div className='flex items-left pt-3 px-5 pb-5 justify-left '>
                     <button><a href="https://github.com/mehiis" target="_blank"><img src={github} alt="GitHub Logo 2025" className="w-9 h-9 mx-4 hover:scale-120 transition-transform duration-300" /></a></button>
-                    <button><a href="https://fi.linkedin.com/in/nikomehilainen" target="_blank"><img src={linkedin} alt="LinkedIn Logo 2025" className="w-9 h-9 mx-4 hover:scale-120 transition-transform duration-300" /></a></button>
+                    {/*<button><a href="https://fi.linkedin.com/in/nikomehilainen" target="_blank"><img src={linkedin} alt="LinkedIn Logo 2025" className="w-9 h-9 mx-4 hover:scale-120 transition-transform duration-300" /></a></button>*/}
                     <button><a href="https://www.instagram.com/nikomehilainen/" target="_blank"><img src={instagram} alt="Instagram Logo 2025" className="w-9 h-9 mx-4 hover:scale-120 transition-transform duration-300" /></a></button>
                 </div>
         </div>
