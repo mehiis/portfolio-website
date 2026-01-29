@@ -9,6 +9,8 @@ function Hero() {
                   <img
                   className="object-contain w-2/3 sm:w-1/2 md:w-1/4 mx-auto md:mx-0 mb-10 md:mb-0"
                   alt="Hero Image 2025"
+                  fetchPriority="high"
+                  loading="eager"
                   src={heroImg}
                   />
 
