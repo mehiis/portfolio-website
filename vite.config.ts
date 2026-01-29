@@ -14,7 +14,6 @@ export default defineConfig({
 
 resolve: {
     alias: {
-      // Tämä yhdistää nykyisen kansion (__dirname) ja 'src'-kansion oikein
       '@': path.resolve(__dirname, './src'),
     },
   },
