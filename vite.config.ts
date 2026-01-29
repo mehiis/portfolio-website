@@ -9,7 +9,6 @@ export default defineConfig({
     react()
   ],
 
-  // your deployment folder
   base: process.env.CI ? '/' : '/~nikomeh/portfolio/',
 
 resolve: {
