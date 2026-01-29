@@ -12,7 +12,10 @@ const BackToTop = (props: BackToTopProps) => {
         onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
             <img src={backToTopIcon}
             loading="lazy"
-            alt="Scroll to top button"/>
+            alt="Scroll to top button"
+            width="80"
+            height="80"
+            />
         </button>
   )
 }

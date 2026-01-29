@@ -12,7 +12,13 @@ const CustomListView = (props: Props) => {
   return (
     <div className="bg-[var(--primary-color)] px-8 py-4 rounded-xl shadow-sm">
         <div className="items-center lg:grid lg:grid-cols-[260px_1fr]">
-            <img src={props.image} alt={"Cover image of the job place " + props.title} className="w-auto max-h-[70px] lg:max-h-[120px] object-contain mx-auto"/>
+            <img
+              src={props.image}
+              alt={"Cover image of the job place " + props.title}
+              className="w-auto max-h-[70px] lg:max-h-[120px] object-contain mx-auto"
+              width="200"
+              height="100"
+              />
 
             <div className="text-[var(--black-color)] p-4">
                 <div className="lg:flex lg:gap-2">

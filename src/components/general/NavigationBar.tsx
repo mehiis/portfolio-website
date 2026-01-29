@@ -22,33 +22,62 @@ const NavigationBar = (navProps: NavigationBarProps) => {
                     <Link to="/">
                       <img src={logo}
                       alt="Logo"
-                      className="h-auto hover:scale-105 transition-transform duration-300 w-auto max-h-[5px] lg:max-h-[60px]"/>
+                      className="h-auto hover:scale-105 transition-transform duration-300 w-auto max-h-[5px] lg:max-h-[60px]"
+                      width="200"
+                      height="100"
+                      />
+
                       </Link>
 
                         <nav className='flex justify-between items-center'>
                         <ul className='flex justify-around items-center mr-10'>
                             <li className="mr-10">
                                     <Link to="/" className="py-1">
-                                        <img src={homebutton} alt="Home button" className="hover:scale-110 transition-transform duration-300 w-auto max-h-[22px]"/>
+                                        <img src={homebutton}
+                                          alt="Home button"
+                                          className="hover:scale-110 transition-transform duration-300 w-auto max-h-[22px]"
+                                          width="100"
+                                          height="50"
+                                          />
                                     </Link>
                             </li>
 
 
                             <li className="mr-10">
                                     <Link to="/blogs/1" className="py-1">
-                                        <img src={blogButton} alt="Blogs button" className="hover:scale-110 transition-transform duration-300 w-auto max-h-[26px]"/>
+                                        <img
+                                          src={blogButton}
+                                          alt="Blogs button"
+                                          className="hover:scale-110 transition-transform duration-300 w-auto max-h-[26px]"
+                                          width="100"
+                                          height="50"
+                                          />
                                     </Link>
                             </li>
 
                             <li className="mr-10">
                                         <a href={resume} target="_blank" rel="noopener noreferrer" className="py-1">
-                                            <img src={resumebutton} alt="Resume button" className="hover:scale-110 transition-transform duration-300 w-auto max-h-[22px]"/>
+                                            <img
+                                              src={resumebutton}
+                                              alt="Resume button"
+                                              className="hover:scale-110 transition-transform duration-300 w-auto max-h-[22px]"
+                                              width="100"
+                                              height="50"
+                                              />
                                         </a>
                             </li>
 
                         </ul>
                         <div className='flex justify-around items-center'>
-                            <a href="https://github.com/mehiis" target="_blank"><img src={github} alt="GitHub Logo 2025" className="w-8 h-8 mx-2 hover:scale-115 transition-transform duration-300" /></a>
+                            <a href="https://github.com/mehiis" target="_blank">
+                            <img
+                              src={github}
+                              alt="GitHub Logo 2025"
+                              className="w-8 h-8 mx-2 hover:scale-115 transition-transform duration-300"
+                              width="32"
+                              height="32"
+                              />
+                            </a>
                             {/*<a href="https://fi.linkedin.com/in/nikomehilainen" target="_blank"><img src={linkedin} alt="LinkedIn Logo 2025" className="w-8 h-8 mx-2 hover:scale-115 transition-transform duration-300" /></a>*/}
                         </div>
                     </nav>
@@ -58,7 +87,11 @@ const NavigationBar = (navProps: NavigationBarProps) => {
                         <Link to="/">
                           <img src={logo}
                           alt="Logo"
-                          className="w-auto h-auto hover:scale-105 mx-2 transition-transform duration-150 max-h-[50px]"/>
+                          className="w-auto h-auto hover:scale-105 mx-2 transition-transform duration-150 max-h-[50px]"
+                          width="150"
+                          height="75"
+                          />
+
                         </Link>
 
                         <nav className='flex justify-between items-center my-1'>
@@ -70,6 +103,8 @@ const NavigationBar = (navProps: NavigationBarProps) => {
                             <img
                               src={navProps.mobileMenuOpen ? mobilemenuclosed : mobilemenuopenicon}
                               alt="Mobile Menu button"
+                              width="50"
+                              height="50"
                             />
                           </button>
                         </div>

@@ -16,7 +16,13 @@ const BlogCard: React.FC<BlogCardProps> = ({ currentPosts }) => {
 
                     <li className="text-white shadow-sm rounded-md overflow-hidden flex-col md:flex-row border border-black/2 mb-11 md:grid md:grid-cols-[25%_75%] ">
                         <div className='h-[180px] md:h-auto flex items-center justify-center overflow-hidden'>
-                            <img src={article?.articleCover} alt={article.title} className="w-full h-full object-cover" />
+                            <img
+                              src={article?.articleCover}
+                              alt={article.title}
+                              className="w-full h-full object-cover"
+                              width="400"
+                              height="250"
+                              />
                         </div>
 
                         <div className="bg-black/4  w-full p-4 h-auto">

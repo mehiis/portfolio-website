@@ -7,11 +7,13 @@ function Hero() {
                 <div
                 className="max-w-[1440px] min-w-[360px] m-auto md:flex md:justify-between sm:center items-center justify-center md:px-10 lg:px-35">
                     <img
-                      className="object-contain w-2/3 sm:w-1/2 md:w-1/4 mx-auto md:mx-0 mb-10 md:mb-0"
+                      className="h-auto object-contain w-2/3 sm:w-1/2 md:w-1/4 mx-auto md:mx-0 mb-10 md:mb-0"
                       alt="Hero Image 2025"
                       fetchPriority="high"
                       loading="eager"
                       src={heroImg}
+                      width="400"
+                      height="400"
                     />
 
                     <p className="text-xl font-[LeagueSpartanRegular] bg-[var(--white-color)] text-[var(--black-color)] shadow-sm rounded-lg my-auto  mx-10 p-8">

@@ -17,7 +17,13 @@ const LatestBlogs = () => {
           <div key={article.id}>
             <Link to={`/article/${article.id}`}>
               <li className="text-white shadow-sm rounded-sm overflow-hidden border border-black/2 mb-5 max-w-[200px] hover:scale-105 transition-transform duration-300">
-                <img src={article.articleCover} alt={article.title} className="object-cover" />
+                <img
+                  src={article.articleCover}
+                  alt={article.title}
+                  className="object-cover"
+                  width="400"
+                  height="250"
+                  />
 
                 <div className='bg-[var(--white-color)] p-3 min-h-[85px]'>
                   <p className='font-[LeagueSpartanRegular] text-sm text-[var(--black-color)] line-clamp-1'>{article.date.toLocaleDateString()}</p>
@@ -34,7 +40,13 @@ const LatestBlogs = () => {
           <div key={article.id}>
             <Link to={`/article/${article.id}`}>
               <li className="text-white shadow-sm rounded-sm overflow-hidden border border-black/2 mb-5 max-h-[200px] max-w-[200px] ">
-                <img src={article.articleCover} alt={article.title} className="object-cover" />
+                <img
+                  src={article.articleCover}
+                  alt={article.title}
+                  className="object-cover"
+                  width="400"
+                  height="250"
+                  />
 
                 <div className='bg-[var(--white-color)] p-3 min-h-[85px]'>
                 <p className='font-[LeagueSpartanRegular] text-sm text-[var(--black-color)] line-clamp-1 '>{article.date.toLocaleDateString()}</p>
