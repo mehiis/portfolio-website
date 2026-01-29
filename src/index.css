@@ -1,33 +1,15 @@
 @import 'tailwindcss';
 
 @font-face {
-  font-family: 'header';
-  src: url(./assets/fonts/US101.TTF);
-}
-
-@font-face {
-  font-family: 'inter';
-  src: url(./assets/fonts/RobotoFlex-Regular.ttf);
-}
-
-@font-face {
-  font-family:'arial-black';
-  src: url(./assets/fonts/arial_black.ttf);
-}
-
-@font-face {
-  font-family: mochi;
-  src: url(./assets/fonts/mochi.ttf);
-}
-
-@font-face {
   font-family: LeagueSpartanRegular;
   src: url(./assets/fonts/LeagueSpartan-Regular.ttf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: LeagueSpartanBold;
   src: url(./assets/fonts/LeagueSpartan-Bold.ttf);
+  font-display: swap;
 }
 
 @layer base {
@@ -42,14 +24,6 @@
     color: var(--black-color);
     background-color: var(--white-color);
   }
-
-  .wavy {
-  background: #8ec5fc;
-  padding: 40px;
-  clip-path: path(
-    "M0,40 Q50,0 100,40 T200,40 T300,40 V200 H0 Z"
-  );
-}
 
   .clip-path-custom {
 clip-path: polygon(
