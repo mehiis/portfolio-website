@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   ci: {
     collect: {
       // Jos sinulla on staattinen sivusto (esim. build-kansio)
