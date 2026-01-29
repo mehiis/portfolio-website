@@ -11,6 +11,7 @@ const BackToTop = (props: BackToTopProps) => {
         style={{ transform: props.bttVisible ? 'translateY(0%)' : 'translateY(150%)' }}
         onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
             <img src={backToTopIcon}
+            loading="lazy"
             alt="Scroll to top button"/>
         </button>
   )
