@@ -11,9 +11,14 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Build project
-        run: npm run build # Varmista että build-komento on oikein
+        run: npm run build
       - name: Install Lighthouse CI
         run: npm install -g @lhci/cli@0.13.x
+      - name: Check build for errors
+        run: |
+          cd dist
+          grep -r "404" . || echo "No hardcoded 404s found"
+          ls -R
       - name: Run Lighthouse CI
         run: lhci autorun
         env:
