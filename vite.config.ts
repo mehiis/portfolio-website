@@ -10,7 +10,7 @@ export default defineConfig({
   ],
 
   // your deployment folder
-  base: '/~nikomeh/portfolio',
+  base: process.env.CI ? '/' : '/~nikomeh/portfolio/',
 
 resolve: {
     alias: {
