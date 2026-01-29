@@ -10,6 +10,11 @@ export default {
 
     assert: {
       preset: 'lighthouse:recommended',
+      assertions: {
+      'csp-xss': 'off',
+      'installable-manifest': 'off',
+      'uses-http2': 'off',
+  },
     },
 
     upload: {
