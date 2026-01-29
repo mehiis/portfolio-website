@@ -2,7 +2,7 @@ export default {
   ci: {
     collect: {
       staticDistDir: './dist',
-      url: ['http://localhost:36805/index.html'],
+      url: ['/'],
     },
 
     assert: {
