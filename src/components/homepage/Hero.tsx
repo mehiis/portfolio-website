@@ -7,7 +7,7 @@ function Hero() {
                 <div
                 className="max-w-[1440px] min-w-[360px] m-auto md:flex md:justify-between sm:center items-center justify-center md:px-10 lg:px-25">
                     <img
-                      className="w-2/3 sm:w-1/2 md:w-1/4 mx-auto md:mx-0 mb-6 md:mb-0 aspect-[1/1] object-contain"
+                      className="w-2/3 sm:w-1/2 md:w-1/4 mx-auto md:mx-0 mb-6 md:mb-0 object-contain"
                       alt="Hero Image 2025"
                       fetchPriority="high"
                       loading="eager"
