@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
-import logo from "@/assets/images/logos/logo-text-with-desc.png";
+import logo from "@/assets/images/logos/nav-logo3.webp";
 import homebutton from "@/assets/images/buttons/home-button.png";
 import resumebutton from "@/assets/images/buttons/resume-button.png"
 import blogButton from "@/assets/images/buttons/blog-button.png"
 import github from "@/assets/images/icons/github-mark.svg";
 {/*import linkedin from "@/assets/images/icons/inBug-Black.png";*/}
-import mobilemenuclosed from "@/assets/images/misc/close-menu.svg"
-import mobilemenuopenicon from "@/assets/images/misc/mobile-menu.svg"
+import mobilemenuclosed from "@/assets/images/misc/close-mobile-menu.webp"
+import mobilemenuopenicon from "@/assets/images/misc/mobile-menu.webp"
 import resume from "@/assets/resume.pdf"
 
 type NavigationBarProps = {
@@ -22,9 +22,9 @@ const NavigationBar = (navProps: NavigationBarProps) => {
                     <Link to="/">
                       <img src={logo}
                       alt="Logo"
-                      className="h-auto hover:scale-105 transition-transform duration-300 w-auto max-h-[5px] lg:max-h-[60px]"
-                      width="200"
-                      height="100"
+                      className="object-contain hover:scale-105 transition-transform duration-300 aspect-[2/1]"
+                      width="94"
+                      height="47"
                       />
 
                       </Link>
@@ -88,8 +88,8 @@ const NavigationBar = (navProps: NavigationBarProps) => {
                           <img src={logo}
                           alt="Logo"
                           className="w-auto h-auto hover:scale-105 mx-2 transition-transform duration-150 max-h-[50px]"
-                          width="150"
-                          height="75"
+                          width="189"
+                          height="95"
                           />
 
                         </Link>
@@ -103,8 +103,8 @@ const NavigationBar = (navProps: NavigationBarProps) => {
                             <img
                               src={navProps.mobileMenuOpen ? mobilemenuclosed : mobilemenuopenicon}
                               alt="Mobile Menu button"
-                              width="50"
-                              height="50"
+                              width="258"
+                              height="258"
                             />
                           </button>
                         </div>
