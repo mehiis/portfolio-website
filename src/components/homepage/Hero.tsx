@@ -1,4 +1,4 @@
-import heroImg from "@/assets/images/misc/hero-image.webp";
+import heroImg from "@/assets/hero-image.webp";
 
 function Hero() {
   return (

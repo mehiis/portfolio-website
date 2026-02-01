@@ -25,6 +25,7 @@ const NavigationBar = (navProps: NavigationBarProps) => {
                       className="hover:scale-105 h-auto w-[100px] transition-transform duration-300 aspect-[2/1]"
                       width="200"
                       height="100"
+                      loading="lazy"
                       />
 
                       </Link>
@@ -38,6 +39,7 @@ const NavigationBar = (navProps: NavigationBarProps) => {
                                           className="hover:scale-110 transition-transform duration-300 h-auto w-[80px] aspect-[10/3]"
                                           width="160"
                                           height="48"
+                                          loading="lazy"
                                           />
                                     </Link>
                             </li>
@@ -51,6 +53,7 @@ const NavigationBar = (navProps: NavigationBarProps) => {
                                           className="hover:scale-110 transition-transform duration-300 h-auto w-[75px] aspect-[5/2]"
                                           width="150"
                                           height="60"
+                                          loading="lazy"
                                           />
                                     </Link>
                             </li>
@@ -63,6 +66,7 @@ const NavigationBar = (navProps: NavigationBarProps) => {
                                               className="hover:scale-110 transition-transform duration-300 w-[120px] h-auto aspect-[4/1]"
                                               width="200"
                                               height="50"
+                                              loading="lazy"
                                               />
                                         </a>
                             </li>
@@ -76,6 +80,7 @@ const NavigationBar = (navProps: NavigationBarProps) => {
                               className="w-8 h-auto mx-2 hover:scale-115 transition-transform duration-300 aspect-square"
                               width="64"
                               height="64"
+                              loading="lazy"
                               />
                             </a>
                             <a href="https://fi.linkedin.com/in/nikomehilainen" target="_blank">
@@ -84,6 +89,7 @@ const NavigationBar = (navProps: NavigationBarProps) => {
                               className="w-8 h-auto mx-2 hover:scale-115 transition-transform duration-300 aspect-square" 
                               width="64"
                               height="64"
+                              loading="lazy"
                               />
                             </a>
                         </div>
@@ -97,6 +103,7 @@ const NavigationBar = (navProps: NavigationBarProps) => {
                           className="hover:scale-105 mx-2 transition-transform duration-150 h-auto w-[100px] aspect-[2/1]"
                           width="64"
                           height="64"
+                          loading="lazy"
                           />
 
                         </Link>
@@ -113,6 +120,7 @@ const NavigationBar = (navProps: NavigationBarProps) => {
                               alt="Mobile Menu toggle button"
                               width="100"
                               height="100"
+                              loading="lazy"
                             />
                           </button>
                         </div>

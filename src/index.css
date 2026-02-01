@@ -2,13 +2,13 @@
 
 @font-face {
   font-family: LeagueSpartanRegular;
-  src: url(./assets/fonts/LeagueSpartan-Regular.ttf);
+  src: url(./assets/LeagueSpartan-Regular.ttf);
   font-display: swap;
 }
 
 @font-face {
   font-family: LeagueSpartanBold;
-  src: url(./assets/fonts/LeagueSpartan-Bold.ttf);
+  src: url(./assets/LeagueSpartan-Bold.ttf);
   font-display: swap;
 }
 
