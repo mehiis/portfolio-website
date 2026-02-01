@@ -67,7 +67,7 @@ const MobileMenu = ({ mobileMenuOpen, setMobileMenuOpen }: MobileMenuProps) => {
                       src={github}
                       loading="lazy"
                       alt="GitHub Logo 2025"
-                      className="w-9 h-auto mx-4 hover:scale-120 transition-transform duration-300 aspect-square"
+                      className="w-8 h-auto mx-4 hover:scale-120 transition-transform duration-300 aspect-square"
                       width="64"
                       height="64"
                       /></a></button>
@@ -76,7 +76,7 @@ const MobileMenu = ({ mobileMenuOpen, setMobileMenuOpen }: MobileMenuProps) => {
                         src={linkedin} 
                         loading="lazy" 
                         alt="LinkedIn Logo 2025" 
-                        className="w-9 h-auto mx-4 hover:scale-120 transition-transform duration-300 aspect-square"
+                        className="w-8 h-auto mx-4 hover:scale-120 transition-transform duration-300 aspect-square"
                         width="64"
                         height="64"
                         /></a></button>
@@ -85,7 +85,7 @@ const MobileMenu = ({ mobileMenuOpen, setMobileMenuOpen }: MobileMenuProps) => {
                       src={instagram}
                       loading="lazy"
                       alt="Instagram Logo 2025"
-                      className="w-9 h-auto mx-4 hover:scale-120 transition-transform duration-300 aspect-square"
+                      className="w-8 h-auto mx-4 hover:scale-120 transition-transform duration-300 aspect-square"
                       width="64"
                       height="64"
                       /></a></button>
