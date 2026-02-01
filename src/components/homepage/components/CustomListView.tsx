@@ -35,7 +35,6 @@ const CustomListView = (props: Props) => {
                     ))}
                 </div>
             </div>
-
         </div>
     </div>
   )
