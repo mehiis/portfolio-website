@@ -11,7 +11,10 @@ const CustomH2Title = (props: Props) => {
         alt={"A topic title with text " + props.alt + "."}
         className="px-7 pt-10 w-auto h-[70px] md:h-[75px]"
         width="700"
-        height="70"/>
+        height="70"
+        loading="lazy"
+        />
+        
     </h2>
   )
 }

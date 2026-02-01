@@ -50,7 +50,7 @@ const NavigationBar = (navProps: NavigationBarProps) => {
                                           alt="Blogs button"
                                           className="hover:scale-110 transition-transform duration-300 h-auto w-[75px] aspect-[5/2]"
                                           width="150"
-                                          height="64"
+                                          height="60"
                                           />
                                     </Link>
                             </li>
