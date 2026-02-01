@@ -1,7 +1,7 @@
 import github from "@/assets/images/icons/gh.webp";
 import linkedin from "@/assets/images/icons/li.webp"
 import instagram from "@/assets/images/icons/ig.webp";
-import fullNameLogo from "@/assets/images/logos/full-name.png"
+import fullNameLogo from "@/assets/images/logos/nikomehilainen.webp";
 import { Link } from "react-router";
 
 const Footer = () => {
@@ -11,10 +11,10 @@ const Footer = () => {
                 <Link to="/">
                   <img src={fullNameLogo}
                   loading="lazy"
-                  alt="Image of stylized full name, small flower and text 'niko mehiläinen'."
-                  className="w-auto max-h-[35px] mx-auto mb-3 hover:scale-105 transition-transform duration-150"
-                  width="150"
-                  height="75"
+                  alt="Image of stylized full name, small flower and text 'niko mehilaeinen'."
+                  className="w-[240px] md:w-[280px] h-auto mx-auto mb-3 hover:scale-105 transition-transform duration-150 aspect-[8/1]"
+                  width="2000"
+                  height="250"
                   />
                 </Link>
 
@@ -25,15 +25,17 @@ const Footer = () => {
                         loading="lazy"
                         alt="GitHub Logo 2025"
                         className="w-8 h-auto mx-3 hover:scale-115 transition-transform duration-150"
-                        width="32"
-                        height="32"/>
+                        width="500"
+                        height="500"/>
                     </a>
                     <a href="https://fi.linkedin.com/in/nikomehilainen" target="_blank">
                     <img 
                       src={linkedin} 
                       loading="lazy" 
                       alt="LinkedIn Logo 2025" 
-                      className="w-8 h-auto mx-3 hover:scale-115 transition-transform duration-150" />
+                      className="w-8 h-auto mx-3 hover:scale-115 transition-transform duration-150" 
+                      width="500"
+                      height="500"/>
                     </a>
                     <a href="https://www.instagram.com/nikomehilainen/" target="_blank">
                       <img
@@ -41,8 +43,8 @@ const Footer = () => {
                         loading="lazy"
                         alt="Instagram Logo 2025"
                         className="w-8 h-auto mx-3 hover:scale-115 transition-transform duration-150"
-                        width="32"
-                        height="32" />
+                        width="500"
+                        height="500" />
                       </a>
                 </div>
             </div>
