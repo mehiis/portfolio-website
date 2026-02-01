@@ -1,6 +1,6 @@
-import github from "@/assets/images/icons/github-mark.svg";
-{/*import linkedin from "@/assets/images/icons/inBug-Black.png";*/}
-import instagram from "@/assets/images/icons/ig.png";
+import github from "@/assets/images/icons/gh.webp";
+import linkedin from "@/assets/images/icons/li.webp"
+import instagram from "@/assets/images/icons/ig.webp";
 import fullNameLogo from "@/assets/images/logos/full-name.png"
 import { Link } from "react-router";
 
@@ -28,7 +28,13 @@ const Footer = () => {
                         width="32"
                         height="32"/>
                     </a>
-                    {/*<a href="https://fi.linkedin.com/in/nikomehilainen" target="_blank"><img src={linkedin} loading="lazy" alt="LinkedIn Logo 2025" className="w-8 h-auto mx-3 hover:scale-115 transition-transform duration-150" /></a>*/}
+                    <a href="https://fi.linkedin.com/in/nikomehilainen" target="_blank">
+                    <img 
+                      src={linkedin} 
+                      loading="lazy" 
+                      alt="LinkedIn Logo 2025" 
+                      className="w-8 h-auto mx-3 hover:scale-115 transition-transform duration-150" />
+                    </a>
                     <a href="https://www.instagram.com/nikomehilainen/" target="_blank">
                       <img
                         src={instagram}

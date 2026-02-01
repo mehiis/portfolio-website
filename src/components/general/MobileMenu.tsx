@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import github from "@/assets/images/icons/github-mark.svg";
-{/*import linkedin from "@/assets/images/icons/inBug-Black.png";*/}
-import instagram from "@/assets/images/icons/ig.png";
+import github from "@/assets/images/icons/gh.webp";
+import linkedin from "@/assets/images/icons/li.webp";
+import instagram from "@/assets/images/icons/ig.webp";
 import homeIcon from "@/assets/images/icons/home-icon.svg"
 import blogIcon from "@/assets/images/icons/blog-icon.svg"
 import resumeIcon from "@/assets/images/icons/resume-icon.svg"
@@ -67,19 +67,27 @@ const MobileMenu = ({ mobileMenuOpen, setMobileMenuOpen }: MobileMenuProps) => {
                       src={github}
                       loading="lazy"
                       alt="GitHub Logo 2025"
-                      className="w-9 h-9 mx-4 hover:scale-120 transition-transform duration-300"
-                      width="36"
-                      height="36"
+                      className="w-9 h-auto mx-4 hover:scale-120 transition-transform duration-300 aspect-square"
+                      width="500"
+                      height="500"
                       /></a></button>
-                    {/*<button><a href="https://fi.linkedin.com/in/nikomehilainen" target="_blank"><img src={linkedin} loading="lazy" alt="LinkedIn Logo 2025" className="w-9 h-9 mx-4 hover:scale-120 transition-transform duration-300" /></a></button>*/}
+                    <button><a href="https://fi.linkedin.com/in/nikomehilainen" target="_blank">
+                    <img 
+                        src={linkedin} 
+                        loading="lazy" 
+                        alt="LinkedIn Logo 2025" 
+                        className="w-9 h-auto mx-4 hover:scale-120 transition-transform duration-300 aspect-square"
+                        width="500"
+                        height="500"
+                        /></a></button>
                     <button><a href="https://www.instagram.com/nikomehilainen/" target="_blank">
                     <img
                       src={instagram}
                       loading="lazy"
                       alt="Instagram Logo 2025"
-                      className="w-9 h-9 mx-4 hover:scale-120 transition-transform duration-300"
-                      width="36"
-                      height="36"
+                      className="w-9 h-auto mx-4 hover:scale-120 transition-transform duration-300 aspect-square"
+                      width="500"
+                      height="500"
                       /></a></button>
                 </div>
         </div>

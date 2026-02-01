@@ -3,8 +3,8 @@ import logo from "@/assets/images/logos/nav-logo.webp";
 import homebutton from "@/assets/images/buttons/home-button.webp";
 import resumebutton from "@/assets/images/buttons/resume-button.webp";
 import blogButton from "@/assets/images/buttons/blog-button.webp"
-import github from "@/assets/images/icons/github-mark.svg";
-{/*import linkedin from "@/assets/images/icons/inBug-Black.png";*/}
+import github from "@/assets/images/icons/gh.webp";
+import linkedin from "@/assets/images/icons/li.webp";
 import mobilemenuclosed from "@/assets/images/misc/close-mobile-menu.webp"
 import mobilemenuopenicon from "@/assets/images/misc/mobile-menu.webp"
 import resume from "@/assets/resume.pdf"
@@ -34,7 +34,7 @@ const NavigationBar = (navProps: NavigationBarProps) => {
                             <li className="mr-10">
                                     <Link to="/" className="py-1">
                                         <img src={homebutton}
-                                          alt="Home button"
+                                          alt="Home button"n
                                           className="hover:scale-110 transition-transform duration-300 h-auto w-[80px] aspect-[10/3]"
                                           width="1200"
                                           height="360"
@@ -72,13 +72,13 @@ const NavigationBar = (navProps: NavigationBarProps) => {
                             <a href="https://github.com/mehiis" target="_blank">
                             <img
                               src={github}
-                              alt="GitHub Logo 2025"
-                              className="w-8 h-8 mx-2 hover:scale-115 transition-transform duration-300"
-                              width="32"
-                              height="32"
+                              alt="GitHub Logo 2025 - Link to my GitHub"
+                              className="w-8 h-auto mx-2 hover:scale-115 transition-transform duration-300 aspect-square"
+                              width="500"
+                              height="500"
                               />
                             </a>
-                            {/*<a href="https://fi.linkedin.com/in/nikomehilainen" target="_blank"><img src={linkedin} alt="LinkedIn Logo 2025" className="w-8 h-8 mx-2 hover:scale-115 transition-transform duration-300" /></a>*/}
+                            <a href="https://fi.linkedin.com/in/nikomehilainen" target="_blank"><img src={linkedin} alt="LinkedIn Logo 2025 - Link to my LinkedIn" className="w-8 h-auto mx-2 hover:scale-115 transition-transform duration-300 aspect-square" /></a>
                         </div>
                     </nav>
                 </div>
