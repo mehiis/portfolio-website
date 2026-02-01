@@ -12,8 +12,8 @@ function Hero() {
             fetchPriority="high"
             loading="eager"
             src={heroImg}
-            width="500"
-            height="500"
+            width="480"
+            height="480"
           />
 
           <p className="text-xl 2xl:text-2xl font-[LeagueSpartanRegular] bg-[var(--white-color)] text-[var(--black-color)] shadow-sm rounded-lg my-auto  mx-10 p-8">
