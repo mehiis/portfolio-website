@@ -13,8 +13,8 @@ const BackToTop = (props: BackToTopProps) => {
             <img src={backToTopIcon}
             loading="lazy"
             alt="Scroll to top button"
-            width="600"
-            height="600"
+            width="160"
+            height="160"
             />
         </button>
   )

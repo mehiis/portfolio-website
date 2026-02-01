@@ -23,8 +23,8 @@ const NavigationBar = (navProps: NavigationBarProps) => {
                       <img src={logo}
                       alt="Logo"
                       className="hover:scale-105 h-auto w-[100px] transition-transform duration-300 aspect-[2/1]"
-                      width="800"
-                      height="400"
+                      width="200"
+                      height="100"
                       />
 
                       </Link>
@@ -36,8 +36,8 @@ const NavigationBar = (navProps: NavigationBarProps) => {
                                         <img src={homebutton}
                                           alt="Home button"
                                           className="hover:scale-110 transition-transform duration-300 h-auto w-[80px] aspect-[10/3]"
-                                          width="1200"
-                                          height="360"
+                                          width="140"
+                                          height="42"
                                           />
                                     </Link>
                             </li>
@@ -49,8 +49,8 @@ const NavigationBar = (navProps: NavigationBarProps) => {
                                           src={blogButton}
                                           alt="Blogs button"
                                           className="hover:scale-110 transition-transform duration-300 h-auto w-[75px] aspect-[5/2]"
-                                          width="1200"
-                                          height="480"
+                                          width="150"
+                                          height="64"
                                           />
                                     </Link>
                             </li>
@@ -61,8 +61,8 @@ const NavigationBar = (navProps: NavigationBarProps) => {
                                               src={resumebutton}
                                               alt="Resume button"
                                               className="hover:scale-110 transition-transform duration-300 w-[120px] h-auto aspect-[4/1]"
-                                              width="1600"
-                                              height="400"
+                                              width="200"
+                                              height="50"
                                               />
                                         </a>
                             </li>
@@ -74,8 +74,8 @@ const NavigationBar = (navProps: NavigationBarProps) => {
                               src={github}
                               alt="GitHub Logo 2025 - Link to my GitHub"
                               className="w-8 h-auto mx-2 hover:scale-115 transition-transform duration-300 aspect-square"
-                              width="500"
-                              height="500"
+                              width="64"
+                              height="64"
                               />
                             </a>
                             <a href="https://fi.linkedin.com/in/nikomehilainen" target="_blank"><img src={linkedin} alt="LinkedIn Logo 2025 - Link to my LinkedIn" className="w-8 h-auto mx-2 hover:scale-115 transition-transform duration-300 aspect-square" /></a>
@@ -88,8 +88,8 @@ const NavigationBar = (navProps: NavigationBarProps) => {
                           <img src={logo}
                           alt="Logo"
                           className="hover:scale-105 mx-2 transition-transform duration-150 h-auto w-[100px] aspect-[2/1]"
-                          width="800"
-                          height="400"
+                          width="64"
+                          height="64"
                           />
 
                         </Link>

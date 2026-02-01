@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import github from "@/assets/images/icons/gh.webp";
 import linkedin from "@/assets/images/icons/li.webp";
 import instagram from "@/assets/images/icons/ig.webp";
-import homeIcon from "@/assets/images/icons/home-icon.svg"
-import blogIcon from "@/assets/images/icons/blog-icon.svg"
-import resumeIcon from "@/assets/images/icons/resume-icon.svg"
+import homeIcon from "@/assets/images/icons/home-icon.webp"
+import blogIcon from "@/assets/images/icons/blog-icon.webp"
+import resumeIcon from "@/assets/images/icons/resume-icon.webp"
 import resume from "@/assets/resume.pdf"
 
 type MobileMenuProps = {
@@ -22,9 +22,9 @@ const MobileMenu = ({ mobileMenuOpen, setMobileMenuOpen }: MobileMenuProps) => {
                           src={homeIcon}
                           loading="lazy"
                           alt="Homepage icon"
-                          className="w-8 h-8"
-                          width="32"
-                          height="32"
+                          className="w-8 h-auto aspect-square"
+                          width="64"
+                          height="64"
                           />
                         <p className='text-2xl font-[LeagueSpartanBold] px-2'>Home</p>
                     </div>
@@ -36,9 +36,9 @@ const MobileMenu = ({ mobileMenuOpen, setMobileMenuOpen }: MobileMenuProps) => {
                           src={blogIcon}
                           loading="lazy"
                           alt="Blogs icon"
-                          className="w-8 h-8"
-                          width="32"
-                          height="32"
+                          className="w-8 h-auto aspect-square"
+                          width="64"
+                          height="64"
                           />
                         <p className='text-2xl font-[LeagueSpartanBold] px-2'>Blogs</p>
                     </div>
@@ -50,9 +50,9 @@ const MobileMenu = ({ mobileMenuOpen, setMobileMenuOpen }: MobileMenuProps) => {
                           src={resumeIcon}
                           loading="lazy"
                           alt="Resume icon"
-                          className="w-8 h-8"
-                          width="32"
-                          height="32"
+                          className="w-8 h-auto aspect-square"
+                          width="64"
+                          height="64"
                           />
                         <p className='text-2xl font-[LeagueSpartanBold] px-2'>Resume</p>
                     </div>
@@ -68,8 +68,8 @@ const MobileMenu = ({ mobileMenuOpen, setMobileMenuOpen }: MobileMenuProps) => {
                       loading="lazy"
                       alt="GitHub Logo 2025"
                       className="w-9 h-auto mx-4 hover:scale-120 transition-transform duration-300 aspect-square"
-                      width="500"
-                      height="500"
+                      width="64"
+                      height="64"
                       /></a></button>
                     <button><a href="https://fi.linkedin.com/in/nikomehilainen" target="_blank">
                     <img 
@@ -77,8 +77,8 @@ const MobileMenu = ({ mobileMenuOpen, setMobileMenuOpen }: MobileMenuProps) => {
                         loading="lazy" 
                         alt="LinkedIn Logo 2025" 
                         className="w-9 h-auto mx-4 hover:scale-120 transition-transform duration-300 aspect-square"
-                        width="500"
-                        height="500"
+                        width="64"
+                        height="64"
                         /></a></button>
                     <button><a href="https://www.instagram.com/nikomehilainen/" target="_blank">
                     <img
@@ -86,8 +86,8 @@ const MobileMenu = ({ mobileMenuOpen, setMobileMenuOpen }: MobileMenuProps) => {
                       loading="lazy"
                       alt="Instagram Logo 2025"
                       className="w-9 h-auto mx-4 hover:scale-120 transition-transform duration-300 aspect-square"
-                      width="500"
-                      height="500"
+                      width="64"
+                      height="64"
                       /></a></button>
                 </div>
         </div>
