@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import logo from "@/assets/images/logos/nav-logo3.webp";
-import homebutton from "@/assets/images/buttons/home-button.png";
-import resumebutton from "@/assets/images/buttons/resume-button.png"
-import blogButton from "@/assets/images/buttons/blog-button.png"
+import logo from "@/assets/images/logos/nav-logo.webp";
+import homebutton from "@/assets/images/buttons/home-button.webp";
+import resumebutton from "@/assets/images/buttons/resume-button.webp";
+import blogButton from "@/assets/images/buttons/blog-button.webp"
 import github from "@/assets/images/icons/github-mark.svg";
 {/*import linkedin from "@/assets/images/icons/inBug-Black.png";*/}
 import mobilemenuclosed from "@/assets/images/misc/close-mobile-menu.webp"
@@ -22,9 +22,9 @@ const NavigationBar = (navProps: NavigationBarProps) => {
                     <Link to="/">
                       <img src={logo}
                       alt="Logo"
-                      className="object-contain hover:scale-105 transition-transform duration-300 aspect-[2/1]"
-                      width="94"
-                      height="47"
+                      className="hover:scale-105 h-auto w-[100px] transition-transform duration-300 aspect-[2/1]"
+                      width="800"
+                      height="400"
                       />
 
                       </Link>
@@ -35,9 +35,9 @@ const NavigationBar = (navProps: NavigationBarProps) => {
                                     <Link to="/" className="py-1">
                                         <img src={homebutton}
                                           alt="Home button"
-                                          className="hover:scale-110 transition-transform duration-300 w-auto max-h-[22px]"
-                                          width="100"
-                                          height="50"
+                                          className="hover:scale-110 transition-transform duration-300 h-auto w-[80px] aspect-[10/3]"
+                                          width="1200"
+                                          height="360"
                                           />
                                     </Link>
                             </li>
@@ -48,9 +48,9 @@ const NavigationBar = (navProps: NavigationBarProps) => {
                                         <img
                                           src={blogButton}
                                           alt="Blogs button"
-                                          className="hover:scale-110 transition-transform duration-300 w-auto max-h-[26px]"
-                                          width="100"
-                                          height="50"
+                                          className="hover:scale-110 transition-transform duration-300 h-auto w-[75px] aspect-[5/2]"
+                                          width="1200"
+                                          height="480"
                                           />
                                     </Link>
                             </li>
@@ -60,9 +60,9 @@ const NavigationBar = (navProps: NavigationBarProps) => {
                                             <img
                                               src={resumebutton}
                                               alt="Resume button"
-                                              className="hover:scale-110 transition-transform duration-300 w-auto max-h-[22px]"
-                                              width="100"
-                                              height="50"
+                                              className="hover:scale-110 transition-transform duration-300 w-[120px] h-auto aspect-[4/1]"
+                                              width="1600"
+                                              height="400"
                                               />
                                         </a>
                             </li>
@@ -87,9 +87,9 @@ const NavigationBar = (navProps: NavigationBarProps) => {
                         <Link to="/">
                           <img src={logo}
                           alt="Logo"
-                          className="w-auto h-auto hover:scale-105 mx-2 transition-transform duration-150 max-h-[50px]"
-                          width="189"
-                          height="95"
+                          className="hover:scale-105 mx-2 transition-transform duration-150 h-auto w-[100px] aspect-[2/1]"
+                          width="800"
+                          height="400"
                           />
 
                         </Link>
