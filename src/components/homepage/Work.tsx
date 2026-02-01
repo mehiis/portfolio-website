@@ -1,6 +1,6 @@
 import CustomListView from "./components/CustomListView";
 import CustomH2Title from "./components/CustomH2Title";
-import titleIcon from "@/assets/images/h2/work-experience-h2.png";
+import titleIcon from "@/assets/images/h2/work-experience.webp";
 
 const jobs = [
     {

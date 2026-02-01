@@ -24,7 +24,7 @@ const Footer = () => {
                         src={github}
                         loading="lazy"
                         alt="GitHub Logo 2025"
-                        className="w-8 h-auto mx-3 hover:scale-115 transition-transform duration-150"
+                        className="w-8 h-auto mx-3 hover:scale-115 transition-transform duration-150 aspect-square"
                         width="500"
                         height="500"/>
                     </a>
@@ -33,7 +33,7 @@ const Footer = () => {
                       src={linkedin} 
                       loading="lazy" 
                       alt="LinkedIn Logo 2025" 
-                      className="w-8 h-auto mx-3 hover:scale-115 transition-transform duration-150" 
+                      className="w-8 h-auto mx-3 hover:scale-115 transition-transform duration-150 aspect-square" 
                       width="500"
                       height="500"/>
                     </a>
@@ -42,7 +42,7 @@ const Footer = () => {
                         src={instagram}
                         loading="lazy"
                         alt="Instagram Logo 2025"
-                        className="w-8 h-auto mx-3 hover:scale-115 transition-transform duration-150"
+                        className="w-8 h-auto mx-3 hover:scale-115 transition-transform duration-150 aspect-square"
                         width="500"
                         height="500" />
                       </a>

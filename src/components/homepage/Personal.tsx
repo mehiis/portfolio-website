@@ -1,6 +1,6 @@
 import CustomProjectView from "./components/CustomProjectView";
 import CustomH2Title from "./components/CustomH2Title";
-import titleIcon from "@/assets/images/h2/personal-projects-h2.png";
+import titleIcon from "@/assets/images/h2/personal-projects.webp";
 import project from "../../data/articles";
 import { Link } from "react-router-dom";
 

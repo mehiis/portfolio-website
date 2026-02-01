@@ -9,9 +9,9 @@ const CustomH2Title = (props: Props) => {
         <img
         src={props.source}
         alt={"A topic title with text " + props.alt + "."}
-        className="w-auto px-7 pt-10 max-h-[72px] h-auto"
-        width="200"
-        height="72"/>
+        className="px-7 pt-10 w-auto h-[75px]"
+        width="2000"
+        height="200"/>
     </h2>
   )
 }

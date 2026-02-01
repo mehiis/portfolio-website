@@ -7,7 +7,7 @@ type BackToTopProps = {
 const BackToTop = (props: BackToTopProps) => {
   return (
         <button
-        className='fixed bottom-5 right-1/2 translate-x-1/2 w-20 h-auto hover:scale-105 transition-transform duration-200 w-20 h-auto z-50'
+        className='fixed bottom-5 right-1/2 translate-x-1/2 w-20 h-auto hover:scale-105 transition-transform duration-200 w-20 h-auto z-50 ascpect-square'
         style={{ transform: props.bttVisible ? 'translateY(0%)' : 'translateY(150%)' }}
         onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
             <img src={backToTopIcon}

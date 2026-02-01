@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import CustomH2Title from './components/CustomH2Title';
-import titleIcon from "@/assets/images/h2/education-h2.png";
+import titleIcon from "@/assets/images/h2/education.webp";
 
 const education = [
     {
