@@ -14,7 +14,7 @@ const CustomProjectView = (props: Props) => {
             <img
               src={props.icon}
               alt={"Icon of the project " + props.title}
-              className="w-auto h-[75px] mb-3 lg:mb-0 object-contain mx-auto"
+              className="w-auto h-[60px] mb-3 lg:mb-0 object-contain mx-auto"
               width="150"
               height="75"
               />

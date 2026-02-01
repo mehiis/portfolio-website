@@ -18,7 +18,7 @@ const Personal = () => {
                         key={index}
                         className="p-4 m-4 max-w-[1440px]"
                     >
-                        <Link to={`/article/${project.id}`}>
+                        <Link to={`/blog/${project.id}`}>
                             <CustomProjectView id={project.id} title={project.title} description={project.description} year={project.date.getFullYear()} tech={project.technologies.sort()} icon={project.icon} />
                         </Link>
                     </li>)
