@@ -15,9 +15,9 @@ const CustomListView = (props: Props) => {
             <img
               src={props.image}
               alt={"Cover image of the job place " + props.title}
-              className="w-auto h-[80] lg:h-[100px] object-contain mx-auto"
-              width="800"
-              height="400"
+              className="w-auto h-[75px] object-contain mx-auto"
+              width="150"
+              height="75"
               />
 
             <div className="text-[var(--black-color)] p-4">
