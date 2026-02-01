@@ -2,6 +2,7 @@ import { Outlet, useLocation } from 'react-router'
 import { useEffect, useState } from 'react';
 import BackToTop from './BackToTop'
 import NavigationBar from './NavigationBar'
+import Footer from './Footer'
 import MobileMenu from './MobileMenu'
 
 const Layout = () => {
@@ -89,6 +90,8 @@ const Layout = () => {
         <BackToTop bttVisible={bttVisible} />
 
         <MobileMenu mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} />
+
+        <Footer />
     </>
   )
 }
