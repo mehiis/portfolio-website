@@ -36,8 +36,8 @@ const NavigationBar = (navProps: NavigationBarProps) => {
                                         <img src={homebutton}
                                           alt="Home button"
                                           className="hover:scale-110 transition-transform duration-300 h-auto w-[80px] aspect-[10/3]"
-                                          width="140"
-                                          height="42"
+                                          width="160"
+                                          height="48"
                                           />
                                     </Link>
                             </li>
@@ -78,7 +78,14 @@ const NavigationBar = (navProps: NavigationBarProps) => {
                               height="64"
                               />
                             </a>
-                            <a href="https://fi.linkedin.com/in/nikomehilainen" target="_blank"><img src={linkedin} alt="LinkedIn Logo 2025 - Link to my LinkedIn" className="w-8 h-auto mx-2 hover:scale-115 transition-transform duration-300 aspect-square" /></a>
+                            <a href="https://fi.linkedin.com/in/nikomehilainen" target="_blank">
+                              <img 
+                              src={linkedin} alt="LinkedIn Logo 2025 - Link to my LinkedIn" 
+                              className="w-8 h-auto mx-2 hover:scale-115 transition-transform duration-300 aspect-square" 
+                              width="64"
+                              height="64"
+                              />
+                            </a>
                         </div>
                     </nav>
                 </div>
@@ -102,9 +109,10 @@ const NavigationBar = (navProps: NavigationBarProps) => {
                           >
                             <img
                               src={navProps.mobileMenuOpen ? mobilemenuclosed : mobilemenuopenicon}
-                              alt="Mobile Menu button"
-                              width="258"
-                              height="258"
+                              className="h-auto w-[50px] aspect-square"
+                              alt="Mobile Menu toggle button"
+                              width="100"
+                              height="100"
                             />
                           </button>
                         </div>
