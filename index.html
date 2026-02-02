@@ -13,9 +13,10 @@
     base-uri 'self'; 
     object-src 'none'; 
     script-src 'self' 'unsafe-inline' 'unsafe-eval' https://vercel.live; 
-    img-src 'self'; 
+    img-src * data: blob:; 
     style-src 'self' 'unsafe-inline';
     font-src 'self' data:;
+    connect-src *;
   ">
   <link rel="preload" as="image" href="/src/assets/hero-image.webp" type="image/webp" fetchpriority="high">
 </head>

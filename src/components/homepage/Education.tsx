@@ -10,8 +10,6 @@ const education = [
         time: "2024 - 2028",
         website: "https://www.metropolia.fi/en"
     },
-
-
 ]
 
 const Education = () => {
