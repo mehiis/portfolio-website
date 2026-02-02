@@ -11,13 +11,7 @@ const CustomProjectView = (props: Props) => {
   return (
     <div className="bg-[var(--primary-color)] px-8 py-4 rounded-xl shadow-sm">
         <div className="items-center lg:grid lg:grid-cols-[260px_1fr]">
-            <img
-              src={props.icon}
-              alt={"Icon of the project " + props.title}
-              className="w-auto h-[60px] mb-3 lg:mb-0 object-contain mx-auto"
-              width="150"
-              height="75"
-              />
+
 
             <div className="text-[var(--black-color)] p-4">
                 <div className="lg:flex lg:gap-2">
