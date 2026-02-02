@@ -5,12 +5,11 @@ import titleIcon from "@/assets/images/h2/work-experience.webp";
 const jobs = [
     {
         id: "1000",
-        title: "Verkkokauppa.com",
+        title: "Verkkokauppa.com Oyj",
         role: "Sales Specialist",
         duration: "2021 - Present",
         description: "Sales Representative at Verkkokauppa.com. Represented the company on social media, hosted auctions and live events, and appeared on the international reality TV show The Apprentice.",
         skills: ["Customer service", "Retail", "Sales"],
-        image: "https://images.ctfassets.net/nggsuamsum0l/74DAKbD8bNPFIMT4RW1qRY/af0436ec104196a607817eec3b701b1a/Logo-musta-teksti.png?q=90&fm=avif&w=384"
     },
 ].reverse();
 
@@ -23,7 +22,7 @@ const Work = () => {
                 <li
                     key={index}
                     className="p-4 m-4 max-w-[1440px]">
-                    <CustomListView title={job.title} role={job.role} description={job.description} duration={job.duration} skills={job.skills.sort()} image={job.image}  />
+                    <CustomListView title={job.title} role={job.role} description={job.description} duration={job.duration} skills={job.skills.sort()} />
                 </li>
             ))}
         </ul>
