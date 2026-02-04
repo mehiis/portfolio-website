@@ -5,7 +5,6 @@ import instagram from "@/assets/images/icons/ig.webp";
 import homeIcon from "@/assets/images/icons/home-icon.webp"
 import blogIcon from "@/assets/images/icons/blog-icon.webp"
 import resumeIcon from "@/assets/images/icons/resume-icon.webp"
-import resume from "@/assets/resume.pdf"
 
 type MobileMenuProps = {
     mobileMenuOpen: boolean;
@@ -16,7 +15,7 @@ const MobileMenu = ({ mobileMenuOpen, setMobileMenuOpen }: MobileMenuProps) => {
   return (
         <div className='px-3 fixed right-0 flex flex-col items-left w-full h-screen bg-[var(--primary-color)] top-17 transition-transform duration-300 overflow-hidden' style={{ transform: mobileMenuOpen ? 'translateX(0%)' : 'translateX(100%)'}}>
 
-                <Link className='flex items-center space-x-2 pl-4 my-3 mt-10' to="" onClick={() => setMobileMenuOpen(false)}>
+                <Link className='flex items-center space-x-2 pl-4 my-3 mt-10' to="/" onClick={() => setMobileMenuOpen(false)}>
                     <div className="flex">
                         <img
                           src={homeIcon}
@@ -44,7 +43,7 @@ const MobileMenu = ({ mobileMenuOpen, setMobileMenuOpen }: MobileMenuProps) => {
                     </div>
                 </Link>
 
-                <a href={resume} className='flex items-center space-x-2 pl-4 my-3' onClick={() => setMobileMenuOpen(false)} target="_blank" rel="noopener noreferrer">
+                <a href="/resume.pdf" className='flex items-center space-x-2 pl-4 my-3' onClick={() => setMobileMenuOpen(false)} target="_blank" rel="noopener noreferrer">
                     <div className="flex">
                         <img
                           src={resumeIcon}
@@ -62,7 +61,7 @@ const MobileMenu = ({ mobileMenuOpen, setMobileMenuOpen }: MobileMenuProps) => {
 
                 <p className='text-xl font-[LeagueSpartanBold] text-left items-left justify-left px-5 mb-2 '>My socials</p>
                 <div className='flex items-left pt-3 px-5 pb-5 justify-left '>
-                    <button><a href="https://github.com/mehiis" target="_blank">
+                    <button><a href="https://github.com/mehiis" target="_blank" rel="noopener noreferrer">
                     <img
                       src={github}
                       loading="lazy"
@@ -71,7 +70,7 @@ const MobileMenu = ({ mobileMenuOpen, setMobileMenuOpen }: MobileMenuProps) => {
                       width="64"
                       height="64"
                       /></a></button>
-                    <button><a href="https://fi.linkedin.com/in/nikomehilainen" target="_blank">
+                    <button><a href="https://fi.linkedin.com/in/nikomehilainen" target="_blank" rel="noopener noreferrer">
                     <img 
                         src={linkedin} 
                         loading="lazy" 
@@ -80,7 +79,7 @@ const MobileMenu = ({ mobileMenuOpen, setMobileMenuOpen }: MobileMenuProps) => {
                         width="64"
                         height="64"
                         /></a></button>
-                    <button><a href="https://www.instagram.com/nikomehilainen/" target="_blank">
+                    <button><a href="https://www.instagram.com/nikomehilainen/" target="_blank" rel="noopener noreferrer">
                     <img
                       src={instagram}
                       loading="lazy"

@@ -1,4 +1,5 @@
-import heroImg from "@/assets/hero-image.webp";
+import heroImgLg from "/hero-img/hero-image-lg.webp";
+import heroImgSm from "/hero-img/hero-image-sm.webp";
 
 function Hero() {
   return (
@@ -7,11 +8,16 @@ function Hero() {
         <div
           className="max-w-[1440px] min-w-[360px] m-auto md:flex md:justify-between sm:center items-center justify-center md:px-10 lg:px-25">
           <img
-            className="w-2/3 sm:w-1/2 md:w-1/4 mx-auto md:mx-0 mb-6 md:mb-0 object-contain"
+            className="w-2/3 sm:w-1/2 md:w-1/4 mx-auto md:mx-0 mb-6 md:mb-0 object-contain aspect-square"
             alt="Hero Image 2025"
             fetchPriority="high"
             loading="eager"
-            src={heroImg}
+            src={heroImgLg}
+            srcSet=
+            {`
+              ${heroImgSm} 280w, 
+              ${heroImgLg} 560w
+            `}
             width="480"
             height="480"
           />

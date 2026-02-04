@@ -25,7 +25,7 @@ const Footer = () => {
                 </Link>
 
                 <div className='flex justify-center'>
-                    <a href="https://github.com/mehiis" target="_blank">
+                    <a href="https://github.com/mehiis" target="_blank" rel="noopener noreferrer">
                       <img
                         src={github}
                         loading="lazy"
@@ -34,7 +34,7 @@ const Footer = () => {
                         width="500"
                         height="500"/>
                     </a>
-                    <a href="https://fi.linkedin.com/in/nikomehilainen" target="_blank">
+                    <a href="https://fi.linkedin.com/in/nikomehilainen" target="_blank" rel="noopener noreferrer">
                     <img 
                       src={linkedin} 
                       loading="lazy" 
@@ -43,7 +43,7 @@ const Footer = () => {
                       width="500"
                       height="500"/>
                     </a>
-                    <a href="https://www.instagram.com/nikomehilainen/" target="_blank">
+                    <a href="https://www.instagram.com/nikomehilainen/" target="_blank" rel="noopener noreferrer">
                       <img
                         src={instagram}
                         loading="lazy"
