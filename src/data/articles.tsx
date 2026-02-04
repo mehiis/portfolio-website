@@ -15,7 +15,7 @@ const Articles: BlogPost[] = [
         description: "A personal portfolio website displaying my skills and projects. This project showcases my ability to create responsive and visually appealing web applications.",
         author: "Niko Mehiläinen",
         date: new Date("2026-01-01"),
-        technologies: ["Vite", "React", "Tailwind CSS", "Figma"],
+        technologies: ["Vite", "React", "Tailwind CSS", "Figma", "GitHub Actions", "Vercel"],
         tags: ["Web Development", "Frontend", "Personal Project"],
         icon: porfolioIcon,
         articleCover: cover0,
@@ -42,6 +42,15 @@ const Articles: BlogPost[] = [
                 image: project0img2,
                 imageAlt: "A screenshot of the first design of the portfolio website.",
                 imageFigcaption: "My first design."
+            },
+            {
+                title: "Quality assurance",
+                paragraphs: [
+                    "...",
+                ],
+                image: "",
+                imageAlt: "",
+                imageFigcaption: ""
             },
             {
                 title: "Post Mortem",
