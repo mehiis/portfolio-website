@@ -9,7 +9,7 @@ export default defineConfig({
     react()
   ],
 
-  base: './',
+  base: '/',
 
 resolve: {
     alias: {
