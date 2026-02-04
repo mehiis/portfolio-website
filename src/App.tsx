@@ -13,7 +13,6 @@ function App() {
     <BrowserRouter basename={baseName}>
     <Routes>
       <Route element={<Layout />}>
-        {/* Define the routes for the application */}
         <Route path="/" element={<Home />} />
         <Route path="/blog/:id" element={<Blog />} />
         <Route path="/blogs/:id" element={<Blogs />} />
