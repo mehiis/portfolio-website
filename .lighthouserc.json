@@ -12,10 +12,7 @@
       "assertions": {
         "csp-xss": "off",
         "installable-manifest": "off",
-        "uses-http2": "off",
-        "splash-screen": "off",
         "themed-omnibox": "off",
-        "maskable-icon": "off",
         "total-byte-weight": "warn",
         "unused-javascript": "warn"
       }
