@@ -17,7 +17,7 @@ const MobileMenu = ({ mobileMenuOpen, setMobileMenuOpen }: MobileMenuProps) => {
                         fixed right-0 top-[68px] 
                         w-full h-[calc(100vh-68px)] 
                         bg-[var(--primary-color)] 
-                        flex flex-col items-start px-3 
+                        flex flex-col items-start px-10 
                         transition-transform duration-300 
                         overflow-y-auto 
                         overscroll-behavior-contain

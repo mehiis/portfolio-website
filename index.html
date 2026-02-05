@@ -19,6 +19,7 @@
     connect-src *;
   ">
 
+  <link rel="preconnect" href="https://www.nikomehilainen.com">
   <link rel="preload" as="image" href="/hero-img/hero-image-lg.webp" type="image/webp" fetchpriority="high">
   <link rel="preload" href="/src/assets/LeagueSpartan-Bold.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="/src/assets/LeagueSpartan-Regular.ttf" as="font" type="font/ttf" crossorigin>
@@ -26,7 +27,7 @@
 
 <body>
   <div id="root"></div>
-  <script type="module" src="/src/main.tsx"></script>
 </body>
 
+ <script type="module" src="/src/main.tsx" defer></script>
 </html>

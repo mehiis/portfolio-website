@@ -102,7 +102,7 @@ const NavigationBar = (navProps: NavigationBarProps) => {
                     </nav>
                 </div>
 
-                <div className="flex items-center justify-between xl:hidden z-200" >
+                <div className="flex items-center justify-between xl:hidden z-200 px-3" >
                         <Link to="/">
                           <img 
                           src={logoLg}
