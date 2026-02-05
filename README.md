@@ -1,7 +1,5 @@
 # Portfolio Website
 
-(http://nikomehilainen.com)[nikomehilainen.com] - Portfolio is live.
-
 This is my personal portfolio showcasing my projects, work experience, and skills as a software developer.
 
 ## Tech Stack
@@ -16,7 +14,7 @@ This is my personal portfolio showcasing my projects, work experience, and skill
 
 - **GitHub Actions**
   - Lighthouse: Test performance, SEO and accessibility.
-- **Vercel**: Continous Deployment: Automatic publishing.
+- **Vercel**: Continuous Deployment: Automatic publishing.
 
 ## Screenshots
 

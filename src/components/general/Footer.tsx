@@ -16,6 +16,7 @@ const Footer = () => {
                     ${fullNameLogoLg} 480w,
                     ${fullNameLogoSm} 240w
                   `}
+                  sizes="(max-width: 768px) 240px, 480px"
                   loading="lazy"
                   alt="Image of stylized full name, small flower and text 'niko mehilaeinen'."
                   className="w-[240px] md:w-[280px] h-auto mx-auto mb-3 hover:scale-105 transition-transform duration-150 aspect-[8/1]"

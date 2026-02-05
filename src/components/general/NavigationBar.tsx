@@ -26,6 +26,7 @@ const NavigationBar = (navProps: NavigationBarProps) => {
                         ${logoSm} 100w,
                         ${logoLg} 200w`
                       }
+                      sizes="(max-width: 768px) 100px, 200px"
                       alt="Logo"
                       className="hover:scale-105 h-auto w-[100px] transition-transform duration-300 aspect-[2/1]"
                       width="200"
@@ -109,6 +110,7 @@ const NavigationBar = (navProps: NavigationBarProps) => {
                             ${logoSm} 100w,
                              ${logoLg} 200w`
                             }
+                          sizes="(max-width: 768px) 100px, 200px"
                           alt="Logo"
                           className="hover:scale-105 mx-2 transition-transform duration-150 h-auto w-[100px] aspect-[2/1]"
                           width="64"

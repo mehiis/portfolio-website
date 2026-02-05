@@ -1,6 +1,7 @@
 import CustomListView from "./components/CustomListView";
 import CustomH2Title from "./components/CustomH2Title";
-import titleIcon from "@/assets/images/h2/work-experience.webp";
+import h2sm from "@/assets/images/h2/work-experience/we-sm.webp";
+import h2lg from "@/assets/images/h2/work-experience/we-lg.webp";
 
 const jobs = [
     {
@@ -16,7 +17,7 @@ const jobs = [
 const Work = () => {
     return(
         <div className="max-w-[1440px] min-w-[360px] mx-auto p-2 md:px-30">
-            <CustomH2Title source={titleIcon} alt="Work Experience" />
+            <CustomH2Title sourceSm={h2sm} sourceLg={h2lg} alt="Work Experience" />
         <ul className="flex flex-col">
             {[...jobs].map((job, index) => (
                 <li
