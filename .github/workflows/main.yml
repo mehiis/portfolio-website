@@ -1,7 +1,7 @@
 name: Lighthouse CI
 on: [push, pull_request]
 jobs:
-  lighthouse-local:
+  lighthouse-home-page-local-test:
     runs-on: ubuntu-latest
     
     steps:
@@ -30,7 +30,7 @@ jobs:
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     
-  test-live-site:
+  test-live-sites:
     runs-on: ubuntu-latest
     
     steps:
