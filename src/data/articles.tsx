@@ -13,7 +13,7 @@ const Articles: BlogPost[] = [
         author: "Niko Mehiläinen",
         date: new Date("2026-01-01"),
         technologies: ["Vite", "React", "Tailwind CSS", "Figma", "GitHub Actions", "Vercel"],
-        tags: ["Web Development", "Frontend", "Personal Project"],
+        tags: ["Web Development", "Frontend", "Personal Project", "CI/CD"],
         icon: porfolioIcon,
         articleCover: cover0,
         featureOnHomePage: true,

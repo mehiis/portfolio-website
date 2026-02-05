@@ -5,6 +5,8 @@ import Blogs from './views/Blogs'
 import NotFound from './components/general/NotFound'
 import Layout from './components/general/Layout'
 import Blog from './views/Blog'
+import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 function App() {
 
@@ -20,6 +22,10 @@ function App() {
       </Route>
     </Routes>
     </BrowserRouter>
+
+    
+    <Analytics />
+    <SpeedInsights />
     </>
   )
 }
