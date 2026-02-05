@@ -34,7 +34,7 @@ const Articles: BlogPost[] = [
                 title: "Design and Development",
                 paragraphs: [
                     "I first came up with a simple idea in Figma, playing around with different colors, creating a few mockups, and building some components. I didn’t want to spend too much time in Figma since I wanted to focus more on the development side of things. Figma was surprisingly powerful for a free tool, and the ability to export assets as SVG or PNG directly from it made the development process a lot faster.",
-                    "Making a portfolio website was a really pleasant, low-threshold project because I only worked on the front-end. I thought about fetching all the blog content from a database, but it felt like overkill for this kind of project, so I decided to pull all the data directly from the code instead. Of course, now updating the project means uploading the whole file with text to the server, which is a bit of a hassle. If there’s a lot more content in the future, I might move it to a database, but for now, I feel like this setup works just fine.",
+                    "Making this portfolio was a pleasant, low-threshold project because I focused entirely on the front-end. I considered fetching blog content from a database, but it felt like overkill, so I decided to keep the data directly in the code. Thanks to Vercel, this is very straightforward. Updating the site is as simple as pushing new code to GitHub.",
                     "If you're interested in the detailed implementation, I’ve left a GitHub link for this website where you can check out the latest version of the portfolio. You can find the link at the top of this site or search for 'mehiis' on GitHub!"
                 ],
                 image: project0img2,
@@ -45,7 +45,7 @@ const Articles: BlogPost[] = [
                 title: "Quality assurance",
                 paragraphs: [
                     "I set up Lighthouse CI within my GitHub Actions so that every time I push new code, the site is automatically audited for performance, accessibility, and SEO. This ensures that new features don't accidentally slow down the site or break its search engine rankings before they go live.",
-                    "For hosting, I chose Vercel. It’s a great fit for a portfolio because the Hobby plan provides professional speed for personal projects and enables easy continuous development with a simple setup. I’ve paired this with Cloudflare for DNS and security, creating a stack that is fast and secure without being a headache to maintain."
+                    "For hosting, I chose Vercel. It’s a great fit for a portfolio because the Hobby plan provides great speed for personal projects and enables easy continuous development with a simple setup. I’ve paired this with Cloudflare for DNS and security, creating a stack that is fast and secure without being a headache to maintain."
                 ],
                 image: "",
                 imageAlt: "",
