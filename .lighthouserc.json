@@ -4,7 +4,7 @@
       "staticDistDir": "./dist",
       "url": [
         "/",
-        "/blogs"
+        "/blogs/1"
     ],
       "settings": {
         "chromeFlags": "--no-sandbox --disable-dev-shm-usage --headless"
