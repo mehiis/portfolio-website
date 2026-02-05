@@ -9,7 +9,7 @@ interface BlogCardProps {
 
 const BlogCard: React.FC<BlogCardProps> = ({ currentPosts }) => {
   return (
-        <>
+        <li>
             {currentPosts.map(article => (
                 <div className='mx-10 mb-10 my-10 md:my-0 ' key={article.id}>
                     <Link to={`/blog/${article.id}`}>
@@ -44,7 +44,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ currentPosts }) => {
                     { article.id !== currentPosts[currentPosts.length - 1].id ? <hr className="border-black/10 my-10"/> : null}
                 </div>
             ))}
-        </>
+        </li>
   )
 }
 

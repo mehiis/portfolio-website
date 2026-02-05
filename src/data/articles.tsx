@@ -25,6 +25,7 @@ const Articles: BlogPost[] = [
                 title: "From Scratch",
                 paragraphs: [
                     "The portfolio website was built from the ground up using Vite as the build tool and React for the frontend. I used Tailwind CSS for styling, which made the whole process super fast. The initial design was created in Figma, and a lot of elements were exported directly from there, like icons and buttons.",
+                    "Quality assurance was done through GitHub Actions, which automatically runs Lighthouse tests on every GitHub push, keeping the performance, accessibility, and SEO of the site in check. The site is hosted on Vercel, which provides simple deployment and hosting solutions. DNS management is handled through Cloudflare.",
                     "The most important thing for me when building this portfolio was keeping it simple and personal. To me, a portfolio should be easy to navigate and show the key info right away. This idea was the main motivation behind how I designed my portfolio. I wanted it to be clean, fast, and focused on what's most important.",
                     "I really wanted to build this portfolio from scratch, even though there are plenty of no-code portfolio builders out there. I felt like doing it myself gave me a chance to show off my skills as a developer, make it stand out visually, and make it much more personal compared to using ready-made templates and components. Plus, I learned a ton and refreshed a lot of my web development skills while working on it. It was a plenty of fun!",
                 ],
@@ -46,7 +47,8 @@ const Articles: BlogPost[] = [
             {
                 title: "Quality assurance",
                 paragraphs: [
-                    "...",
+                    "I set up Lighthouse CI within my GitHub Actions so that every time I push new code, the site is automatically audited for performance, accessibility, and SEO. This ensures that new features don't accidentally slow down the site or break its search engine rankings before they go live.",
+                    "For hosting, I chose Vercel. It’s a great fit for a portfolio because the Hobby plan provides professional speed for personal projects and enables easy continuous development with a simple setup. I’ve paired this with Cloudflare for DNS and security, creating a stack that is fast and secure without being a headache to maintain."
                 ],
                 image: "",
                 imageAlt: "",
