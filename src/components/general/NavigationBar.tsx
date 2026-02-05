@@ -17,7 +17,7 @@ type NavigationBarProps = {
 
 const NavigationBar = (navProps: NavigationBarProps) => {
   return (
-            <div className='bg-[var(--primary-color)] min-w-[360px] shadow-sm sticky top-0 z-50 transition-transform duration-200 position-absolute px-5 py-2' style={{ transform: navProps.isVisible ? 'translateY(0)' : 'translateY(-100%)' }}>
+            <div className='bg-[var(--primary-color)] min-w-[360px] shadow-sm sticky top-0 z-50 transition-transform duration-200 position-absolute px-5 py-2 z-200' style={{ transform: navProps.isVisible ? 'translateY(0)' : 'translateY(-100%)' }}>
                 <div className="max-w-[1440px] min-w-[360px] mx-auto flex items-center justify-between bg-[var(--primary-color)] hidden xl:flex lg:px-40" >
                     <Link to="/">
                       <img 
@@ -101,7 +101,7 @@ const NavigationBar = (navProps: NavigationBarProps) => {
                     </nav>
                 </div>
 
-                <div className="flex items-center justify-between xl:hidden" >
+                <div className="flex items-center justify-between xl:hidden z-200" >
                         <Link to="/">
                           <img 
                           src={logoLg}
