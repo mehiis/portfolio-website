@@ -2,12 +2,7 @@
   "ci": {
     "collect": {
       "staticDistDir": "./dist",
-      "isSinglePageContext": true,
-      "url": [
-        "/",
-        "/blogs/1"
-      ],
-      "numberOfRuns": 3,
+      "url": ["/", "/blogs/1"],
       "settings": {
         "chromeFlags": "--no-sandbox --disable-dev-shm-usage --headless"
       }
