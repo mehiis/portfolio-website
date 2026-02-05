@@ -5,21 +5,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: 'npm'
+
       - name: Install dependencies
-        run: npm install
+        run: npm ci
+
       - name: Build project
         run: npm run build
-      - name: Install Lighthouse CI
-        run: npm install -g @lhci/cli@0.13.x
-      - name: Check build for errors
-        run: |
-          cd dist
-          grep -r "404" . || echo "No hardcoded 404s found"
-          ls -R
+
       - name: Run Lighthouse CI
-        run: lhci autorun
+        uses: treosh/lighthouse-ci-action@v12
+        with:
+          configPath: ./.lighthouserc.json
+          uploadArtifacts: true 
+          temporaryPublicStorage: true
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.GITHUB_TOKEN }}
