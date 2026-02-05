@@ -12,7 +12,7 @@ const LatestBlogs = () => {
       <h2 className='my-5 font-[LeagueSpartanBold] text-xl'>Latest Blogs</h2>
       <hr className='mb-5 border-black/10'/>
 
-      <ul className='gap-10 hidden md:visible md:grid md:grid-cols-4 md:auto-rows-fr'>
+      <ul className='gap-10 hidden xl:grid md:grid-cols-4 md:auto-rows-fr'>
         {latestBlogsDesktop.map(blog => (
           <div key={blog.id}>
             <Link to={`/blog/${blog.id}`}>
@@ -35,7 +35,7 @@ const LatestBlogs = () => {
         ))}
       </ul>
 
-      <ul className='gap-10 md:hidden grid grid-cols-2 auto-rows-fr'>
+      <ul className='gap-10 xl:hidden grid grid-cols-2 auto-rows-fr justify-items-center'>
         {latestBlogsMobile.map(blog => (
           <div key={blog.id}>
             <Link to={`/blog/${blog.id}`}>

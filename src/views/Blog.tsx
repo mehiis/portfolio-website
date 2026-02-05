@@ -17,7 +17,7 @@ const Blog = () => {
             <ArticleHeader title={article.title} desc={article.description} author={article.author} date={article.date} resources={article.resources} />
 
             <article className="mt-6 max-w-[1440px] mx-auto py-4 px-5 md:px-50">
-              <div className="md:grid md:grid-cols-[1fr_0.4fr] gap-10">
+              <div className="xl:grid xl:grid-cols-[1fr_0.4fr] gap-10">
                 <div className="flex flex-col">
                 {article.chapters.map((article, index) => (
                   <div key={index} className="mt-4 mb-15">
@@ -38,7 +38,7 @@ const Blog = () => {
                 ))}
                 </div>
 
-                <div className="sticky top-20 hidden md:block p-5 rounded-lg h-fit">
+                <div className="sticky top-20 hidden xl:block p-5 rounded-lg h-fit">
                   <p className="text-xl font-[LeagueSpartanBold]">Table of contents</p>
                   <div className="mt-4 flex flex-col gap-3">
                     {article.chapters.map((chapter, index) => (

@@ -14,14 +14,14 @@ const BlogCard: React.FC<BlogCardProps> = ({ currentPosts }) => {
                 <div className='mx-10 mb-10 my-10 md:my-0 ' key={article.id}>
                     <Link to={`/blog/${article.id}`}>
 
-                    <li className="text-white shadow-sm rounded-md overflow-hidden flex-col md:flex-row border border-black/2 mb-11 md:grid md:grid-cols-[25%_75%] ">
-                        <div className='h-[180px] md:h-auto flex items-center justify-center overflow-hidden'>
+                    <div className="text-white shadow-sm rounded-md overflow-hidden flex-col xl:flex-row border border-black/2 mb-11 xl:grid xl:grid-cols-[25%_75%]">
+                        <div className='xl:h-auto flex overflow-hidden h-[240px]'>
                             <img
                               src={article?.articleCover}
                               alt={article.title}
                               className="w-full h-full object-cover"
-                              width="400"
-                              height="250"
+                              width="290"
+                              height="200"
                               />
                         </div>
 
@@ -38,7 +38,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ currentPosts }) => {
                             </div>
                             </div>
                         </div>
-                    </li>
+                    </div>
 
                     </Link>
                     { article.id !== currentPosts[currentPosts.length - 1].id ? <hr className="border-black/10 my-10"/> : null}
