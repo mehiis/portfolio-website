@@ -4,9 +4,7 @@
       "startServerCommand": "npm run start", 
       "url": [
         "http://localhost:44711/",
-        "http://localhost:44711/blogs/1",
-        "http://nikomehilainen.com/",
-        "http://nikomehilainen.com/blogs/1"
+        "http://localhost:44711/blogs/1"
       ],
       "numberOfRuns": 3,
       "settings": {
