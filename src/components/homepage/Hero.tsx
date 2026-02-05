@@ -18,6 +18,7 @@ function Hero() {
               ${heroImgSm} 280w, 
               ${heroImgLg} 560w
             `}
+            sizes="(max-width: 640px) 280px, 480px"
             width="480"
             height="480"
           />
