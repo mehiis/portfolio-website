@@ -13,7 +13,7 @@ const Blog = () => {
     <>
       <div>
         {article ? (
-          <div>
+          <div className="justify-between min-h-screen flex flex-col">
             <ArticleHeader title={article.title} desc={article.description} author={article.author} date={article.date} resources={article.resources} />
 
             <article className="mt-6 max-w-[1440px] mx-auto py-4 px-5 md:px-50">

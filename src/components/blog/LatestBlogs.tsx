@@ -13,21 +13,21 @@ const LatestBlogs = () => {
       <hr className='mb-5 border-black/10'/>
 
       <ul className='gap-10 hidden md:visible md:grid md:grid-cols-4 md:auto-rows-fr'>
-        {latestBlogsDesktop.map(article => (
-          <div key={article.id}>
-            <Link to={`/blog/${article.id}`}>
+        {latestBlogsDesktop.map(blog => (
+          <div key={blog.id}>
+            <Link to={`/blog/${blog.id}`}>
               <li className="text-white shadow-sm rounded-sm overflow-hidden border border-black/2 mb-5 max-w-[200px] hover:scale-105 transition-transform duration-300">
                 <img
-                  src={article.articleCover}
-                  alt={article.title}
+                  src={blog.articleCover}
+                  alt={blog.title}
                   className="object-cover"
                   width="400"
                   height="250"
                   />
 
                 <div className='bg-[var(--white-color)] p-3 min-h-[85px]'>
-                  <p className='font-[LeagueSpartanRegular] text-sm text-[var(--black-color)] line-clamp-1'>{article.date.toLocaleDateString()}</p>
-                  <h3 className='font-[LeagueSpartanBold] text-black text-sm line-clamp-2 my-auto'>{article.title}</h3>
+                  <p className='font-[LeagueSpartanRegular] text-sm text-[var(--black-color)] line-clamp-1'>{blog.date.toLocaleDateString()}</p>
+                  <h3 className='font-[LeagueSpartanBold] text-black text-sm line-clamp-2 my-auto'>{blog.title}</h3>
                 </div>
               </li>
             </Link>
@@ -36,21 +36,21 @@ const LatestBlogs = () => {
       </ul>
 
       <ul className='gap-10 md:hidden grid grid-cols-2 auto-rows-fr'>
-        {latestBlogsMobile.map(article => (
-          <div key={article.id}>
-            <Link to={`/blog/${article.id}`}>
+        {latestBlogsMobile.map(blog => (
+          <div key={blog.id}>
+            <Link to={`/blog/${blog.id}`}>
               <li className="text-white shadow-sm rounded-sm overflow-hidden border border-black/2 mb-5 max-h-[200px] max-w-[200px] ">
                 <img
-                  src={article.articleCover}
-                  alt={article.title}
+                  src={blog.articleCover}
+                  alt={blog.title}
                   className="object-cover"
                   width="400"
                   height="250"
                   />
 
                 <div className='bg-[var(--white-color)] p-3 min-h-[85px]'>
-                <p className='font-[LeagueSpartanRegular] text-sm text-[var(--black-color)] line-clamp-1 '>{article.date.toLocaleDateString()}</p>
-                <h3 className='font-[LeagueSpartanBold] text-black text-sm line-clamp-2 px-2'>{article.title}</h3>
+                <p className='font-[LeagueSpartanRegular] text-sm text-[var(--black-color)] line-clamp-1 '>{blog.date.toLocaleDateString()}</p>
+                <h3 className='font-[LeagueSpartanBold] text-black text-sm line-clamp-2 px-2'>{blog.title}</h3>
                 </div>
               </li>
 
