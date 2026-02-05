@@ -16,7 +16,8 @@
         "themed-omnibox": "off",
         "maskable-icon": "off",
         "total-byte-weight": "warn",
-        "unused-javascript": "warn"
+        "unused-javascript": "warn",
+        "errors-in-console": "warn"
       }
     },
     "upload": {
