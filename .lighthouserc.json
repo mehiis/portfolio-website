@@ -1,10 +1,11 @@
 {
   "ci": {
     "collect": {
-      "startServerCommand": "npm run start", 
+      "staticDistDir": "./dist",
+      "isSinglePageContext": true,
       "url": [
-        "http://localhost:44711/",
-        "http://localhost:44711/blogs/1"
+        "/",
+        "/blogs/1"
       ],
       "numberOfRuns": 3,
       "settings": {
