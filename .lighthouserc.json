@@ -1,12 +1,14 @@
 {
   "ci": {
     "collect": {
-      "staticDistDir": "./dist",
-      "isSinglePageContent": true,
+      "startServerCommand": "npm run start", 
       "url": [
-        "/",
-        "/blogs/1"
-    ],
+        "http://localhost:44711/",
+        "http://localhost:44711/blogs/1",
+        "http://nikomehilainen.com/",
+        "http://nikomehilainen.com/blogs/1"
+      ],
+      "numberOfRuns": 3,
       "settings": {
         "chromeFlags": "--no-sandbox --disable-dev-shm-usage --headless"
       }
