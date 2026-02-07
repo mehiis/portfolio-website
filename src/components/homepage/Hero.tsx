@@ -1,6 +1,3 @@
-import heroImgLg from "/hero-img/hero-image-lg.webp";
-import heroImgSm from "/hero-img/hero-image-sm.webp";
-
 function Hero() {
   return (
     <>
@@ -12,11 +9,11 @@ function Hero() {
             alt="Hero Image 2025"
             fetchPriority="high"
             loading="eager"
-            src={heroImgLg}
+            src="/hero-img/hero-image-lg.webp"
             srcSet=
             {`
-              ${heroImgSm} 280w, 
-              ${heroImgLg} 560w
+              /hero-img/hero-image-sm.webp 280w,
+              /hero-img/hero-image-lg.webp 560w
             `}
             sizes="(max-width: 640px) 280px, 480px"
             width="480"
