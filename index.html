@@ -5,7 +5,13 @@
   <meta charset="UTF-8">
   <title>Niko Mehiläinen - Portfolio</title>
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="preload" as="image" href="/hero-img/hero-image-sm.webp" type="image/webp" fetchpriority="high">
+  <link
+    rel="preload"
+    as="image"
+    imagesrcset="/hero-img/hero-image-sm.webp 280w, /hero-img/hero-image-lg.webp 560w"
+    imagesizes="(max-width: 640px) 280px, 480px"
+    fetchpriority="high"
+  >
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="Niko Mehiläinen, portfolio, software development, programming, blog, projects, developer, coding, technology, web development, software engineer, game development, ohjelmointi, ohjelmistokehitys, blogi, projektit">

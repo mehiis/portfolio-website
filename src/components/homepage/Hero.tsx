@@ -9,7 +9,7 @@ function Hero() {
             alt="Hero Image 2025"
             fetchPriority="high"
             loading="eager"
-            src="/hero-img/hero-image-sm.webp"
+            src="/hero-img/hero-image-lg.webp"
             srcSet=
             {`
               /hero-img/hero-image-sm.webp 280w,
