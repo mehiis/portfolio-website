@@ -9,15 +9,15 @@ function Hero() {
             alt="Hero Image 2025"
             fetchPriority="high"
             loading="eager"
-            src="/hero-img/hero-image-lg.webp"
+            src="/hero-img/hero-image-sm.webp"
             srcSet=
             {`
               /hero-img/hero-image-sm.webp 280w,
               /hero-img/hero-image-lg.webp 560w
             `}
             sizes="(max-width: 640px) 280px, 480px"
-            width="480"
-            height="480"
+            width="280"
+            height="280"
           />
 
           <p className="text-xl 2xl:text-2xl font-[LeagueSpartanRegular] bg-[var(--white-color)] text-[var(--black-color)] shadow-sm rounded-lg my-auto  mx-10 p-8">
