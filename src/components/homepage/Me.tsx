@@ -3,7 +3,7 @@ const Me = () => {
   const age = new Date().getFullYear() - 1998;
 
   return (
-    <div className="bg-[var(--secondary-color)] justify-between min-h-screen flex flex-col">
+    <div className="bg-[var(--secondary-color)] justify-end flex flex-col">
       <section className='max-w-[1440px] min-w-[360px] mx-auto p-2 md:px-10 md:px-30'>
 
           <div className='p-4 m-4'>

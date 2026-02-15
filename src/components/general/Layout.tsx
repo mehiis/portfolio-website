@@ -26,9 +26,9 @@ const Layout = () => {
 
     // Close mobile menu if entering desktop size
     useEffect(() => {
-        if (width >= 768) { 
+        if (width >= 768) {
             setMobileMenuOpen(false);
-        } 
+        }
     }, [width]);
 
     // Handle body overflow and navbar visibility when mobile menu is toggled
@@ -83,7 +83,7 @@ const Layout = () => {
     <>
         <NavigationBar isVisible={isVisible} mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} />
 
-        <main className='mx-auto min-h-screen  min-w-[360px]'>
+        <main className='mx-auto min-h-screen  min-w-[360px] justify-between flex flex-col'>
             <Outlet />
         </main>
 
