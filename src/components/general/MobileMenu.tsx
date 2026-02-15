@@ -14,16 +14,16 @@ type MobileMenuProps = {
 const MobileMenu = ({ mobileMenuOpen, setMobileMenuOpen }: MobileMenuProps) => {
   return (
         <div className='
-                        fixed right-0 top-[68px] 
-                        w-full h-[calc(100vh-68px)] 
-                        bg-[var(--primary-color)] 
-                        flex flex-col items-start px-10 
-                        transition-transform duration-300 
-                        overflow-y-auto 
+                        fixed right-0 top-17
+                        w-full h-[calc(100vh-68px)]
+                        bg-(--primary-color)
+                        flex flex-col items-start px-10
+                        transition-transform duration-300
+                        overflow-y-auto
                         overscroll-behavior-contain
                         z-100
-                        ' 
-            style={{ transform: mobileMenuOpen ? 'translateX(0%)' : 'translateX(100%)'}}>
+                        '
+            style={{ transform: mobileMenuOpen ? 'translateX(0%)' : 'translateX(100%)' }}>
 
                 <Link className='flex items-center space-x-2 pl-4 my-3 mt-10' to="/" onClick={() => setMobileMenuOpen(false)}>
                     <div className="flex">
@@ -81,10 +81,10 @@ const MobileMenu = ({ mobileMenuOpen, setMobileMenuOpen }: MobileMenuProps) => {
                       height="64"
                       /></a></button>
                     <button><a href="https://fi.linkedin.com/in/nikomehilainen" target="_blank" rel="noopener noreferrer">
-                    <img 
-                        src={linkedin} 
-                        loading="lazy" 
-                        alt="LinkedIn Logo 2025" 
+                    <img
+                        src={linkedin}
+                        loading="lazy"
+                        alt="LinkedIn Logo 2025"
                         className="w-8 h-auto mx-4 hover:scale-120 transition-transform duration-300 aspect-square"
                         width="64"
                         height="64"
