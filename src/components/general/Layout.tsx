@@ -83,7 +83,7 @@ const Layout = () => {
     <>
         <NavigationBar isVisible={isVisible} mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} />
 
-        <main className='mx-auto min-h-screen  min-w-[360px] justify-between flex flex-col'>
+        <main className='mx-auto min-h-screen min-w-90 flex flex-col'>
             <Outlet />
         </main>
 

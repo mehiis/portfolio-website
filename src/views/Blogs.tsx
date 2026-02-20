@@ -18,11 +18,11 @@ const Blogs = () => {
      <BlogsHeader />
      <div className="max-w-[1440px] mx-auto md:px-30">
 
-      <ul>
+      <ul className="justify-start items-start">
         <BlogCard currentPosts={currentPosts}></BlogCard>
       </ul>
-      
-      <div className="flex justify-center mb-10">
+
+      <div className="flex justify-center mb-10 ">
         {Array.from({ length: totalPages }, (_, index) => index + 1).map(number => (
           <button
             key={number}

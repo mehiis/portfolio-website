@@ -7,14 +7,14 @@ import Work from '../components/homepage/Work'
 
 const Home = () => {
   return (
-    <>
+    <div className="flex flex-col min-h-screen justify-between">
       <Hero />
       <Personal />
       <Work />
       <Education />
       <Tools />
       <Me />
-    </>
+    </div>
   )
 }
 
