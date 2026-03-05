@@ -66,11 +66,11 @@ const Chapter = () => {
 
   return (
     <div className='max-w-360 flex flex-col justify-center items-center p-5 min-h-screen md:px-30 xl:px-80'>
-      <h1 className='text-xl font-bold my-3 mb-8 font-[LeagueSpartanBold] text-center'>
+      <h1 className='text-2xl font-bold my-3 font-[LeagueSpartanBold] text-center'>
         {(Quiz)[parseInt(id!) - 1]?.[0]?.name || `Chapter ${id}`}
       </h1>
 
-      <p className='mb-2 font-[LeagueSpartanRegular] text-lg'>
+      <p className='mb-4 font-[LeagueSpartanRegular] text-lg'>
         Question {currentIndex + 1} / {questionAmount}
       </p>
 
@@ -109,12 +109,7 @@ const Chapter = () => {
 
           {checkAnswer && (
             <div className='mt-8 pt-6 border-t border-gray-100 animate-in fade-in slide-in-from-bottom-2'>
-              <p className={`text-xl italic mb-2 font-[LeagueSpartanBold] ${yourAnswer === currentQuestion?.answer ? 'text-green-600' : 'text-red-600'}`}>
-                {yourAnswer === currentQuestion?.answer ? 'Correct! :)' : 'Incorrect! :('}
-              </p>
-              <p className='text-gray-700 leading-relaxed mb-6 font-[LeagueSpartanRegular]'>{currentQuestion?.explanation}</p>
-
-              <button
+                            <button
                 className='w-full py-4 font-[LeagueSpartanBold] bg-(--secondary-color) text-(--black-color) rounded-xl font-bold text-lg hover:scale-103 transition-transform'
                 onClick={() => {
                   setCheckAnswer(false);
@@ -127,6 +122,12 @@ const Chapter = () => {
               >
                 {currentIndex + 1 < questionAmount ? 'Next Question' : 'See Results'}
               </button>
+
+              <p className={`text-xl italic mb-2 font-[LeagueSpartanBold] ${yourAnswer === currentQuestion?.answer ? 'text-green-600' : 'text-red-600'}`}>
+                {yourAnswer === currentQuestion?.answer ? 'Correct! :)' : 'Incorrect! :('}
+              </p>
+              <p className='text-gray-700 leading-relaxed mb-6 font-[LeagueSpartanRegular]'>{currentQuestion?.explanation}</p>
+
               <p className='text-xs text-gray-500 mt-4 font-[LeagueSpartanRegular] italic'>
                 (Most explanations are written with the help of an AI model and checked by a person, but they may not be 100% accurate. If you find any mistakes, feel free to point them out!)
               </p>
