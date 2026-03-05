@@ -66,20 +66,13 @@ const Chapter = () => {
 
   return (
     <div className='max-w-360 flex flex-col justify-center items-center p-5 min-h-screen md:px-30 xl:px-80'>
-      <h1 className='text-3xl font-bold my-6 mb-8 font-[LeagueSpartanBold] text-center'>
+      <h1 className='text-xl font-bold my-3 mb-8 font-[LeagueSpartanBold] text-center'>
         {(Quiz)[parseInt(id!) - 1]?.[0]?.name || `Chapter ${id}`}
       </h1>
 
       <p className='mb-2 font-[LeagueSpartanRegular] text-lg'>
         Question {currentIndex + 1} / {questionAmount}
       </p>
-
-      <div className='w-full bg-gray-200 rounded-full mb-10 h-4 overflow-hidden'>
-        <div
-          className='bg-(--secondary-color) h-full transition-all duration-500 ease-out'
-          style={{ width: `${questionAmount > 0 ? ((currentIndex + (quizDone ? 1 : 0)) / questionAmount) * 100 : 0}%` }}
-        ></div>
-      </div>
 
       {!quizDone ? (
         <div className='w-full bg-white shadow-sm border border-gray-100 rounded-2xl p-6 mb-4'>
