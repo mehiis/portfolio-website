@@ -6,6 +6,7 @@ import NotFound from './components/general/NotFound'
 import Layout from './components/general/Layout'
 import Blog from './views/Blog'
 import Chapter from './views/korea/Chapter';
+import Korea from './views/Korea';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/blog/:id" element={<Blog />} />
         <Route path="/blogs/:id" element={<Blogs />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/korea" element={<Korea />} />
         <Route path="/korea/chapter/:id" element={<Chapter />} />
       </Route>
     </Routes>
