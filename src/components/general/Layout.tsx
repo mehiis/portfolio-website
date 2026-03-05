@@ -27,6 +27,7 @@ const Layout = () => {
     // Close mobile menu if entering desktop size
     useEffect(() => {
         if (width >= 768) {
+        if (width >= 768) {
             setMobileMenuOpen(false);
         }
     }, [width]);

@@ -5,6 +5,7 @@ import Blogs from './views/Blogs'
 import NotFound from './components/general/NotFound'
 import Layout from './components/general/Layout'
 import Blog from './views/Blog'
+import Chapter from './views/korea/Chapter';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/blog/:id" element={<Blog />} />
         <Route path="/blogs/:id" element={<Blogs />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/korea/chapter/:id" element={<Chapter />} />
       </Route>
     </Routes>
     </BrowserRouter>
