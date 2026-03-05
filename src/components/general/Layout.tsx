@@ -48,7 +48,7 @@ const Layout = () => {
 
         // Toggle Back to Top button visibility
         const toggleBttVisibility = () => {
-            if (window.scrollY > 50 && !mobileMenuOpen) {
+            if (window.scrollY > 250 && !mobileMenuOpen) {
                 setBttVisible(true);
             } else {
                 setBttVisible(false);

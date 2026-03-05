@@ -76,7 +76,12 @@ const Chapter = () => {
 
       {!quizDone ? (
         <div className='w-full bg-white shadow-sm border border-gray-100 rounded-2xl p-6 mb-4'>
-          <p className='text-2xl font-bold mb-6 text-center font-[LeagueSpartanBold]'>{currentQuestion?.question}</p>
+          <p className='text-2xl font-bold mb-2 text-center font-[LeagueSpartanBold]'>{currentQuestion?.question}</p>
+
+          {checkAnswer ? (
+                          <p className={`mb-2 text-lg text-center italic font-[LeagueSpartanRegular] ${yourAnswer === currentQuestion?.answer ? 'text-green-600' : 'text-red-600'}`}>
+                {yourAnswer === currentQuestion?.answer ? 'Correct!' : 'Incorrect!'}
+              </p>) : (<p className='mb-2 text-lg text-center italic font-[LeagueSpartanRegular]'>Please select an answer.</p>)}
 
           <div className='flex flex-col space-y-3'>
             {shuffledOptions.map((option) => (
@@ -123,9 +128,6 @@ const Chapter = () => {
                 {currentIndex + 1 < questionAmount ? 'Next Question' : 'See Results'}
               </button>
 
-              <p className={`text-xl italic mb-2 font-[LeagueSpartanBold] ${yourAnswer === currentQuestion?.answer ? 'text-green-600' : 'text-red-600'}`}>
-                {yourAnswer === currentQuestion?.answer ? 'Correct! :)' : 'Incorrect! :('}
-              </p>
               <p className='text-gray-700 leading-relaxed mb-6 font-[LeagueSpartanRegular]'>{currentQuestion?.explanation}</p>
 
               <p className='text-xs text-gray-500 mt-4 font-[LeagueSpartanRegular] italic'>
