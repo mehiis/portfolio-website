@@ -109,8 +109,8 @@ const Chapter = () => {
 
           {checkAnswer && (
             <div className='mt-8 pt-6 border-t border-gray-100 animate-in fade-in slide-in-from-bottom-2'>
-                            <button
-                className='w-full py-4 font-[LeagueSpartanBold] bg-(--secondary-color) text-(--black-color) rounded-xl font-bold text-lg hover:scale-103 transition-transform'
+                <button
+                className='w-full py-4 font-[LeagueSpartanBold] bg-(--secondary-color) text-(--black-color) rounded-xl font-bold text-lg hover:scale-103 transition-transform mb-4'
                 onClick={() => {
                   setCheckAnswer(false);
                   if (currentIndex + 1 < questionAmount) {
