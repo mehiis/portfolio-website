@@ -19,9 +19,12 @@ const Chapter = () => {
   }, [currentIndex, id]);
 
   return (
-<div className='m-auto max-w-360 flex flex-col justify-center items-center px-5 md:px-80 min-h-screen'>
+<div className=' max-w-360 flex flex-col justify-center items-center px-5 min-h-screen md:px-80'>
       <h1 className='text-3xl font-bold my-6 mb-8 font-[LeagueSpartanBold]'>Basic korean quiz {id}</h1>
+
       <p className='mb-2 font-[LeagueSpartanRegular]'>Question {currentIndex + 1} / {questionAmount}</p>
+
+
       {!quizDone ? (
           <div className='w-full bg-(--primary-color) rounded-full mb-10'>
             <div className='bg-(--secondary-color) text-xs leading-none h-4 rounded-full' style={{ width: `${((currentIndex + 1) / questionAmount) * 100}%` }}></div>
@@ -29,6 +32,9 @@ const Chapter = () => {
       ) : (
         <p className='text-green-500 font-bold mb-4 font-[LeagueSpartanBold]'>Quiz Completed!</p>
       )}
+
+
+
       {!quizDone && id && (
         <div className='w-full bg-(--primary-color) rounded-lg p-4 mb-4'>
           <p className='text-lg font-bold mb-2 font-[LeagueSpartanBold]'>{Quiz[parseInt(id) - 1][currentIndex].question}</p>
@@ -36,7 +42,7 @@ const Chapter = () => {
       {shuffledOptions.map((option, index) => (
       <button
         key={index}
-        className={`w-full py-2 px-4 rounded-lg font-[LeagueSpartanRegular] font-bold ${
+        className={`py-2 px-4 rounded-lg font-[LeagueSpartanRegular] font-bold ${
           checkAnswer
             ? option === question?.answer
               ? "bg-green-500 text-white"
@@ -89,6 +95,9 @@ const Chapter = () => {
           )}
         </div>
       )}
+
+
+
       {quizDone && (
         <>
              <p className='text-8xl mt-5 mb-10 font-bold'>{
