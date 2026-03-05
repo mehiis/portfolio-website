@@ -181,18 +181,13 @@ const Chapter = () => {
                 Next Lesson
               </Link>
             )}
-
-            <Link to='/korea' className='py-4 text-blue-600 font-bold hover:underline font-[LeagueSpartanRegular] duration-300'>
-              Back to Chapters
-            </Link>
           </div>
         </div>
       )}
 
-      <button className="m-3 bg-(--secondary-color) font-[LeagueSpartanRegular] text-sm text-(--black-color)  px-4 py-2 rounded-lg hover:scale-105 transition-transform duration-200 inline-block shadow-sm"
-        onClick={() => {
-          window.history.back()
-          }}>&#10229; Back to previous page</button>
+      <Link to='/korea' className="m-3 bg-(--secondary-color) font-[LeagueSpartanRegular] text-sm text-(--black-color)  px-4 py-2 rounded-lg hover:scale-105 transition-transform duration-200 inline-block shadow-sm">
+        &#10229; Back to Chapters
+      </Link>
     </div>
   );
 };
