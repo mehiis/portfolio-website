@@ -133,6 +133,48 @@ const Quiz = [
       answer: "Ø / NG",
       explanation: "ㅇ is a Korean consonant that represents the sound similar to the 'ng' in 'song'. When it appears at the beginning of a syllable, it is silent and serves as a placeholder for the initial consonant."
     },
+    {
+      question: "What is A in Korean?",
+      options: ["ㅏ", "ㅓ", "ㅗ", "ㅜ"],
+      isWord: false,
+      answer: "ㅏ",
+      explanation: "ㅏ is a Korean vowel that represents the sound similar to the 'a' in 'father'."
+    },
+    {
+      question: "What is G / K in Korean?",
+      options: ["ㄱ", "ㄴ", "ㄷ", "ㄹ"],
+      isWord: false,
+      answer: "ㄱ",
+      explanation: "ㄱ is a Korean consonant that represents the sound similar to the 'g' in 'go'."
+    },
+    {
+      question: "What is J in Korean?",
+      options: ["ㅈ", "ㄴ", "ㄷ", "ㅅ"],
+      isWord: false,
+      answer: "ㅈ",
+      explanation: "ㅈ is a Korean consonant that represents the sound similar to the 'j' in 'jump'."
+    },
+    {
+      question: "What is U in Korean?",
+      options: ["ㅜ", "ㅓ", "ㅗ", "ㅏ"],
+      isWord: false,
+      answer: "ㅜ",
+      explanation: "ㅜ is a Korean vowel that represents the sound similar to the 'u' in 'up'."
+    },
+    {
+      question: "What is N in Korean?",
+      options: ["ㄴ", "ㄱ", "ㄷ", "ㅁ"],
+      isWord: false,
+      answer: "ㄴ",
+      explanation: "ㄴ is a Korean consonant that represents the sound similar to the 'n' in 'no'."
+    },
+    {
+      question: "What is O in Korean?",
+      options: ["ㅗ", "ㅓ", "ㅜ", "ㅏ"],
+      isWord: false,
+      answer: "ㅗ",
+      explanation: "ㅗ is a Korean vowel that represents the sound similar to the 'o' in 'open'."
+    },
   ],
 ]
 
