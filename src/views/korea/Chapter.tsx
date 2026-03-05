@@ -47,7 +47,7 @@ const Chapter = () => {
   }, [currentIndex, id, currentQuizData]);
 
   return (
-<div className=' max-w-360 flex flex-col justify-center items-center px-5 min-h-screen lg:px-30 xl:px-80'>
+<div className=' max-w-360 flex flex-col justify-center items-center px-5 min-h-screen md:px-30 xl:px-80'>
       <h1 className='text-3xl font-bold my-6 mb-8 font-[LeagueSpartanBold]'>Basic korean quiz {id}</h1>
 
       <p className='mb-2 font-[LeagueSpartanRegular]'>Question {currentIndex + 1} / {questionAmount}</p>
