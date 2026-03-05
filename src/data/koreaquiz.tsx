@@ -5,7 +5,7 @@ const Quiz = [
       options: ["A", "E", "I", "O"],
       isWord: false,
       answer: "A",
-      explanation: "ㅏ is a Korean vowel that represents the sound similar to the 'a' in 'father'. (This explanation is generated with use of AI and may not be entirely accurate.)"
+      explanation: "ㅏ is a Korean vowel that represents the sound similar to the 'a' in 'father'."
     },
     {
       question: "What is ㅑ in Korean?",
@@ -26,7 +26,7 @@ const Quiz = [
       options: ["EO", "A", "O", "U"],
       isWord: false,
       answer: "EO",
-      explanation: "ㅓ is a Korean vowel that represents the sound similar to the 'eo' in 'word'."
+      explanation: "ㅓ (eo) is an 'open' vowel sound. It sounds like the 'u' in 'up' or the 'o' in 'done'. Unlike ㅗ (o), which is made with rounded lips, ㅓ is pronounced with a relaxed, unrounded mouth."
     },
     {
       question: "What is ㅜ in Korean?",
@@ -40,7 +40,7 @@ const Quiz = [
       options: ["EO", "EU", "O", "U"],
       isWord: false,
       answer: "EU",
-      explanation: "ㅡ is a Korean vowel that represents the sound similar to the 'eu' in 'put'."
+      explanation: "ㅡ (eu) is a flat, unrounded vowel. To make this sound, pull the corners of your mouth back (like a wide, tight smile) and make a sound similar to the 'u' in 'pull' or the 'i' in 'cousin'."
     },
     {
       question: "What is ㅣ in Korean?",
@@ -61,7 +61,7 @@ const Quiz = [
       options: ["YEO", "YA", "YOU", "YEU"],
       isWord: false,
       answer: "YEO",
-      explanation: "ㅕ is a Korean vowel that represents the sound similar to the 'yeo' in 'yesterday'."
+      explanation: "ㅕ (yeo) is a combination of a quick 'y' sound followed by ㅓ (eo). It sounds like the 'yo' in 'young' or 'yonder'. Keep your mouth open and relaxed, without rounding your lips."
     },
     {
       question: "What is ㅛ in Korean?",
