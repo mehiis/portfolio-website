@@ -4,9 +4,9 @@ import Quiz from '../data/koreaquiz';
 const Korea = () => {
   return (
     <div className='items-start flex flex-col min-h-screen'>
-      <div className='flex flex-col gap-4 items-start bg-(--secondary-color) w-full py-5 shadow-sm items-center px-5 md:px-30 xl:px-80'>
-        <h1 className='font-[LeagueSpartanBold] text-2xl'>Simple quizes for learning Korean</h1>
-        <p>This quizes were made for learning Korean when I was an exchange student in Seoul. I hope you find them helpful!</p>
+      <div className='flex flex-col gap-4 bg-(--secondary-color) w-full py-5 shadow-sm items-center px-5 md:px-30 xl:px-80'>
+        <h1 className='font-[LeagueSpartanBold] text-2xl'>Simple Quizzes for Learning Korean</h1>
+        <p>These quizzes were made to help learn Korean when I was an exchange student in Seoul. I hope you find them helpful!</p>
       </div>
     <div className='flex flex-col gap-4 mt-6 w-max-360 mx-auto px-5 md:px-30 xl:px-80'>
         {Quiz.map((chapter, index) => (

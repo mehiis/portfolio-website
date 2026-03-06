@@ -143,9 +143,14 @@ const Chapter = () => {
           <p className='text-9xl my-4 font-black text-(--secondary-color)'>
             {(() => {
                 const score = (rightAnswers / questionAmount) * 100;
+                if (score >= 95) return 'A+';
                 if (score >= 90) return 'A';
+                if (score >= 85) return 'B+';
                 if (score >= 80) return 'B';
+                if (score >= 75) return 'C+';
                 if (score >= 70) return 'C';
+                if (score >= 65) return 'D+';
+                if (score >= 60) return 'D';
                 return 'F';
             })()}
           </p>
