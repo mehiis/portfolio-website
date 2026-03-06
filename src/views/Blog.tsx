@@ -3,6 +3,7 @@ import Articles from "../data/articles";
 import NotFound from "../components/general/NotFound";
 import ArticleHeader from "../components/blogspage/ArticleHeader";
 import LatestBlogs from "../components/blog/LatestBlogs";
+import { Helmet } from "react-helmet-async";
 
 const Blog = () => {
   const { id } = useParams<{ id: string }>();
@@ -11,8 +12,16 @@ const Blog = () => {
 
   return (
     <>
+        <Helmet>
+          <title>
+            {article?.title ? `Niko Mehiläinen - ${article.title}` : "Niko Mehiläinen - Loading..."}
+          </title>
+          <meta name="description" content={article?.description || "A blog post by Niko Mehiläinen"} />
+      </Helmet>
+
       <div>
         {article ? (
+
           <div className="justify-between min-h-screen flex flex-col">
             <ArticleHeader title={article.title} desc={article.description} author={article.author} date={article.date} resources={article.resources} />
 

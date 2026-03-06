@@ -1,8 +1,15 @@
 import { Link } from 'react-router-dom';
 import Quiz from '../data/koreaquiz';
+import { Helmet } from 'react-helmet-async';
 
 const Korea = () => {
   return (
+    <>
+    <Helmet>
+        <title>Niko Mehiläinen - Learn Korean</title>
+        <meta name="description" content={`Simple Korean quizzes for beginners! Learn the alphabet, words, and expressions. Created to support my exchange studies in Seoul.`} />
+    </Helmet>
+
     <div className='items-start flex flex-col min-h-screen'>
       <div className='flex flex-col gap-4 bg-(--secondary-color) w-full py-5 shadow-sm items-center px-5 md:px-30 xl:px-80'>
         <h1 className='font-[LeagueSpartanBold] text-2xl'>Simple Quizzes for Learning Korean</h1>
@@ -16,6 +23,7 @@ const Korea = () => {
         ))}
     </div>
     </div>
+    </>
   )
 }
 

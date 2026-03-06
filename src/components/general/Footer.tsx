@@ -19,11 +19,18 @@ const Footer = () => {
                   sizes="(max-width: 768px) 240px, 480px"
                   loading="lazy"
                   alt="Image of stylized full name, small flower and text 'niko mehilaeinen'."
-                  className="w-60 md:w-70 h-auto mx-auto mb-3 hover:scale-105 transition-transform duration-150 aspect-8/1"
+                  className="w-60 md:w-70 h-auto mx-auto mb-1 hover:scale-105 transition-transform duration-150 aspect-8/1"
                   width="240"
                   height="30"
                   />
                 </Link>
+
+                <div className='text-center mb-2 text-sm text-[var(--black-color)] font-[LeagueSpartanRegular]'>
+                    <Link to="/" className="hover:underline hover:bg-(--secondary-color)">  Homepage  </Link> &#9679;
+                    <Link to="/blogs/1" className="hover:underline hover:bg-(--secondary-color)">  Blogs  </Link> &#9679;
+                    <Link to="/korea" className="hover:underline hover:bg-(--secondary-color)">  Learn Korean  </Link>
+
+                </div>
 
                 <div className='flex justify-center'>
                     <a href="https://github.com/mehiis" target="_blank" rel="noopener noreferrer">

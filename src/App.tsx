@@ -7,23 +7,26 @@ import Layout from './components/general/Layout'
 import Blog from './views/Blog'
 import Chapter from './views/korea/Chapter';
 import Korea from './views/Korea';
+import { HelmetProvider } from 'react-helmet-async';
 
 function App() {
 
   return (
     <>
-    <BrowserRouter basename={baseName}>
-    <Routes>
-      <Route element={<Layout />}>
-        <Route path="/" element={<Home />} />
-        <Route path="/blog/:id" element={<Blog />} />
-        <Route path="/blogs/:id" element={<Blogs />} />
-        <Route path="*" element={<NotFound />} />
-        <Route path="/korea" element={<Korea />} />
-        <Route path="/korea/chapter/:id" element={<Chapter />} />
-      </Route>
-    </Routes>
-    </BrowserRouter>
+    <HelmetProvider>
+      <BrowserRouter basename={baseName}>
+        <Routes>
+          <Route element={<Layout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/blog/:id" element={<Blog />} />
+            <Route path="/blogs/:id" element={<Blogs />} />
+            <Route path="*" element={<NotFound />} />
+            <Route path="/korea" element={<Korea />} />
+            <Route path="/korea/chapter/:id" element={<Chapter />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </HelmetProvider>
     </>
   )
 }

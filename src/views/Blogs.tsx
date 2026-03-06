@@ -2,6 +2,7 @@ import {useNavigate, useParams } from 'react-router-dom'
 import BlogsHeader from '../components/blogspage/BlogsHeader'
 import Articles from '../data/articles'
 import BlogCard from '../components/blogspage/BlogCard';
+import { Helmet } from 'react-helmet-async';
 
 const Blogs = () => {
   const { id } = useParams<{ id: string }>();
@@ -15,6 +16,12 @@ const Blogs = () => {
 
   return (
     <>
+        <Helmet>
+          <title>Niko Mehiläinen - Blogs</title>
+          <meta name="description" content="Explore my blog posts on various topics like development, studies, and more." />
+        </Helmet>
+
+
      <BlogsHeader />
      <div className="max-w-[1440px] mx-auto md:px-30">
 
