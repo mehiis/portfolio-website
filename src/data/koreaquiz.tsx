@@ -1,7 +1,7 @@
 const Quiz = [
   [
     {
-      name: "Chapter 1: Hangul Alphabet starter",
+      name: "Chapter 1: Hangul beginner",
       questions: [
             {
       question: "What is ㅏ in Korean?",
@@ -280,7 +280,7 @@ const Quiz = [
   ],
   [
   {
-    name: "Chapter 2: Hangul Whole Alphabet ",
+    name: "Chapter 2: Hangul Alphabet advanced",
     questions: [
       {
         question: "What is ㅏ in Korean?",
@@ -524,7 +524,195 @@ const Quiz = [
       }
     ]
   }
+  ],
+  [
+  {
+    name: "Chapter 2: Words",
+    questions: [
+      {
+        question: "Which one of these means AGAIN in Korean?",
+        options: ["또", "써요", "짜요", "오빠"],
+        answer: "또",
+        explanation: "또 (tto) means again. 써요 (sseo-yo) means write (basic: 쓰다), 짜요 (jja-yo) means salty (basic: 짜다), and 오빠 (o-ppa) means older brother."
+      },
+      {
+        question: "Which one of these means WRITE in Korean?",
+        options: ["써요", "또", "짜요", "오빠"],
+        answer: "써요",
+        explanation: "써요 (sseo-yo) is the polite form of 'to write' (basic: 쓰다). 또 (tto) means again, 짜요 (jja-yo) means salty (basic: 짜다), and 오빠 (o-ppa) means older brother."
+      },
+      {
+        question: "Which one of these means SALTY in Korean?",
+        options: ["짜요", "써요", "또", "오빠"],
+        answer: "짜요",
+        explanation: "짜요 (jja-yo) is the polite form of 'salty' (basic: 짜다). 써요 (sseo-yo) means write (basic: 쓰다), 또 (tto) means again, and 오빠 (o-ppa) means older brother."
+      },
+      {
+        question: "Which one of these means OLDER BROTHER (used by a female)?",
+        options: ["오빠", "짜요", "써요", "또"],
+        answer: "오빠",
+        explanation: "오빠 (o-ppa) means older brother for a female. 짜요 (jja-yo) means salty (basic: 짜다), 써요 (sseo-yo) means write (basic: 쓰다), and 또 (tto) means again."
+      },
+      {
+        question: "Which one of these means CHEAP in Korean?",
+        options: ["싸요", "가짜", "아저씨", "바빠요"],
+        answer: "싸요",
+        explanation: "싸요 (ssa-yo) is the polite form of 'cheap' (basic: 싸다). 가짜 (ga-jja) means fake, 아저씨 (a-jeo-ssi) means middle-aged man, and 바빠요 (ba-ppa-yo) means busy (basic: 바쁘다)."
+      },
+      {
+        question: "Which one of these means FAKE in Korean?",
+        options: ["가짜", "싸요", "아저씨", "바빠요"],
+        answer: "가짜",
+        explanation: "가짜 (ga-jja) means fake. 싸요 (ssa-yo) means cheap (basic: 싸다), 아저씨 (a-jeo-ssi) means middle-aged man, and 바빠요 (ba-ppa-yo) means busy (basic: 바쁘다)."
+      },
+      {
+        question: "Which one of these means MIDDLE-AGED MAN in Korean?",
+        options: ["아저씨", "가짜", "싸요", "바빠요"],
+        answer: "아저씨",
+        explanation: "아저씨 (a-jeo-ssi) means middle-aged man. 가짜 (ga-jja) means fake, 싸요 (ssa-yo) means cheap (basic: 싸다), and 바빠요 (ba-ppa-yo) means busy (basic: 바쁘다)."
+      },
+      {
+        question: "Which one of these means BUSY in Korean?",
+        options: ["바빠요", "아저씨", "가짜", "싸요"],
+        answer: "바빠요",
+        explanation: "바빠요 (ba-ppa-yo) is the polite form of 'busy' (basic: 바쁘다). 아저씨 (a-jeo-ssi) means middle-aged man, 가짜 (ga-jja) means fake, and 싸요 (ssa-yo) means cheap (basic: 싸다)."
+      },
+      {
+        question: "Which one of these means TICKET in Korean?",
+        options: ["표", "치즈", "하나", "휴지"],
+        answer: "표",
+        explanation: "표 (pyo) means ticket. 치즈 (chi-jeu) is cheese, 하나 (ha-na) is one, and 휴지 (hyu-ji) is tissue."
+      },
+      {
+        question: "Which one of these means CHEESE in Korean?",
+        options: ["치즈", "표", "하나", "휴지"],
+        answer: "치즈",
+        explanation: "치즈 (chi-jeu) is cheese. 표 (pyo) means ticket, 하나 (ha-na) is one, and 휴지 (hyu-ji) is tissue."
+      },
+      {
+        question: "Which one of these means ONE in Korean?",
+        options: ["하나", "표", "치즈", "휴지"],
+        answer: "하나",
+        explanation: "하나 (ha-na) is the native Korean word for one. 표 (pyo) means ticket, 치즈 (chi-jeu) is cheese, and 휴지 (hyu-ji) is tissue."
+      },
+      {
+        question: "Which one of these means TISSUE in Korean?",
+        options: ["휴지", "표", "치즈", "하나"],
+        answer: "휴지",
+        explanation: "휴지 (hyu-ji) means tissue. 표 (pyo) means ticket, 치즈 (chi-jeu) is cheese, and 하나 (ha-na) is one."
+      },
+      {
+        question: "Which one of these means COAT in Korean?",
+        options: ["코트", "치마", "포도", "티셔츠"],
+        answer: "코트",
+        explanation: "코트 (ko-teu) is a coat. 치마 (chi-ma) is a skirt, 포도 (po-do) means grape, and 티셔츠 (ti-syeo-cheu) is a t-shirt."
+      },
+      {
+        question: "Which one of these means SKIRT in Korean?",
+        options: ["치마", "코트", "포도", "티셔츠"],
+        answer: "치마",
+        explanation: "치마 (chi-ma) means skirt. 코트 (ko-teu) is a coat, 포도 (po-do) means grape, and 티셔츠 (ti-syeo-cheu) is a t-shirt."
+      },
+      {
+        question: "Which one of these means GRAPE in Korean?",
+        options: ["포도", "치마", "코트", "티셔츠"],
+        answer: "포도",
+        explanation: "포도 (po-do) means grape. 치마 (chi-ma) is a skirt, 코트 (ko-teu) is a coat, and 티셔츠 (ti-syeo-cheu) is a t-shirt."
+      },
+      {
+        question: "Which one of these means T-SHIRT in Korean?",
+        options: ["티셔츠", "포도", "치마", "코트"],
+        answer: "티셔츠",
+        explanation: "티셔츠 (ti-syeo-cheu) is a t-shirt. 포도 (po-do) means grape, 치마 (chi-ma) is a skirt, and 코트 (ko-teu) is a coat."
+      },
+      {
+        question: "Which one of these means DOG in Korean?",
+        options: ["개", "가게", "해요", "예뻐요"],
+        answer: "개",
+        explanation: "개 (gae) means dog. Funny fact: 개 (dog) and 게 (crab) are written differently but sound exactly the same! 가게 (ga-ge) means store, 해요 (hae-yo) means do (basic: 하다), and 예뻐요 (ye-ppeo-yo) means pretty (basic: 예쁘다)."
+      },
+      {
+        question: "Which one of these means STORE in Korean?",
+        options: ["가게", "개", "해요", "예뻐요"],
+        answer: "가게",
+        explanation: "가게 (ga-ge) means store. 개 (gae) means dog, 해요 (hae-yo) means do (basic: 하다), and 예뻐요 (ye-ppeo-yo) means pretty (basic: 예쁘다)."
+      },
+      {
+        question: "Which one of these means DO in Korean?",
+        options: ["해요", "가게", "개", "예뻐요"],
+        answer: "해요",
+        explanation: "해요 (hae-yo) is the polite form of 'to do' (basic: 하다). 가게 (ga-ge) means store, 개 (gae) means dog, and 예뻐요 (ye-ppeo-yo) means pretty (basic: 예쁘다)."
+      },
+      {
+        question: "Which one of these means PRETTY in Korean?",
+        options: ["예뻐요", "해요", "가게", "개"],
+        answer: "예뻐요",
+        explanation: "예뻐요 (ye-ppeo-yo) is the polite form of 'pretty' (basic: 예쁘다). 해요 (hae-yo) means do (basic: 하다), 가게 (ga-ge) means store, and 개 (gae) means dog."
+      },
+      {
+        question: "Which one of these means CAKE in Korean?",
+        options: ["케이크", "주세요", "회사", "의사"],
+        answer: "케이크",
+        explanation: "케이크 (ke-i-keu) is a cake. 주세요 (ju-se-yo) means 'please give' (basic: 주다), 회사 (hoe-sa) means company, and 의사 (ui-sa) means doctor."
+      },
+      {
+        question: "Which one of these means PLEASE GIVE ME in Korean?",
+        options: ["주세요", "케이크", "회사", "의사"],
+        answer: "주세요",
+        explanation: "주세요 (ju-se-yo) is the polite way to say 'please give' (basic: 주다). 케이크 (ke-i-keu) is cake, 회사 (hoe-sa) means company, and 의사 (ui-sa) means doctor."
+      },
+      {
+        question: "Which one of these means COMPANY in Korean?",
+        options: ["회사", "주세요", "케이크", "의사"],
+        answer: "회사",
+        explanation: "회사 (hoe-sa) means company. 주세요 (ju-se-yo) means 'please give' (basic: 주다), 케이크 (ke-i-keu) is cake, and 의사 (ui-sa) means doctor."
+      },
+      {
+        question: "Which one of these means DOCTOR in Korean?",
+        options: ["의사", "회사", "주세요", "케이크"],
+        answer: "의사",
+        explanation: "의사 (ui-sa) means doctor. 회사 (hoe-sa) means company, 주세요 (ju-se-yo) means 'please give' (basic: 주다), and 케이크 (ke-i-keu) is cake."
+      },
+      {
+        question: "Which one of these means APPLE in Korean?",
+        options: ["사과", "과자", "쇠고기", "매워요"],
+        answer: "사과",
+        explanation: "사과 (sa-gwa) means apple. 과자 (gwa-ja) means snack, 쇠고기 (soe-go-gi) means beef, and 매워요 (mae-wo-yo) means spicy (basic: 맵다)."
+      },
+      {
+        question: "Which one of these means SNACK in Korean?",
+        options: ["과자", "사과", "쇠고기", "매워요"],
+        answer: "과자",
+        explanation: "과자 (gwa-ja) means snack. 사과 (sa-gwa) means apple, 쇠고기 (soe-go-gi) means beef, and 매워요 (mae-wo-yo) means spicy (basic: 맵다)."
+      },
+      {
+        question: "Which one of these means BEEF in Korean?",
+        options: ["쇠고기", "과자", "사과", "매워요"],
+        answer: "쇠고기",
+        explanation: "쇠고기 (soe-go-gi) means beef. 과자 (gwa-ja) means snack, 사과 (sa-gwa) means apple, and 매워요 (mae-wo-yo) means spicy (basic: 맵다)."
+      },
+      {
+        question: "Which one of these means SPICY in Korean?",
+        options: ["매워요", "쇠고기", "과자", "사과"],
+        answer: "매워요",
+        explanation: "매워요 (mae-wo-yo) is the polite form of 'spicy' (basic: 맵다). 쇠고기 (soe-go-gi) means beef, 과자 (gwa-ja) means snack, and 사과 (sa-gwa) means apple."
+      },
+      {
+        question: "Which one of these means WAITER in Korean?",
+        options: ["웨이터", "돼지고기", "쇠고기", "의사"],
+        answer: "웨이터",
+        explanation: "웨이터 (we-i-teo) is a waiter. 돼지고기 (dwae-ji-go-gi) means pork, 쇠고기 (soe-go-gi) means beef, and 의사 (ui-sa) means doctor."
+      },
+      {
+        question: "Which one of these means PORK in Korean?",
+        options: ["돼지고기", "웨이터", "쇠고기", "의사"],
+        answer: "돼지고기",
+        explanation: "돼지고기 (dwae-ji-go-gi) means pork. 웨이터 (we-i-teo) is a waiter, 쇠고기 (soe-go-gi) means beef, and 의사 (ui-sa) means doctor."
+      }
+    ]
+  }
 ]
+
 ]
 
 export default Quiz;
