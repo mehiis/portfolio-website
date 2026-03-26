@@ -711,7 +711,275 @@ const Quiz = [
       }
     ]
   }
+],
+[
+  {
+    name: "Chapter 3: Words and Classroom Expressions",
+    questions: [
+      {
+        question: "Which one of these means BOOK in Korean?",
+        options: ["책", "밖", "부엌", "돈"],
+        answer: "책",
+        explanation: "책 (chaek) means book. 밖 (bak) means outside, 부엌 (bu-eok) means kitchen, and 돈 (don) means money."
+      },
+      {
+        question: "Which one of these means OUTSIDE in Korean?",
+        options: ["밖", "책", "부엌", "돈"],
+        answer: "밖",
+        explanation: "밖 (bak) means outside. 책 (chaek) means book, 부엌 (bu-eok) means kitchen, and 돈 (don) means money."
+      },
+      {
+        question: "Which one of these means KITCHEN in Korean?",
+        options: ["부엌", "책", "밖", "돈"],
+        answer: "부엌",
+        explanation: "부엌 (bu-eok) means kitchen. 책 (chaek) means book, 밖 (bak) means outside, and 돈 (don) means money."
+      },
+      {
+        question: "Which one of these means MONEY in Korean?",
+        options: ["돈", "책", "밖", "부엌"],
+        answer: "돈",
+        explanation: "돈 (don) means money. 책 (chaek) means book, 밖 (bak) means outside, and 부엌 (bu-eok) means kitchen."
+      },
+      {
+        question: "Which one of these means TO CLOSE in Korean?",
+        options: ["닫다", "빗", "빚", "빛"],
+        answer: "닫다",
+        explanation: "닫다 (dat-da) is the basic form meaning to close. 빗 (bit) is a comb, 빚 (bit) is debt, and 빛 (bit) is light."
+      },
+      {
+        question: "Which one of these means COMB in Korean?",
+        options: ["빗", "닫다", "빚", "빛"],
+        answer: "빗",
+        explanation: "빗 (bit) means a comb. 닫다 (dat-da) means to close, 빚 (bit) means debt, and 빛 (bit) means light."
+      },
+      {
+        question: "Which one of these means DEBT in Korean?",
+        options: ["빚", "빗", "닫다", "빛"],
+        answer: "빚",
+        explanation: "빚 (bit) means debt. 빗 (bit) means comb, 닫다 (dat-da) means to close, and 빛 (bit) means light."
+      },
+      {
+        question: "Which one of these means LIGHT in Korean?",
+        options: ["빛", "빚", "빗", "닫다"],
+        answer: "빛",
+        explanation: "빛 (bit) means light. 빚 (bit) means debt, 빗 (bit) means comb, and 닫다 (dat-da) means to close."
+      },
+      {
+        question: "Which one of these means END in Korean?",
+        options: ["끝", "히읗", "있다", "물"],
+        answer: "끝",
+        explanation: "끝 (kkeut) means end or finish. 히읗 (hieut) is the letter 'ㅎ', 있다 (it-da) means to be or to have, and 물 (mul) means water."
+      },
+      {
+        question: "Which one of these is the name of the letter 'ㅎ'?",
+        options: ["히읗", "끝", "있다", "물"],
+        answer: "히읗",
+        explanation: "히읗 (hieut) is the name of the consonant 'ㅎ'. 끝 (kkeut) means end, 있다 (it-da) means to be/have, and 물 (mul) means water."
+      },
+      {
+        question: "Which one of these means TO HAVE or TO BE in Korean?",
+        options: ["있다", "히읗", "끝", "물"],
+        answer: "있다",
+        explanation: "있다 (it-da) is the basic form meaning to exist, to be at a location, or to have. 히읗 (hieut) is 'ㅎ', 끝 (kkeut) means end, and 물 (mul) means water."
+      },
+      {
+        question: "Which one of these means WATER in Korean?",
+        options: ["물", "있다", "히읗", "끝"],
+        answer: "물",
+        explanation: "물 (mul) means water. 있다 (it-da) means to be/have, 히읗 (hieut) is 'ㅎ', and 끝 (kkeut) means end."
+      },
+      {
+        question: "Which one of these means KIMCHI in Korean?",
+        options: ["김치", "물", "입", "잎"],
+        answer: "김치",
+        explanation: "김치 (kimchi) is the famous Korean fermented dish. 물 (mul) is water, 입 (ip) means mouth, and 잎 (ip) means leaf."
+      },
+      {
+        question: "Which one of these means MOUTH in Korean?",
+        options: ["입", "김치", "물", "잎"],
+        answer: "입",
+        explanation: "입 (ip) means mouth. 김치 (kimchi) is kimchi, 물 (mul) is water, and 잎 (ip) means leaf."
+      },
+      {
+        question: "Which one of these means LEAF in Korean?",
+        options: ["잎", "입", "김치", "물"],
+        answer: "잎",
+        explanation: "잎 (ip) means leaf. 입 (ip) means mouth, 김치 (kimchi) is kimchi, and 물 (mul) is water."
+      },
+      {
+        question: "Which one of these means BREAD in Korean?",
+        options: ["빵", "입", "잎", "김치"],
+        answer: "빵",
+        explanation: "빵 (ppang) means bread. 입 (ip) is mouth, 잎 (ip) is leaf, and 김치 (kimchi) is kimchi."
+      },
+      {
+        question: "Which one of these means PLEASE WRITE in Korean?",
+        options: ["쓰세요", "들으세요", "읽으세요", "따라 하세요"],
+        answer: "쓰세요",
+        explanation: "쓰세요 (sseu-se-yo) is the polite command for 'please write'. The basic form is 쓰다 (sseu-da). 들으세요 means please listen, 읽으세요 means please read, and 따라 하세요 means please repeat after me."
+      },
+      {
+        question: "Which one of these means PLEASE LISTEN in Korean?",
+        options: ["들으세요", "쓰세요", "읽으세요", "따라 하세요"],
+        answer: "들으세요",
+        explanation: "들으세요 (deu-reu-se-yo) is the polite command for 'please listen'. The basic form is 듣다 (deut-da). 쓰세요 means please write, 읽으세요 means please read, and 따라 하세요 means please repeat after me."
+      },
+      {
+        question: "Which one of these means PLEASE READ in Korean?",
+        options: ["읽으세요", "들으세요", "쓰세요", "따라 하세요"],
+        answer: "읽으세요",
+        explanation: "읽으세요 (il-geu-se-yo) is the polite command for 'please read'. The basic form is 읽다 (ik-da). 들으세요 means please listen, 쓰세요 means please write, and 따라 하세요 means please repeat after me."
+      },
+      {
+        question: "Which one of these means PLEASE REPEAT AFTER ME?",
+        options: ["따라 하세요", "읽으세요", "들으세요", "쓰세요"],
+        answer: "따라 하세요",
+        explanation: "따라 하세요 (ttara ha-se-yo) means 'please follow/repeat after me'. The basic form is 따라 하다 (ttara ha-da). 읽으세요 means please read, 들으세요 means please listen, and 쓰세요 means please write."
+      },
+      {
+        question: "Which one of these means DO YOU UNDERSTAND?",
+        options: ["알겠어요?", "질문 있어요?", "네", "아니요"],
+        answer: "알겠어요?",
+        explanation: "알겠어요? (al-ge-sseo-yo?) means 'Do you understand?'. The basic form is 알다 (al-da). 질문 있어요? means 'Do you have questions?', 네 means yes, and 아니요 means no."
+      },
+      {
+        question: "Which one of these means DO YOU HAVE QUESTIONS?",
+        options: ["질문 있어요?", "알겠어요?", "네", "아니요"],
+        answer: "질문 있어요?",
+        explanation: "질문 있어요? (jil-mun i-sseo-yo?) means 'Do you have questions?'. The basic form is 질문 있다 (jil-mun it-da). 알겠어요? means 'Do you understand?', 네 means yes, and 아니요 means no."
+      },
+      {
+        question: "Which one of these means YES in Korean?",
+        options: ["네", "아니요", "알겠어요?", "질문 있어요?"],
+        answer: "네",
+        explanation: "네 (ne) means yes. 아니요 (aniyo) means no, 알겠어요? means 'Do you understand?', and 질문 있어요? means 'Do you have questions?'."
+      },
+      {
+        question: "Which one of these means NO in Korean?",
+        options: ["아니요", "네", "알겠어요?", "질문 있어요?"],
+        answer: "아니요",
+        explanation: "아니요 (aniyo) means no. 네 (ne) means yes, 알겠어요? means 'Do you understand?', and 질문 있어요? means 'Do you have questions?'."
+      }
+    ]
+  }
+],
+[
+  {
+    name: "Chapter 4: Countries and Introductions",
+    questions: [
+      {
+        question: "Which one of these means KOREA in Korean?",
+        options: ["한국", "중국", "일본", "미국"],
+        answer: "한국",
+        explanation: "한국 (han-guk) means Korea. 중국 (jung-guk) is China, 일본 (il-bon) is Japan, and 미국 (mi-guk) is USA."
+      },
+      {
+        question: "Which one of these means USA in Korean?",
+        options: ["미국", "영국", "독일", "프랑스"],
+        answer: "미국",
+        explanation: "미국 (mi-guk) means USA. 영국 (yeong-guk) is UK, 독일 (dok-il) is Germany, and 프랑스 (peu-rang-seu) is France."
+      },
+      {
+        question: "Which one of these means CHINA in Korean?",
+        options: ["중국", "한국", "일본", "호주"],
+        answer: "중국",
+        explanation: "중국 (jung-guk) means China. 한국 (han-guk) is Korea, 일본 (il-bon) is Japan, and 호주 (ho-ju) is Australia."
+      },
+      {
+        question: "Which one of these means JAPAN in Korean?",
+        options: ["일본", "중국", "미국", "영국"],
+        answer: "일본",
+        explanation: "일본 (il-bon) means Japan. 중국 (jung-guk) is China, 미국 (mi-guk) is USA, and 영국 (yeong-guk) is UK."
+      },
+      {
+        question: "Which one of these means UK (United Kingdom) in Korean?",
+        options: ["영국", "미국", "독일", "프랑스"],
+        answer: "영국",
+        explanation: "영국 (yeong-guk) means UK. 미국 (mi-guk) is USA, 독일 (dok-il) is Germany, and 프랑스 (peu-rang-seu) is France."
+      },
+      {
+        question: "Fill in the blank: 어느 나라 ____이에요?",
+        options: ["사람", "이름", "만나서", "반가워요"],
+        answer: "사람",
+        explanation: "사람 (sa-ram) means person. The phrase '어느 나라 사람이에요?' asks 'Which country's person are you?'. 이름 is name, 만나서 is meeting, and 반가워요 is glad (basic: 반갑다)."
+      },
+      {
+        question: "Fill in the blank: 제 이름____ 마이클이에요.",
+        options: ["은", "는", "이에요", "예요"],
+        answer: "은",
+        explanation: "Since '이름' (name) ends in a consonant (ㅁ), we use the topic marker 은 (eun). 는 is for vowels. 이에요/예요 are 'to be' verbs."
+      },
+      {
+        question: "Fill in the blank: 저____ 마이클이에요.",
+        options: ["는", "은", "이에요", "예요"],
+        answer: "는",
+        explanation: "Since '저' (I) ends in a vowel (ㅓ), we use the topic marker 는 (neun). 은 is for consonants. 이에요/예요 are 'to be' verbs."
+      },
+      {
+        question: "Fill in the blank: 링링 씨____ 어느 나라 사람이에요?",
+        options: ["는", "은", "이에요", "예요"],
+        answer: "는",
+        explanation: "Since '씨' (honorific) ends in a vowel (ㅣ), we use the topic marker 는 (neun). 은 is for consonants. 이에요/예요 are 'to be' verbs."
+      },
+      {
+        question: "Fill in the blank: 안녕하세요? 저는 링링____.",
+        options: ["이에요", "예요", "은", "는"],
+        answer: "이에요",
+        explanation: "Since '링링' (Lingling) ends in a consonant (ㅇ), we use 이에요 (i-e-yo). 예요 is for vowels. 은/는 are markers."
+      },
+      {
+        question: "Fill in the blank: 안녕하세요? 저는 크리스____.",
+        options: ["예요", "이에요", "은", "는"],
+        answer: "예요",
+        explanation: "Since '크리스' (Chris) ends in a vowel (ㅡ), we use 예요 (ye-yo). 이에요 is for consonants. 은/는 are markers."
+      },
+      {
+        question: "Which word means 'NAME' in Korean?",
+        options: ["이름", "사람", "나라", "어느"],
+        answer: "이름",
+        explanation: "이름 (i-reum) means name. 사람 means person, 나라 means country, and 어느 means which."
+      },
+      {
+        question: "Which word means 'WHICH' in Korean?",
+        options: ["어느", "나라", "사람", "이름"],
+        answer: "어느",
+        explanation: "어느 (eo-neu) means which. 나라 means country, 사람 means person, and 이름 means name."
+      },
+      {
+        question: "How do you say 'Nice to meet you'?",
+        options: ["만나서 반가워요", "안녕하세요?", "어느 나라 사람이에요?", "네"],
+        answer: "만나서 반가워요",
+        explanation: "만나서 반가워요 (man-na-seo ban-ga-wo-yo) means nice to meet you. Basic form of 반가워요 is 반갑다. 안녕하세요? is hello, 어느 나라... asks nationality, and 네 is yes."
+      },
+      {
+        question: "Which phrase means 'I am an American person'?",
+        options: ["미국 사람이에요", "영국 사람이에요", "한국 사람이에요", "독일 사람이에요"],
+        answer: "미국 사람이에요",
+        explanation: "미국 (USA) + 사람 (person) + 이에요 (am). 영국 is UK, 한국 is Korea, and 독일 is Germany."
+      },
+      {
+        question: "Which one of these means AUSTRALIA in Korean?",
+        options: ["호주", "프랑스", "독일", "영국"],
+        answer: "호주",
+        explanation: "호주 (ho-ju) means Australia. 프랑스 is France, 독일 is Germany, and 영국 is UK."
+      },
+      {
+        question: "Which one of these means FRANCE in Korean?",
+        options: ["프랑스", "독일", "영국", "호주"],
+        answer: "프랑스",
+        explanation: "프랑스 (peu-rang-seu) means France. 독일 is Germany, 영국 is UK, and 호주 is Australia."
+      },
+      {
+        question: "Which one of these means GERMANY in Korean?",
+        options: ["독일", "프랑스", "영국", "호주"],
+        answer: "독일",
+        explanation: "독일 (dok-il) means Germany. 프랑스 is France, 영국 is UK, and 호주 is Australia."
+      }
+    ]
+  }
 ]
+
+
 
 ]
 
