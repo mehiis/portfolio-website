@@ -176,12 +176,6 @@ const Chapter = () => {
             >
               Try Again
             </button>
-
-            {id && Quiz.length > parseInt(id) && (
-              <Link to={`/korea/chapter/${parseInt(id) + 1}`} className='py-4 bg-gray-200 text-gray-800 rounded-xl font-bold text-lg hover:scale-105 duration-300 font-[LeagueSpartanRegular]'>
-                Next Lesson
-              </Link>
-            )}
           </div>
         </div>
       )}
