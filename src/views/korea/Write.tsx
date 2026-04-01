@@ -2,7 +2,16 @@ import { Link, useParams } from 'react-router-dom';
 import Quiz from '../../data/koreaquiz';
 import { useState, useEffect } from 'react';
 
-// ... interfaces remain the same ...
+interface QuizQuestion {
+  question: string;
+  answer: string;
+  explanation: string;
+}
+
+interface QuizChapter {
+  name: string;
+  questions: QuizQuestion[];
+}
 
 const shuffleArray = <T,>(array: T[]): T[] => {
   const shuffled = [...array];
