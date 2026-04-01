@@ -163,7 +163,7 @@ const Chapter = () => {
               className='py-4 bg-(--secondary-color) text-(--black-color) rounded-xl font-bold text-lg hover:scale-105 duration-300 font-[LeagueSpartanRegular]'
               onClick={() => {
                 const rawData = Quiz;
-                const chapterObject = rawData[parseInt(id!) - 1]?.[0];
+                const chapterObject = rawData[parseInt(id!) - 1]?.[0] as QuizChapter | undefined;
                 if (chapterObject) {
                   setCurrentQuizData(shuffleArray(chapterObject.questions));
                   setQuizDone(false);
