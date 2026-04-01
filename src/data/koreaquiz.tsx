@@ -2,6 +2,7 @@ const Quiz = [
   [
     {
       name: "Chapter 1: Hangul beginner",
+      write: false,
       questions: [
             {
       question: "What is ㅏ in Korean?",
@@ -160,6 +161,7 @@ const Quiz = [
   [
     {
     name : "Chapter 1: Words",
+    write: false,
     questions: [
       {
     question: "Which one of these means MOTHER in Korean?",
@@ -281,6 +283,7 @@ const Quiz = [
   [
   {
     name: "Chapter 2: Hangul Alphabet advanced",
+    write: false,
     questions: [
       {
         question: "What is ㅏ in Korean?",
@@ -528,6 +531,7 @@ const Quiz = [
   [
   {
     name: "Chapter 2: Words",
+    write: false,
     questions: [
       {
         question: "Which one of these means AGAIN in Korean?",
@@ -715,6 +719,7 @@ const Quiz = [
 [
   {
     name: "Chapter 3: Words and Classroom Expressions",
+    write: false,
     questions: [
       {
         question: "Which one of these means BOOK in Korean?",
@@ -866,6 +871,7 @@ const Quiz = [
 [
   {
     name: "Chapter 4: Countries and Introductions",
+    write: false,
     questions: [
       {
         question: "Which one of these means KOREA in Korean?",
@@ -977,7 +983,118 @@ const Quiz = [
       }
     ]
   }
+],
+[
+  {
+    name: "Chapter 5: Countries and Places (Week 6 quiz)",
+    write: false,
+    questions: [
+      {
+        question: "Which one of these means SCHOOL in Korean?",
+        options: ["학교", "교실", "집", "도서관"],
+        answer: "학교",
+        explanation: "학교 (hak-gyo) means school. 교실 (gyo-sil) is a classroom, 집 (jip) is home, and 도서관 (do-seo-gwan) is a library."
+      },
+      {
+        question: "Which one of these means HOME in Korean?",
+        options: ["집", "식당", "시장", "약국"],
+        answer: "집",
+        explanation: "집 (jip) means home or house. 식당 (sik-dang) is a restaurant, 시장 (si-jang) is a market, and 약국 (yak-guk) is a pharmacy."
+      },
+      {
+        question: "Which one of these means RESTAURANT in Korean?",
+        options: ["식당", "커피숍", "은행", "공원"],
+        answer: "식당",
+        explanation: "식당 (sik-dang) means restaurant. 커피숍 (keo-pi-syop) is a coffee shop, 은행 (eun-haeng) is a bank, and 공원 (gong-won) is a park."
+      },
+      {
+        question: "Which one of these means PARK in Korean?",
+        options: ["공원", "학교", "시장", "도서관"],
+        answer: "공원",
+        explanation: "공원 (gong-won) means park. 학교 (hak-gyo) is school, 시장 (si-jang) is market, and 도서관 (do-seo-gwan) is library."
+      },
+      {
+        question: "Which one of these means CLASSROOM in Korean?",
+        options: ["교실", "학교", "집", "식당"],
+        answer: "교실",
+        explanation: "교실 (gyo-sil) means classroom. 학교 (hak-gyo) is school, 집 (jip) is home, and 식당 (sik-dang) is restaurant."
+      },
+      {
+        question: "Which one of these means MARKET in Korean?",
+        options: ["시장", "은행", "약국", "공원"],
+        answer: "시장",
+        explanation: "시장 (si-jang) means market. 은행 (eun-haeng) is a bank, 약국 (yak-guk) is a pharmacy, and 공원 (gong-won) is a park."
+      },
+      {
+        question: "Which one of these means COFFEE SHOP in Korean?",
+        options: ["커피숍", "식당", "도서관", "학교"],
+        answer: "커피숍",
+        explanation: "커피숍 (keo-pi-syop) is the loanword for coffee shop. 식당 (sik-dang) is a restaurant, 도서관 (do-seo-gwan) is a library, and 학교 (hak-gyo) is a school."
+      },
+      {
+        question: "Which one of these means BANK in Korean?",
+        options: ["은행", "약국", "시장", "집"],
+        answer: "은행",
+        explanation: "은행 (eun-haeng) means bank. 약국 (yak-guk) is a pharmacy, 시장 (si-jang) is a market, and 집 (jip) is home."
+      },
+      {
+        question: "Which one of these means LIBRARY in Korean?",
+        options: ["도서관", "교실", "학교", "공원"],
+        answer: "도서관",
+        explanation: "도서관 (do-seo-gwan) means library. 교실 (gyo-sil) is a classroom, 학교 (hak-gyo) is a school, and 공원 (gong-won) is a park."
+      },
+      {
+        question: "Which one of these means PHARMACY in Korean?",
+        options: ["약국", "은행", "시장", "식당"],
+        answer: "약국",
+        explanation: "약국 (yak-guk) means pharmacy. 은행 (eun-haeng) is a bank, 시장 (si-jang) is a market, and 식당 (sik-dang) is a restaurant."
+      },
+      {
+        question: "Which one of these means FRANCE in Korean?",
+        options: ["프랑스", "독일", "영국", "호주"],
+        answer: "프랑스",
+        explanation: "프랑스 (peu-rang-seu) is France. 독일 (dok-il) is Germany, 영국 (yeong-guk) is UK, and 호주 (ho-ju) is Australia."
+      },
+      {
+        question: "Which one of these means AUSTRALIA in Korean?",
+        options: ["호주", "미국", "일본", "중국"],
+        answer: "호주",
+        explanation: "호주 (ho-ju) is Australia. 미국 (mi-guk) is USA, 일본 (il-bon) is Japan, and 중국 (jung-guk) is China."
+      },
+      {
+        question: "Which one of these means CHINA in Korean?",
+        options: ["중국", "한국", "일본", "미국"],
+        answer: "중국",
+        explanation: "중국 (jung-guk) means China. 한국 (han-guk) is Korea, 일본 (il-bon) is Japan, and 미국 (mi-guk) is USA."
+      },
+      {
+        question: "Which one of these means JAPAN in Korean?",
+        options: ["일본", "중국", "한국", "독일"],
+        answer: "일본",
+        explanation: "일본 (il-bon) means Japan. 중국 (jung-guk) is China, 한국 (han-guk) is Korea, and 독일 (dok-il) is Germany."
+      }
+    ]
+  }
+],
+[
+  {
+    name: "Chapter 5: Countries and Places (Writing Quiz)",
+    write: true,
+    questions: [
+      {
+        question: "Which one of these means SCHOOL in Korean?",
+        answer: "학교",
+        explanation: "학교 (hak-gyo)."
+      },
+      {
+        question: "Which one of these means PARK in Korean?",
+        answer: "공원",
+        explanation: "공원 (gong-won)."
+      },
+    ]}
 ]
+
+
 
 
 
