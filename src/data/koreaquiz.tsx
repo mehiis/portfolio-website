@@ -1082,16 +1082,97 @@ const Quiz = [
     write: true,
     questions: [
       {
-        question: "Which one of these means SCHOOL in Korean?",
+        question: "How do you write KOREA in Korean?",
+        answer: "한국",
+        explanation: "한국 (han-guk)."
+      },
+      {
+        question: "How do you write CHINA in Korean?",
+        answer: "중국",
+        explanation: "중국 (jung-guk)."
+      },
+      {
+        question: "How do you write JAPAN in Korean?",
+        answer: "일본",
+        explanation: "일본 (il-bon)."
+      },
+      {
+        question: "How do you write USA in Korean?",
+        answer: "미국",
+        explanation: "미국 (mi-guk)."
+      },
+      {
+        question: "How do you write FRANCE in Korean?",
+        answer: "프랑스",
+        explanation: "프랑스 (peu-rang-seu)."
+      },
+      {
+        question: "How do you write GERMANY in Korean?",
+        answer: "독일",
+        explanation: "독일 (dok-il)."
+      },
+      {
+        question: "How do you write UK in Korean?",
+        answer: "영국",
+        explanation: "영국 (yeong-guk)."
+      },
+      {
+        question: "How do you write AUSTRALIA in Korean?",
+        answer: "호주",
+        explanation: "호주 (ho-ju)."
+      },
+      {
+        question: "How do you write SCHOOL in Korean?",
         answer: "학교",
         explanation: "학교 (hak-gyo)."
       },
       {
-        question: "Which one of these means PARK in Korean?",
+        question: "How do you write HOME in Korean?",
+        answer: "집",
+        explanation: "집 (jip)."
+      },
+      {
+        question: "How do you write RESTAURANT in Korean?",
+        answer: "식당",
+        explanation: "식당 (sik-dang)."
+      },
+      {
+        question: "How do you write PARK in Korean?",
         answer: "공원",
         explanation: "공원 (gong-won)."
       },
-    ]}
+      {
+        question: "How do you write CLASSROOM in Korean?",
+        answer: "교실",
+        explanation: "교실 (gyo-sil)."
+      },
+      {
+        question: "How do you write MARKET in Korean?",
+        answer: "시장",
+        explanation: "시장 (si-jang)."
+      },
+      {
+        question: "How do you write COFFEE SHOP in Korean?",
+        answer: "커피숍",
+        explanation: "커피숍 (keo-pi-syop)."
+      },
+      {
+        question: "How do you write BANK in Korean?",
+        answer: "은행",
+        explanation: "은행 (eun-haeng)."
+      },
+      {
+        question: "How do you write LIBRARY in Korean?",
+        answer: "도서관",
+        explanation: "도서관 (do-seo-gwan)."
+      },
+      {
+        question: "How do you write PHARMACY in Korean?",
+        answer: "약국",
+        explanation: "약국 (yak-guk)."
+      }
+    ]
+  }
 ]
 
 
