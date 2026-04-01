@@ -2,16 +2,7 @@ import { Link, useParams } from 'react-router-dom';
 import Quiz from '../../data/koreaquiz';
 import { useState, useEffect } from 'react';
 
-interface QuizQuestion {
-  question: string;
-  answer: string;
-  explanation: string;
-}
-
-interface QuizChapter {
-  name: string;
-  questions: QuizQuestion[];
-}
+// ... interfaces remain the same ...
 
 const shuffleArray = <T,>(array: T[]): T[] => {
   const shuffled = [...array];
@@ -113,12 +104,24 @@ const Write = () => {
             />
 
             {!checkAnswer ? (
+              <div className='flex flex-col md:flex-row gap-4 w-full justify-center items-center'>
               <button
                 type="submit"
                 className='py-4 bg-(--secondary-color) text-(--black-color) rounded-xl font-[LeagueSpartanBold] text-xl hover:scale-105 transition-transform duration-200 inline-block shadow-sm mt-2 px-10 justify-self-center items-center'
               >
                 Check Answer
               </button>
+              <button
+              type = "button" className='py-4 bg-gray-200 text-[--black-color] font-[LeagueSpartanRegular] rounded-xl text-lg hover:scale-105 duration-300 mt-2 px-10 justify-self-center items-center inline-block shadow-sm'
+              onClick={() => {
+                setCheckAnswer(true);
+              }
+              }
+              >
+                I don't know
+              </button>
+              </div>
+
             ) : (
               <div className="animate-in fade-in slide-in-from-top-2">
                 <button
