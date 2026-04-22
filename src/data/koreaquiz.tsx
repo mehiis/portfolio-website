@@ -870,6 +870,47 @@ const Quiz = [
 ],
 [
   {
+    name: "Chapter 3: Write Classroom Expressions",
+    write: true,
+    questions: [
+      {
+        question: "How do you write \"PLEASE WRITE\" in Korean?",
+        answer: "쓰세요",
+        explanation: "쓰세요 (sseu-se-yo) means 'please write'."
+      },
+      {
+        question: "How do you write \"PLEASE LISTEN\" in Korean?",
+        answer: "들으세요",
+        explanation: "들으세요 (deu-reu-se-yo) means 'please listen'."
+      },
+      {
+        question: "How do you write \"PLEASE READ\" in Korean?",
+        answer: "읽으세요",
+        explanation: "읽으세요 (il-geu-se-yo) means 'please read'."
+      },
+      {
+        question: "How do you write \"PLEASE REPEAT AFTER ME\" in Korean?",
+        answer: "따라 하세요",
+        explanation: "따라 하세요 (ttara ha-se-yo) means 'please follow/repeat after me'."
+      },
+      {
+        question: "How do you write \"DO YOU UNDERSTAND?\" in Korean?",
+        answer: "알겠어요",
+        explanation: "알겠어요? (al-ge-sseo-yo?) means 'Do you understand?'."
+      },
+      {
+        question: "How do you write \"DO YOU HAVE QUESTIONS?\" in Korean?",
+        answer: "질문 있어요",
+        explanation: "질문 있어요? (jil-mun i-sseo-yo?) means 'Do you have questions?'."
+      }
+    ]
+  }
+]
+,
+
+
+[
+  {
     name: "Chapter 4: Countries and Introductions",
     write: false,
     questions: [
@@ -986,7 +1027,7 @@ const Quiz = [
 ],
 [
   {
-    name: "Chapter 5: Countries and Places (Week 6 quiz)",
+    name: "Chapter 5: Countries and Places",
     write: false,
     questions: [
       {
@@ -1078,7 +1119,7 @@ const Quiz = [
 ],
 [
   {
-    name: "Chapter 5: Countries and Places (Writing Quiz)",
+    name: "Chapter 5: Writing Countries and Places",
     write: true,
     questions: [
       {

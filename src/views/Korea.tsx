@@ -18,11 +18,14 @@ const Korea = () => {
     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full mt-8 px-10 xl:px-80'>
         {Quiz.map((chapter, index) => (
           chapter[0]?.write ? (
-            <Link to={`/korea/write/${index + 1}`} key={index} className='py-4 px-6 bg-(--secondary-color) text-(--black-color) rounded-lg text-center hover:scale-105 transition-transform duration-300 font-[LeagueSpartanRegular] justify-center items-center flex'>
-                {chapter[0]?.name || `Chapter ${index + 1}`}
-            </Link>
+            <div className='relative hover:scale-105 transition-transform duration-300' key={index}>
+              <p className='absolute top-0 left-0 bg-(--black-color) text-(--white-color) px-2 text-sm rounded-br-lg rounded-tl-lg font-[LeagueSpartanBold]'>WRITE</p>
+              <Link to={`/korea/write/${index + 1}`} key={index} className='py-4 px-6 bg-(--secondary-color) text-(--black-color) rounded-lg text-center font-[LeagueSpartanRegular] justify-center items-center flex shadow-sm pt-6'>
+                  {chapter[0]?.name || `Chapter ${index + 1}`}
+              </Link>
+            </div>
           ) : (
-             <Link to={`/korea/chapter/${index + 1}`} key={index} className='py-4 px-6 bg-(--secondary-color) text-(--black-color) rounded-lg text-center hover:scale-105 transition-transform duration-300 font-[LeagueSpartanRegular] justify-center items-center flex'>
+             <Link to={`/korea/chapter/${index + 1}`} key={index} className='py-4 px-6 bg-(--secondary-color) text-(--black-color) rounded-lg text-center hover:scale-105 transition-transform duration-300 font-[LeagueSpartanRegular] justify-center items-center flex shadow-sm'>
                 {chapter[0]?.name || `Chapter ${index + 1}`}
             </Link>
           )

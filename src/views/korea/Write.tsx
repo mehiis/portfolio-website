@@ -55,12 +55,11 @@ const Write = () => {
   };
 
   const handleVerify = (e?: React.FormEvent) => {
-    if (e) e.preventDefault(); // Prevent page reload if using <form>
+    if (e) e.preventDefault();
     if (!userInput.trim() || checkAnswer) return;
 
     setCheckAnswer(true);
 
-    // Compare normalized strings
     const isCorrect = userInput.trim().toLowerCase() === currentQuestion?.answer.trim().toLowerCase();
 
     if (isCorrect) {
