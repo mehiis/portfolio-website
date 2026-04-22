@@ -1,6 +1,7 @@
 import { Link, useParams } from 'react-router-dom';
 import Quiz from '../../data/koreaquiz';
 import { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 interface QuizQuestion {
   question: string;
@@ -72,6 +73,12 @@ const Write = () => {
   }
 
   return (
+    <>
+        <Helmet>
+          <title>Niko Mehiläinen - Korean Quiz</title>
+          <meta name="description" content="Learn Korean & Hangul with interactive quizzes online." />
+        </Helmet>
+
     <div className='max-w-360 flex flex-col justify-center items-center p-5 min-h-screen md:px-30 xl:px-80 '>
       <h1 className='text-2xl font-bold my-3 font-[LeagueSpartanBold] text-center'>
         {(Quiz)[parseInt(id!) - 1]?.[0]?.name || `Chapter ${id}`}
@@ -188,6 +195,7 @@ const Write = () => {
         &#10229; Back to Chapters
       </Link>
     </div>
+    </>
   );
 };
 
