@@ -1,7 +1,7 @@
 import type BlogPost from "../types/BlogPost"
 
 import porfolioIcon from "@/assets/images/nav-logo/logo-lg.webp"
-import cover0 from "@/assets/images/blog/0/cover_0.jpg"
+import cover0 from "/b1cover.webp"
 import project0img1 from "@/assets/images/projects/0_portfolio/project0-img-1.jpg"
 import project0img2 from "@/assets/images/projects/0_portfolio/project0-img-2.jpg"
 
