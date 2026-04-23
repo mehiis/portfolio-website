@@ -4,6 +4,7 @@ import linkedin from "@/assets/images/icons/li.webp";
 import instagram from "@/assets/images/icons/ig.webp";
 import homeIcon from "@/assets/images/icons/home-icon.webp"
 import blogIcon from "@/assets/images/icons/blog-icon.webp"
+import hakLogo from "@/assets/images/icons/hak.webp"
 import resumeIcon from "@/assets/images/icons/resume-icon.webp"
 
 type MobileMenuProps = {
@@ -66,6 +67,20 @@ const MobileMenu = ({ mobileMenuOpen, setMobileMenuOpen }: MobileMenuProps) => {
                         <p className='text-2xl font-[LeagueSpartanBold] px-2'>Resume</p>
                     </div>
                 </a>
+
+                                <Link className='flex items-center space-x-2 pl-4 my-3' to="/korea" onClick={() => setMobileMenuOpen(false)}>
+                    <div className="flex">
+                        <img
+                          src={hakLogo}
+                          loading="lazy"
+                          alt='Korean text "hak" meaning "learn" as icon'
+                          className="w-8 h-auto aspect-square"
+                          width="64"
+                          height="64"
+                          />
+                        <p className='text-2xl font-[LeagueSpartanBold] px-2'>Learn Korean</p>
+                    </div>
+                </Link>
 
                         <hr className="border-black/10 my-5"/>
 
