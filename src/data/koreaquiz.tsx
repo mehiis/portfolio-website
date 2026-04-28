@@ -907,8 +907,6 @@ const Quiz = [
   }
 ]
 ,
-
-
 [
   {
     name: "Chapter 4: Countries and Introductions",
@@ -1211,6 +1209,69 @@ const Quiz = [
         question: "How do you write PHARMACY in Korean?",
         answer: "약국",
         explanation: "약국 (yak-guk)."
+      }
+    ]
+  }
+],
+[
+  {
+    name: "Midterm: Greetings and conversations",
+    write: true,
+    questions: [
+      {
+        question: "How do you write \"Hello\" in Korean?",
+        answer: "안녕하세요",
+        explanation: "안녕하세요 (an-nyeong-ha-se-yo)."
+      },
+      {
+        question: "How do you write \"Thank you\" in Korean?",
+        answer: "감사합니다",
+        explanation: "감사합니다 (gam-sa-ham-ni-da)."
+      },
+      {
+        question: "How do you write \"Nice to meet you\" in Korean?",
+        answer: "만나서 반가워요",
+        explanation: "만나서 반가워요 (man-na-seo ban-ga-wo-yo). You can also only say 반가워요 (ban-ga-wo-yo) to mean 'nice to meet you'."
+      },
+      {
+        question: "How do you write \"Goodbye\" (when the other person is staying) in Korean?",
+        answer: "안녕히 계세요",
+        explanation: "안녕히 계세요 (an-nyeong-hi gye-se-yo) is used when the other person is staying."
+      },
+      {
+        question: "How do you write \"I am\" in Korean?",
+        answer: "저는",
+        explanation: "저는 (jeo-neun) is used to say 'I am' or 'I am (doing something)'."
+      },
+      {
+        question: "How do you write \"My name is\" in Korean?",
+        answer: "제 이름은",
+        explanation: "제 이름은 (je i-reum-eun) is used to say 'My name is...'"
+      },
+      {
+        question: "How do you write \"I am a student\" in Korean?",
+        answer: "저는 학생이에요",
+        explanation: "저는 학생이에요 (jeo-neun hak-saeng-i-e-yo) is used to say 'I am a student' or 'Please give me'."
+      },
+      {
+        question: "How do you write \"Where are you from?\" in Korean?",
+        answer: "어느 나라 사람이에요?",
+        explanation: "어느 나라 사람이에요 (eo-neun na-ra sa-ri-e-yo) is used to ask 'Where are you from?'."
+      },
+      {
+        question: "How do you write \"Where are you going?\" in Korean?",
+        answer: "어디에 가요?",
+        explanation: "어디에 가요? (eo-di-e ga-yo?) is used to ask 'Where are you going?'."
+      },
+      {
+        question: "How do you write \"What is this?\" in Korean?",
+        answer: "이게 뭐예요?",
+        explanation: "이게 뭐예요? (i-ge mwo-ye-yo?) is used to ask 'What is this?'."
+      },
+      {
+        question: "How do you write \"Who is going?\" in Korean?",
+        answer: "누가 가요?",
+        explanation: "누가 가요? (nu-ga ga-yo?) is used to ask 'Who is going?'."
       }
     ]
   }
