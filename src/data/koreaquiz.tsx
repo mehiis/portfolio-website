@@ -1263,11 +1263,6 @@ const Quiz = [
         explanation: "어디에 가요? (eo-di-e ga-yo?) is used to ask 'Where are you going?'."
       },
       {
-        question: "How do you write \"What is this?\" in Korean?",
-        answer: "이게 뭐예요",
-        explanation: "이게 뭐예요? (i-ge mwo-ye-yo?) is used to ask 'What is this?'."
-      },
-      {
         question: "How do you write \"Who is going to the library?\" in Korean?",
         answer: "누가 도서관에 가요",
         explanation: "누가 도서관에 가요? (nu-ga do-seo-gwan-e ga-yo?) is used to ask 'Who is going to the library?'."
