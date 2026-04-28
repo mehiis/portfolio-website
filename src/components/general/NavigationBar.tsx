@@ -20,7 +20,7 @@ const NavigationBar = (navProps: NavigationBarProps) => {
             <div className='bg-[var(--primary-color)] min-w-[360px] shadow-sm sticky top-0 z-50 transition-transform duration-200 position-absolute px-5 py-2 z-200' style={{ transform: navProps.isVisible ? 'translateY(0)' : 'translateY(-100%)' }}>
                 <div className="max-w-[1440px] min-w-[360px] mx-auto flex items-center justify-between bg-[var(--primary-color)] hidden xl:flex lg:px-40" >
                     <Link to="/">
-                      <img 
+                      <img
                       src={logoLg}
                       srcSet={`
                         ${logoSm} 100w,
@@ -90,9 +90,9 @@ const NavigationBar = (navProps: NavigationBarProps) => {
                               />
                             </a>
                             <a href="https://fi.linkedin.com/in/nikomehilainen" target="_blank" rel="noopener noreferrer">
-                              <img 
-                              src={linkedin} alt="LinkedIn Logo 2025 - Link to my LinkedIn" 
-                              className="w-8 h-auto mx-2 hover:scale-115 transition-transform duration-300 aspect-square" 
+                              <img
+                              src={linkedin} alt="LinkedIn Logo 2025 - Link to my LinkedIn"
+                              className="w-8 h-auto mx-2 hover:scale-115 transition-transform duration-300 aspect-square"
                               width="64"
                               height="64"
                               loading="lazy"
@@ -104,7 +104,7 @@ const NavigationBar = (navProps: NavigationBarProps) => {
 
                 <div className="flex items-center justify-between xl:hidden z-200 px-3" >
                         <Link to="/">
-                          <img 
+                          <img
                           src={logoLg}
                           srcSet={`
                             ${logoSm} 100w,

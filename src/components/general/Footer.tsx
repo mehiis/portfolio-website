@@ -8,7 +8,7 @@ import { Link } from "react-router";
 const Footer = () => {
   return (
         <footer className='mt-0'>
-            <div className='bg-[var(--primary-color)] p-15 justify-center items-center min-w-[360px] pb-25'>
+            <div className='bg-[var(--primary-color)] p-15 justify-center items-center min-w-[360px] pb-25 caret-transparent'>
                 <Link to="/">
                   <img
                   src={fullNameLogoLg}
