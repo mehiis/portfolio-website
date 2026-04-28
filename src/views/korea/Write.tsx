@@ -97,9 +97,9 @@ const Write = () => {
           </p>
 
           {checkAnswer ? (
-            <div className={`text-center mb-2 rounded-lg ${userInput.trim().toLowerCase() === currentQuestion?.answer.toLowerCase() ? 'text-green-500' : 'text-red-500'}`}>
+            <div className={`text-center mb-2 rounded-lg ${userInput.trim().toLowerCase().replaceAll("?", "") === currentQuestion?.answer.toLowerCase() ? 'text-green-500' : 'text-red-500'}`}>
                   {
-                  userInput.trim().toLowerCase() === currentQuestion?.answer.toLowerCase()
+                  userInput.trim().toLowerCase().replaceAll("?", "") === currentQuestion?.answer.toLowerCase()
                     ? "Correct!"
                     : "Incorrect!"
                   }
@@ -111,7 +111,7 @@ const Write = () => {
               className={`w-full p-4 text-xl rounded-xl border-2 outline-none transition-all text-center font-[LeagueSpartanRegular]
               ${
                 checkAnswer
-                  ? (userInput.trim().toLowerCase() === currentQuestion?.answer.toLowerCase()
+                  ? (userInput.trim().toLowerCase().replaceAll("?", "") === currentQuestion?.answer.toLowerCase()
                       ? "border-green-500 bg-green-50"
                       : "border-red-500 bg-red-50")
                   : "border-gray-200 focus:border-(--secondary-color)"
