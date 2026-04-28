@@ -108,7 +108,7 @@ const Write = () => {
             <input
               type="text"
               autoFocus
-              className={`caret-black w-full p-4 text-xl rounded-xl border-2 outline-none transition-all text-center font-[LeagueSpartanRegular]
+              className={`focus:placeholder-transparent caret-black caret- w-full p-4 text-xl rounded-xl border-2 outline-none transition-all text-center font-[LeagueSpartanRegular]
               ${
                 checkAnswer
                   ? (userInput.trim().toLowerCase().replaceAll("?", "") === currentQuestion?.answer.toLowerCase()
