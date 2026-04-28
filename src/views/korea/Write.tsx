@@ -55,13 +55,13 @@ const Write = () => {
     setUserInput('');
   };
 
-  const handleVerify = (e?: React.FormEvent) => {
+  const handleVerify = (e?: React.FormEvent<HTMLFormElement>) => {
+    const filteredInput:string = userInput.replace(/[^a-zA-Z0-9]/g, "");
+
     if (e) e.preventDefault();
-    if (!userInput.trim() || checkAnswer) return;
-
+    if (!filteredInput.trim() || checkAnswer) return;
     setCheckAnswer(true);
-
-    const isCorrect = userInput.trim().toLowerCase() === currentQuestion?.answer.trim().toLowerCase();
+    const isCorrect = filteredInput === currentQuestion?.answer.trim().toLowerCase();
 
     if (isCorrect) {
       setRightAnswers(prev => prev + 1);
@@ -96,7 +96,8 @@ const Write = () => {
 
           {checkAnswer ? (
             <div className={`text-center mb-2 rounded-lg ${userInput.trim().toLowerCase() === currentQuestion?.answer.toLowerCase() ? 'text-green-500' : 'text-red-500'}`}>
-                  {userInput.trim().toLowerCase() === currentQuestion?.answer.toLowerCase()
+                  {
+                  userInput.trim().toLowerCase() === currentQuestion?.answer.toLowerCase()
                     ? "Correct!"
                     : "Incorrect!"
                   }
@@ -105,7 +106,8 @@ const Write = () => {
             <input
               type="text"
               autoFocus
-              className={`w-full p-4 text-xl rounded-xl border-2 outline-none transition-all text-center font-[LeagueSpartanRegular] ${
+              className={`w-full p-4 text-xl rounded-xl border-2 outline-none transition-all text-center font-[LeagueSpartanRegular]
+              ${
                 checkAnswer
                   ? (userInput.trim().toLowerCase() === currentQuestion?.answer.toLowerCase()
                       ? "border-green-500 bg-green-50"
