@@ -281,7 +281,7 @@ const Quiz = [
     }
   ],
   [
-  {
+    {
     name: "Chapter 2: Hangul Alphabet advanced",
     write: false,
     questions: [
@@ -715,8 +715,8 @@ const Quiz = [
       }
     ]
   }
-],
-[
+  ],
+  [
   {
     name: "Chapter 3: Words and Classroom Expressions",
     write: false,
@@ -867,8 +867,8 @@ const Quiz = [
       }
     ]
   }
-],
-[
+  ],
+  [
   {
     name: "Chapter 3: Write Classroom Expressions",
     write: true,
@@ -905,9 +905,8 @@ const Quiz = [
       }
     ]
   }
-]
-,
-[
+  ],
+  [
   {
     name: "Chapter 4: Countries and Introductions",
     write: false,
@@ -1022,8 +1021,8 @@ const Quiz = [
       }
     ]
   }
-],
-[
+  ],
+  [
   {
     name: "Chapter 5: Countries and Places",
     write: false,
@@ -1114,8 +1113,8 @@ const Quiz = [
       }
     ]
   }
-],
-[
+  ],
+  [
   {
     name: "Chapter 5: Writing Countries and Places",
     write: true,
@@ -1212,8 +1211,8 @@ const Quiz = [
       }
     ]
   }
-],
-[
+  ],
+  [
   {
     name: "Midterm: Greetings and conversations",
     write: true,
@@ -1275,12 +1274,7 @@ const Quiz = [
       }
     ]
   }
-]
-
-
-
-
-
+  ],
 ]
 
 export default Quiz;
