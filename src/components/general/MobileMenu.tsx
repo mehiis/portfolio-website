@@ -15,6 +15,7 @@ type MobileMenuProps = {
 const MobileMenu = ({ mobileMenuOpen, setMobileMenuOpen }: MobileMenuProps) => {
   return (
         <div className='
+                        caret-transparent
                         fixed right-0 top-17
                         w-full h-[calc(100vh-68px)]
                         bg-(--primary-color)
