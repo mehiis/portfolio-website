@@ -56,12 +56,14 @@ const Write = () => {
   };
 
   const handleVerify = (e?: React.FormEvent<HTMLFormElement>) => {
+    const filtered: string = userInput.trim().toLowerCase().replaceAll("?", "");
+
     if (e) e.preventDefault();
     if (!userInput.trim() || checkAnswer) return;
 
     setCheckAnswer(true);
 
-    const isCorrect = userInput.trim().toLowerCase() === currentQuestion?.answer.trim().toLowerCase();
+    const isCorrect = filtered === currentQuestion?.answer.trim().toLowerCase();
 
     if (isCorrect) {
       setRightAnswers(prev => prev + 1);
