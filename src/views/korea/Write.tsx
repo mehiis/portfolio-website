@@ -59,7 +59,7 @@ const Write = () => {
     const filtered: string = userInput.trim().toLowerCase().replaceAll("?", "");
 
     if (e) e.preventDefault();
-    if (!userInput.trim() || checkAnswer) return;
+    if (!filtered.trim() || checkAnswer) return;
 
     setCheckAnswer(true);
 
