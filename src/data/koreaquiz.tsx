@@ -1270,6 +1270,89 @@ const Quiz = [
     ]
   }
   ],
+  [
+  {
+    name: "Chapter 6: Basics of Sino-Korean Numbers",
+    write: true,
+    questions: [
+      {
+        question: "How do you write \"One\" in Sino-Korean?",
+        answer: "일",
+        explanation: "일 (il) is the Sino-Korean word for \"one\". Sino-Korean numbers are used for dates(years/months/days), money, phone numbers, identification numbers, maths, large numbers, measurements, and more. Sino-Korean numbers are based on Chinese characters and are used in specific contexts."
+      },
+      {
+        question: "How do you write \"Two\" in Sino-Korean?",
+        answer: "이",
+        explanation: "이 (i) is the Sino-Korean word for \"two\". Sino-Korean numbers are used for dates(years/months/days), money, phone numbers, identification numbers, maths, large numbers, measurements, and more. Sino-Korean numbers are based on Chinese characters and are used in specific contexts."
+      },
+      {
+        question: "How do you write \"Three\" in Sino-Korean?",
+        answer: "삼",
+        explanation: "삼 (sam) is the Sino-Korean word for \"three\". Sino-Korean numbers are used for dates(years/months/days), money, phone numbers, identification numbers, maths, large numbers, measurements, and more. Sino-Korean numbers are based on Chinese characters and are used in specific contexts."
+      },
+      {
+        question: "How do you write \"Four\" in Sino-Korean?",
+        answer: "사",
+        explanation: "사 (sa) is the Sino-Korean word for \"four\". Sino-Korean numbers are used for dates(years/months/days), money, phone numbers, identification numbers, maths, large numbers, measurements, and more. Sino-Korean numbers are based on Chinese characters and are used in specific contexts."
+      },
+      {
+        question: "How do you write \"Five\" in Sino-Korean?",
+        answer: "오",
+        explanation: "오 (o) is the Sino-Korean word for \"five\". Sino-Korean numbers are used for dates(years/months/days), money, phone numbers, identification numbers, maths, large numbers, measurements, and more. Sino-Korean numbers are based on Chinese characters and are used in specific contexts."
+      },
+      {
+        question: "How do you write \"Six\" in Sino-Korean?",
+        answer: "육",
+        explanation: "육 (yuk) is the Sino-Korean word for \"six\". Sino-Korean numbers are used for dates(years/months/days), money, phone numbers, identification numbers, maths, large numbers, measurements, and more. Sino-Korean numbers are based on Chinese characters and are used in specific contexts."
+      },
+      {
+        question: "How do you write \"Seven\" in Sino-Korean?",
+        answer: "칠",
+        explanation: "칠 (chil) is the Sino-Korean word for \"seven\". Sino-Korean numbers are used for dates(years/months/days), money, phone numbers, identification numbers, maths, large numbers, measurements, and more. Sino-Korean numbers are based on Chinese characters and are used in specific contexts."
+      },
+      {
+        question: "How do you write \"Eight\" in Sino-Korean?",
+        answer: "팔",
+        explanation: "팔 (pal) is the Sino-Korean word for \"eight\". Sino-Korean numbers are used for dates(years/months/days), money, phone numbers, identification numbers, maths, large numbers, measurements, and more. Sino-Korean numbers are based on Chinese characters and are used in specific contexts."
+      },
+      {
+        question: "How do you write \"Nine\" in Sino-Korean?",
+        answer: "구",
+        explanation: "구 (gu) is the Sino-Korean word for \"nine\". Sino-Korean numbers are used for dates(years/months/days), money, phone numbers, identification numbers, maths, large numbers, measurements, and more. Sino-Korean numbers are based on Chinese characters and are used in specific contexts."
+      },
+      {
+        question: "How do you write \"Ten\" in Sino-Korean?",
+        answer: "십",
+        explanation: "십 (sip) is the Sino-Korean word for \"ten\". Sino-Korean numbers are used for dates(years/months/days), money, phone numbers, identification numbers, maths, large numbers, measurements, and more. Sino-Korean numbers are based on Chinese characters and are used in specific contexts."
+      },
+      {
+        question: "How do you write \"Twenty\" in Sino-Korean?",
+        answer: "이십",
+        explanation: "이십 (i-sip) is the Sino-Korean word for \"twenty\". It is formed by combining 이 (two) and 십 (ten). Sino-Korean numbers are used for dates(years/months/days), money, phone numbers, identification numbers, maths, large numbers, measurements, and more. Sino-Korean numbers are based on Chinese characters and are used in specific contexts."
+      },
+      {
+        question: "How do you write \"One Hundred\" in Sino-Korean?",
+        answer: "백",
+        explanation: "백 (baek) is the Sino-Korean word for \"one hundred\". Sino-Korean numbers are used for dates(years/months/days), money, phone numbers, identification numbers, maths, large numbers, measurements, and more. Sino-Korean numbers are based on Chinese characters and are used in specific contexts."
+      },
+      {
+        question: "How do you write \"One Thousand\" in Sino-Korean?",
+        answer: "천",
+        explanation: "천 (cheon) is the Sino-Korean word for \"one thousand\". Sino-Korean numbers are used for dates(years/months/days), money, phone numbers, identification numbers, maths, large numbers, measurements, and more. Sino-Korean numbers are based on Chinese characters and are used in specific contexts."
+      },
+      {
+        question: "How do you write \"Ten Thousand\" in Sino-Korean?",
+        answer: "만",
+        explanation: "만 (man) is the Sino-Korean word for \"ten thousand\". Sino-Korean numbers are used for dates(years/months/days), money, phone numbers, identification numbers, maths, large numbers, measurements, and more. Sino-Korean numbers are based on Chinese characters and are used in specific contexts."
+      },
+      {
+        question: "How do you write \"One Hundred Thousand\" in Sino-Korean?",
+        answer: "십만",
+        explanation: "십만 (sip-man) is the Sino-Korean word for \"one hundred thousand\". Sino-Korean numbers are used for dates(years/months/days), money, phone numbers, identification numbers, maths, large numbers, measurements, and more. Sino-Korean numbers are based on Chinese characters and are used in specific contexts."
+      }
+    ]
+  }
+  ],
 ]
 
 export default Quiz;
