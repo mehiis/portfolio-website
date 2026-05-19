@@ -1353,6 +1353,97 @@ const Quiz = [
     ]
   }
   ],
+  [
+  {
+    name: "Chapter 7: Basics of Korean Numbers",
+    write: true,
+    questions: [
+      {
+        question: "How do you write \"One\" in Korean?",
+        answer: "하나",
+        explanation: "하나 (hana) is the Korean word for \"one\". Korean numbers are used for general counting, age, time, food, and more. Korean numbers are native to the Korean language and are used in specific contexts."
+      },
+      {
+        question: "How do you write \"Two\" in Korean?",
+        answer: "둘",
+        explanation: "둘 (dul) is the Korean word for \"two\". Korean numbers are used for general counting, age, time, food, and more. Korean numbers are native to the Korean language and are used in specific contexts."
+      },
+      {
+        question: "How do you write \"Three\" in Korean?",
+        answer: "셋",
+        explanation: "셋 (set) is the Korean word for \"three\". Korean numbers are used for general counting, age, time, food, and more. Korean numbers are native to the Korean language and are used in specific contexts."
+      },
+      {
+        question: "How do you write \"Four\" in Korean?",
+        answer: "넷",
+        explanation: "넷 (neot) is the Korean word for \"four\". Korean numbers are used for general counting, age, time, food, and more. Korean numbers are native to the Korean language and are used in specific contexts."
+      },
+      {
+        question: "How do you write \"Five\" in Korean?",
+        answer: "다섯",
+        explanation: "다섯 (daseot) is the Korean word for \"five\". Korean numbers are used for general counting, age, time, food, and more. Korean numbers are native to the Korean language and are used in specific contexts."
+      },
+      {
+        question: "How do you write \"Six\" in Korean?",
+        answer: "여섯",
+        explanation: "여섯 (yeosot) is the Korean word for \"six\". Korean numbers are used for general counting, age, time, food, and more. Korean numbers are native to the Korean language and are used in specific contexts."
+      },
+      {
+        question: "How do you write \"Seven\" in Korean?",
+        answer: "일곱",
+        explanation: "일곱 (ilgop) is the Korean word for \"seven\". Korean numbers are used for general counting, age, time, food, and more. Korean numbers are native to the Korean language and are used in specific contexts."
+      },
+      {
+        question: "How do you write \"Eight\" in Korean?",
+        answer: "여덟",
+        explanation: "여덟 (yeodeol) is the Korean word for \"eight\". Korean numbers are used for general counting, age, time, food, and more. Korean numbers are native to the Korean language and are used in specific contexts."
+      },
+      {
+        question: "How do you write \"Nine\" in Korean?",
+        answer: "아홉",
+        explanation: "아홉 (ahop) is the Korean word for \"nine\". Korean numbers are used for general counting, age, time, food, and more. Korean numbers are native to the Korean language and are used in specific contexts."
+      },
+      {
+        question: "How do you write \"Ten\" in Korean?",
+        answer: "열",
+        explanation: "열 (yeol) is the Korean word for \"ten\". Korean numbers are used for general counting, age, time, food, and more. Korean numbers are native to the Korean language and are used in specific contexts."
+      }
+    ]
+  }
+  ],
+  [
+  {
+    name: "Chapter 7: Counting foods",
+    write: true,
+    questions: [
+      {
+        question: "How do you write \"Three breads\" in Korean?",
+        answer: "빵 세 개",
+        explanation: "세 (se) is the native Korean number for three, 개 (gae) is the counter for general objects, and 빵 (ppang) means bread. In Korean, when counting objects, you typically use a number + counter + noun structure."
+      },
+      {
+        question: "How do you write \"Seven bottles of beer\" in Korean?",
+        answer: "맥주 일곱 병",
+        explanation: "일곱 (ilgop) is the native Korean number for seven, 병 (byeong) is the counter for containers, and 맥주 (maekju) means beer. In Korean, when counting objects, you typically use a number + counter + noun structure."
+      },
+      {
+        question: "How do you write \"Eight glasses of juice\" in Korean?",
+        answer: "주스 여덟 잔",
+        explanation: "여덟 (yeodeol) is the native Korean number for eight, 잔 (jan) is the counter for cups/glasses, and 주스 (juse) means juice. In Korean, when counting objects, you typically use a number + counter + noun structure."
+      },
+      {
+        question: "How do you write \"Five cups of ramen\" in Korean?",
+        answer: "라면 다섯 그릇",
+        explanation: "다섯 (daseot) is the native Korean number for five, 그릇 (geulbeot) is the counter for bowls, and 라면 (ramen) means ramen. In Korean, when counting objects, you typically use a number + counter + noun structure."
+      },
+      {
+        question: "How do you write \"Three portions of bulgogi\" in Korean?",
+        answer: "삼겹살 세 인분",
+        explanation: "삼겹살 (samgyeopsal) is the Korean word for bulgogi (grilled beef), and 세 인분 (se inbun) means \"three servings\". In Korean, when describing portions or servings, you typically use a number + counter + noun structure."
+      },
+    ]
+  }
+  ],
 ]
 
 export default Quiz;
