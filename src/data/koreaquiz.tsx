@@ -1438,8 +1438,8 @@ const Quiz = [
       },
       {
         question: "How do you write \"Two portions of bulgogi\" in Korean?",
-        answer: "삼겹살 두 인분",
-        explanation: "삼겹살 두 인분 (samgyeopsal du inbun)” means “two servings of samgyeopsal.” In Korean, counting follows the structure number + counter + noun, where 삼겹살 refers to grilled pork belly, and 두 인분 means “two servings,” with 인분 being the counter used for portions or servings. Native Korean numbers are shortened when used before counters, so 하나 becomes 한, 둘 becomes 두, 셋 becomes 세, and 넷 becomes 네."
+        answer: "삼겹살 이 인분",
+        explanation: "삼겹살 이 인분 (samgyeopsal i inbun)” means “two servings of samgyeopsal.” In Korean, counting follows the structure number + counter + noun, where 삼겹살 refers to grilled pork belly, and 이 인분 means “two servings,” with 인분 being the counter used for portions or servings. In this case, the native Korean number for two (둘) is not used, and instead, the Sino-Korean number 이 is used with the counter 인분 to indicate the quantity of servings."
       },
     ]
   }
