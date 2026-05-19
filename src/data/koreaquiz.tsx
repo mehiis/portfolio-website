@@ -1419,27 +1419,27 @@ const Quiz = [
       {
         question: "How do you write \"Three breads\" in Korean?",
         answer: "빵 세 개",
-        explanation: "세 (se) is the native Korean number for three, 개 (gae) is the counter for general objects, and 빵 (ppang) means bread. In Korean, when counting objects, you typically use a number + counter + noun structure."
+        explanation: "빵 세 개 (ppang se gae)” means “three pieces of bread.” In Korean, counting follows the structure number + counter + noun, where 빵 means bread, 세 is the native Korean number for three, and 개 is the general counter used for objects or items. Native Korean numbers are shortened when used before counters, so 하나 becomes 한, 둘 becomes 두, 셋 becomes 세, and 넷 becomes 네."
       },
       {
-        question: "How do you write \"Seven bottles of beer\" in Korean?",
-        answer: "맥주 일곱 병",
-        explanation: "일곱 (ilgop) is the native Korean number for seven, 병 (byeong) is the counter for containers, and 맥주 (maekju) means beer. In Korean, when counting objects, you typically use a number + counter + noun structure."
+        question: "How do you write \"Four bottles of beer\" in Korean?",
+        answer: "맥주 네 병",
+        explanation: "맥주 네 병 (maekju ne byeong)” means “four bottles of beer.” In Korean, counting follows the structure number + counter + noun, where 맥주 means beer, 네 is the number four, and 병 is the counter for bottles or containers, and native Korean numbers 1–4 are shortened when used before counters, so 하나 becomes 한, 둘 becomes 두, 셋 becomes 세, and 넷 becomes 네."
       },
       {
         question: "How do you write \"Eight glasses of juice\" in Korean?",
         answer: "주스 여덟 잔",
-        explanation: "여덟 (yeodeol) is the native Korean number for eight, 잔 (jan) is the counter for cups/glasses, and 주스 (juse) means juice. In Korean, when counting objects, you typically use a number + counter + noun structure."
+        explanation: "주스 여덟 잔 (juse yeodeol jan). 여덟 (yeodeol) is the native Korean number for eight, 잔 (jan) is the counter for cups/glasses, and 주스 (juse) means juice. In Korean, when counting objects, you typically use a number + counter + noun structure."
       },
       {
-        question: "How do you write \"Five cups of ramen\" in Korean?",
-        answer: "라면 다섯 그릇",
-        explanation: "다섯 (daseot) is the native Korean number for five, 그릇 (geulbeot) is the counter for bowls, and 라면 (ramen) means ramen. In Korean, when counting objects, you typically use a number + counter + noun structure."
+        question: "How do you write \"One cup of ramen\" in Korean?",
+        answer: "라면 한 그릇",
+        explanation: "라면 한 그릇 (ramyeon han geureut)” means “one bowl of ramen.” In Korean, counting follows the structure number + counter + noun, where 라면 means ramen, 한 is the native Korean number for one, and 그릇 is the counter used for bowls or servings. Native Korean numbers are shortened when used before counters, so 하나 becomes 한, 둘 becomes 두, 셋 becomes 세, and 넷 becomes 네."
       },
       {
-        question: "How do you write \"Three portions of bulgogi\" in Korean?",
-        answer: "삼겹살 세 인분",
-        explanation: "삼겹살 (samgyeopsal) is the Korean word for bulgogi (grilled beef), and 세 인분 (se inbun) means \"three servings\". In Korean, when describing portions or servings, you typically use a number + counter + noun structure."
+        question: "How do you write \"Two portions of bulgogi\" in Korean?",
+        answer: "삼겹살 두 인분",
+        explanation: "삼겹살 두 인분 (samgyeopsal du inbun)” means “two servings of samgyeopsal.” In Korean, counting follows the structure number + counter + noun, where 삼겹살 refers to grilled pork belly, and 두 인분 means “two servings,” with 인분 being the counter used for portions or servings. Native Korean numbers are shortened when used before counters, so 하나 becomes 한, 둘 becomes 두, 셋 becomes 세, and 넷 becomes 네."
       },
     ]
   }
