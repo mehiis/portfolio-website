@@ -1419,7 +1419,7 @@ const Quiz = [
       {
         question: "How do you write \"Three breads\" in Korean?",
         answer: "빵 세 개",
-        explanation: "빵 세 개 (ppang se gae)” means “three pieces of bread.” In Korean, counting follows the structure number + counter + noun, where 빵 means bread, 세 is the native Korean number for three, and 개 is the general counter used for objects or items. Native Korean numbers are shortened when used before counters, so 하나 becomes 한, 둘 becomes 두, 셋 becomes 세, and 넷 becomes 네."
+        explanation: "빵 세 개 (ppang se gae)” means “three pieces of bread.” In Korean, counting follows the structure number + counter + noun, where 빵 means bread, 세 is the native Korean number for three, and 개 is the general counter for objects or items. Native Korean numbers 1-4 are shortened when used before counters, so 하나 becomes 한, 둘 becomes 두, 셋 becomes 세, and 넷 becomes 네."
       },
       {
         question: "How do you write \"Four bottles of beer\" in Korean?",
@@ -1434,12 +1434,12 @@ const Quiz = [
       {
         question: "How do you write \"One cup of ramen\" in Korean?",
         answer: "라면 한 그릇",
-        explanation: "라면 한 그릇 (ramyeon han geureut)” means “one bowl of ramen.” In Korean, counting follows the structure number + counter + noun, where 라면 means ramen, 한 is the native Korean number for one, and 그릇 is the counter used for bowls or servings. Native Korean numbers are shortened when used before counters, so 하나 becomes 한, 둘 becomes 두, 셋 becomes 세, and 넷 becomes 네."
+        explanation: "라면 한 그릇 (ramyeon han geureut)” means “one bowl of ramen.” In Korean, counting follows the structure number + counter + noun. Native Korean numbers are shortened when used before counters, so 하나 becomes 한, 둘 becomes 두, 셋 becomes 세, and 넷 becomes 네."
       },
       {
         question: "How do you write \"Two portions of bulgogi\" in Korean?",
         answer: "삼겹살 이 인분",
-        explanation: "삼겹살 이 인분 (samgyeopsal i inbun)” means “two servings of samgyeopsal.” In Korean, counting follows the structure number + counter + noun, where 삼겹살 refers to grilled pork belly, and 이 인분 means “two servings,” with 인분 being the counter used for portions or servings. In this case, the native Korean number for two (둘) is not used, and instead, the Sino-Korean number 이 is used with the counter 인분 to indicate the quantity of servings."
+        explanation: "삼겹살 이 인분 (samgyeopsal i inbun)” means “two servings of samgyeopsal.” In Korean, counting follows the structure number + counter + noun. Sino-Korean number 이 is used with the counter 인분 to indicate the quantity of servings."
       },
     ]
   }
