@@ -164,6 +164,10 @@ const Write = () => {
                    <p className='text-gray-700 font-[LeagueSpartanRegular] font-bold '>
                     {currentQuestion?.explanation}
                    </p>
+
+                   <p className='text-xs text-gray-500 mt-4 font-[LeagueSpartanRegular] italic'>
+                  (Most explanations are written with the help of an AI model and checked by a person, but they may not be 100% accurate. If you find any mistakes, feel free to point them out!)
+                </p>
                 </div>
               </div>
             )}
