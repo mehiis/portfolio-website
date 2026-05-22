@@ -81,7 +81,7 @@ const Write = () => {
           <meta name="description" content="Learn Korean & Hangul with interactive quizzes online." />
         </Helmet>
 
-    <div className='max-w-360 flex flex-col justify-center items-center p-5 min-h-screen mx-auto'>
+    <div className='max-w-170 w-full md:w-170 flex flex-col justify-center items-center p-5 min-h-screen mx-auto'>
       <h1 className='text-2xl font-bold my-3 font-[LeagueSpartanBold] text-center'>
         {(Quiz)[parseInt(id!) - 1]?.[0]?.name || `Chapter ${id}`}
       </h1>
@@ -91,7 +91,7 @@ const Write = () => {
       </p>
 
       {!quizDone ? (
-        <div className='w-full bg-white shadow-sm border border-gray-100 rounded-2xl px-10 mb-4 py-15'>
+        <div className='w-full md:w-200 bg-white shadow-sm border border-gray-100 rounded-2xl px-10 mb-4 py-15'>
           <p className='text-3xl font-bold mb-6 text-center font-[LeagueSpartanBold]'>
             {currentQuestion?.question}
           </p>
@@ -108,7 +108,7 @@ const Write = () => {
             <input
               type="text"
               autoFocus
-              className={`focus:placeholder-transparent caret-black caret- w-full p-4 text-xl rounded-xl border-2 outline-none transition-all text-center font-[LeagueSpartanRegular]
+              className={`focus:placeholder-transparent caret-black w-4/5 md:w-2/3 p-4 text-xl rounded-xl border-2 outline-none transition-all text-center font-[LeagueSpartanRegular]
               ${
                 checkAnswer
                   ? (userInput.trim().toLowerCase().replaceAll("?", "") === currentQuestion?.answer.toLowerCase()
@@ -142,10 +142,10 @@ const Write = () => {
               </div>
 
             ) : (
-              <div className="animate-in fade-in slide-in-from-top-2">
+              <div className="animate-in fade-in slide-in-from-top-2 justify-center items-center flex flex-col max-w-360">
                 <button
                   type="button"
-                  className='w-full py-4 bg-(--secondary-color) text-(--black-color) rounded-xl font-[LeagueSpartanBold] text-lg hover:scale-102 transition-transform duration-200 inline-block shadow-sm mt-2 px-10 justify-self-center items-center'
+                  className='py-4 bg-(--secondary-color) text-(--black-color) rounded-xl font-[LeagueSpartanBold] text-lg hover:scale-102 transition-transform duration-200 inline-block shadow-sm mt-2 px-10 justify-self-center items-center'
                   onClick={() => {
                     setCheckAnswer(false);
                     setUserInput('');
@@ -159,9 +159,10 @@ const Write = () => {
                   {currentIndex + 1 < questionAmount ? 'Next Question' : 'See Results'}
                 </button>
 
-                <div className='mt-6 pt-6 border-t border-gray-100 flex justify-center'>
-                   <p className='text-gray-700 leading-relaxed font-[LeagueSpartanRegular] font-bold text-center '>
-                    {"Correct answer: " + currentQuestion?.explanation}
+                <div className='max-w-150'>
+                  <hr className='my-6 border-gray-300' />
+                   <p className='text-gray-700 font-[LeagueSpartanRegular] font-bold '>
+                    {currentQuestion?.explanation}
                    </p>
                 </div>
               </div>

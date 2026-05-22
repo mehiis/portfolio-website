@@ -71,7 +71,7 @@ const Chapter = () => {
       <title>Niko Mehiläinen - Korean Quiz</title>
       <meta name="description" content="Learn Korean & Hangul with interactive quizzes online." />
     </Helmet>
-    <div className='max-w-360 flex flex-col justify-center items-center p-5 min-h-screen mx-auto'>
+    <div className='max-w-170 w-full md:w-170 flex flex-col justify-center items-center p-5 min-h-screen mx-auto'>
       <h1 className='text-2xl font-bold my-3 font-[LeagueSpartanBold] text-center'>
         {(Quiz)[parseInt(id!) - 1]?.[0]?.name || `Chapter ${id}`}
       </h1>
@@ -134,11 +134,15 @@ const Chapter = () => {
                 {currentIndex + 1 < questionAmount ? 'Next Question' : 'See Results'}
               </button>
 
-              <p className='text-gray-700 leading-relaxed mb-6 font-[LeagueSpartanRegular]'>{currentQuestion?.explanation}</p>
+              <div className='max-w-120 mx-auto'>
+                <p className='text-gray-700 font-[LeagueSpartanRegular] font-bold text-center'>
+                {currentQuestion?.explanation}
+                </p>
 
-              <p className='text-xs text-gray-500 mt-4 font-[LeagueSpartanRegular] italic'>
-                (Most explanations are written with the help of an AI model and checked by a person, but they may not be 100% accurate. If you find any mistakes, feel free to point them out!)
-              </p>
+                <p className='text-xs text-gray-500 mt-4 font-[LeagueSpartanRegular] italic'>
+                  (Most explanations are written with the help of an AI model and checked by a person, but they may not be 100% accurate. If you find any mistakes, feel free to point them out!)
+                </p>
+              </div>
             </div>
           )}
         </div>
