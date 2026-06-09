@@ -1438,8 +1438,8 @@ const Quiz = [
       },
       {
         question: "How do you write \"Two portions of bulgogi\" in Korean?",
-        answer: "삼겹살 이 인분",
-        explanation: "삼겹살 이 인분 (samgyeopsal i inbun)” means “two servings of samgyeopsal.” In Korean, counting follows the structure number + counter + noun. Sino-Korean number 이 is used with the counter 인분 to indicate the quantity of servings."
+        answer: "불고기 이 인분",
+        explanation: "불고기 이 인분 (bulgogi i inbun)” means “two servings of bulgogi.” In Korean, counting follows the structure number + counter + noun. Sino-Korean number 이 is used with the counter 인분 to indicate the quantity of servings."
       },
     ]
   }
