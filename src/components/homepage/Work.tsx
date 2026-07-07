@@ -9,20 +9,20 @@ const jobs = [
         title: "Verkkokauppa.com Oyj",
         role: "Sales Specialist",
         duration: "2021 - Present",
-        description: "Sales Representative at Verkkokauppa.com. Represented the company on social media, hosted auctions and live events, and appeared on the international reality TV show The Apprentice.",
+        description: 'Sales Representative at Verkkokauppa.com. Represented the company on social media, hosted auctions and live events, and appeared on the Finnish adaptation of the international reality TV show "The Apprentice."',
         skills: ["Customer service", "Retail", "Sales"],
     },
 ].reverse();
 
 const Work = () => {
     return(
-        <div className="max-w-[1440px] min-w-[360px] mx-auto p-2 md:px-30">
+        <div className="max-w-360 min-w-90 mx-auto p-2 md:px-30">
             <CustomH2Title sourceSm={h2sm} sourceLg={h2lg} alt="Work Experience" />
         <ul className="flex flex-col">
             {[...jobs].map((job, index) => (
                 <li
                     key={index}
-                    className="p-4 m-4 max-w-[1440px]">
+                    className="p-4 m-4 max-w-360">
                     <CustomListView title={job.title} role={job.role} description={job.description} duration={job.duration} skills={job.skills.sort()} />
                 </li>
             ))}
