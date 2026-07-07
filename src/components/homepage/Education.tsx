@@ -12,7 +12,7 @@ const education = [
         website: "https://www.metropolia.fi/en"
     },
     {
-        degree: "Exchange Student, Information Technology and Communications",
+        degree: "Exchange Student, Department of Computer Science and Engineering",
         institution: "Seoul University of Science and Technology",
         location: "Seoul, Korea",
         time: "Spring 2026",
