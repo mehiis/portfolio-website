@@ -9,7 +9,7 @@ const jobs = [
         title: "Verkkokauppa.com Oyj",
         role: "Sales Specialist",
         duration: "2021 - Present",
-        description: 'Sales Representative at Verkkokauppa.com. Represented the company on social media, hosted auctions and live events, and appeared on the Finnish adaptation of the international reality TV show "The Apprentice."',
+        description: 'Sales Representative at Verkkokauppa.com. Represented the company on social media, hosted auctions and live events, and represented the company on the Finnish adaptation of the international reality TV show "The Apprentice."',
         skills: ["Customer service", "Retail", "Sales"],
     },
 ].reverse();
