@@ -13,7 +13,7 @@ const education = [
     },
     {
         degree: "Exchange Student, Information Technology and Communications",
-        institution: "Seoul University of Science and Technology (SeoulTech)",
+        institution: "Seoul University of Science and Technology",
         location: "Seoul, Korea",
         time: "Spring 2026",
         website: "https://www.seoultech.ac.kr/"
@@ -22,11 +22,11 @@ const education = [
 
 const Education = () => {
   return (
-        <div className="max-w-[1440px] min-w-[360px] mx-auto p-2 md:px-30">
+        <div className="max-w-360 min-w-90 mx-auto p-2 md:px-30">
             <CustomH2Title sourceSm={h2sm} sourceLg={h2lg} alt="Education" />
             <div className='p-4 m-4'>
 
-                <ul className="bg-[var(--primary-color)] w-full rounded-lg grid grid-cols-1 md:grid-cols-2 gap-4 px-4 py-10 shadow-sm">
+                <ul className="bg-(--primary-color) w-full rounded-lg grid grid-cols-1 md:grid-cols-2 gap-4 px-4 py-10 shadow-sm">
 
                     {[...education].map((edu, index) => (
                         <li key={index}>
@@ -35,7 +35,7 @@ const Education = () => {
                             target="_blank"
                             className="hover:scale-102 transition-transform duration-300"
                           >
-                              <div className="bg-[var(--secondary-color)] max-w-[730px] clip-path-custom p-10 rounded-lg h-full flex flex-col justify-between duration-300 hover:scale-102">
+                              <div className="bg-(--secondary-color) max-w-[730px] clip-path-custom p-10 rounded-lg h-full flex flex-col justify-between duration-300 hover:scale-102">
                                   <div className="flex 2xl:flex-row flex-col 2xl:items-top 2xl:gap-2">
                                       <h3 className="text-md 2xl:text-lg font-[LeagueSpartanBold]">{edu.institution}</h3>
                                       <p className="text-sm font-[LeagueSpartanRegular]">{edu.time}</p>
