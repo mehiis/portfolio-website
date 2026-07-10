@@ -9,6 +9,7 @@ import Chapter from './views/korea/Chapter';
 import Write from './views/korea/Write';
 import Korea from './views/Korea';
 import { HelmetProvider } from 'react-helmet-async';
+import GameIdeaGenerator from './views/GameIdeaGenerator';
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
             <Route path="/korea" element={<Korea />} />
             <Route path="/korea/chapter/:id" element={<Chapter />} />
             <Route path="/korea/write/:id" element={<Write />} />
+            <Route path="/game-idea-generator" element={<GameIdeaGenerator />} />
           </Route>
         </Routes>
       </BrowserRouter>

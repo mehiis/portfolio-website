@@ -1445,95 +1445,64 @@ const Quiz = [
   }
   ],
     [
-  {
+{
     name: "Chapter 8: Particles and Verbs",
     write: false,
     questions: [
       {
-        question: "Choose a correct particle: 안녕하세요? 제 이름___ 크리스예요.",
+        question: "Choose the correct particle: 안녕하세요? 제 이름___ 크리스예요.",
+        options: ["는", "은", "가", "이"],
+        answer: "은",
+        explanation: "이름 ends in a consonant, so it takes the topic marker (Topic marker) 은 (eun) instead of 는 (neun)."
+      },
+      {
+        question: "Choose the correct particle: 친구가 커피숍___ 와요.",
+        options: ["는", "에", "가", "이"],
+        answer: "에",
+        explanation: "친구가 커피숍에 와요 means 'My friend comes to the coffee shop.' 에 (e) is a location/destination marker (Destination marker) in Korean."
+      },
+      {
+        question: "Choose the correct particle: 주엔이 도서관___ 가요.",
+        options: ["는", "에", "가", "이"],
+        answer: "에",
+        explanation: "주엔이 도서관에 가요 means 'Ju-en goes to the library.' 에 (e) indicates the destination of the action."
+      },
+      {
+        question: "Choose the correct particle: 저___ 학생이에요.",
         options: ["는", "은", "가", "이"],
         answer: "는",
-        explanation: "는 (neun) is a topic marker particle in Korean. It is used to indicate the topic of a sentence."
+        explanation: "저는 학생이에요 means 'I am a student.' 저 (I) ends in a vowel, so it takes the topic marker (Topic marker) 는 (neun)."
       },
       {
-        question: "Choose a correct particle: 친구가 커피숍___ 와요.",
-        options: ["는", "에", "가", "이"],
-        answer: "에",
-        explanation: "친구가 커피숍에 와요 means 'My friend came to the coffee shop.' 에 (e) is a location marker particle in Korean. It is used to indicate where something is located or to whom something belongs."
-      },
-      {
-        question: "Choose a correct particle: 친구가 커피숍___ 와요.",
-        options: ["는", "에", "가", "이"],
-        answer: "에",
-        explanation: "친구가 커피숍에 와요 means 'My friend came to the coffee shop.' 에 (e) is a location marker particle in Korean. It is used to indicate where something is located or to whom something belongs."
-      },
-      {
-        question: "Choose a correct particle: 주엔이 도서관___ 가요",
-        options: ["는", "에", "가", "이"],
-        answer: "에",
-        explanation: "주엔이 도서관에 가요 means 'Ju-en goes to the library.' 에 (e) is a location marker particle in Korean. It is used to indicate where something is located or to whom something belongs."
-      },
-      {
-        question: "Choose a correct particle: 저___ 학생이에요.",
-        options: ["는", "에", "가", "이"],
+        question: "Choose the correct particle: 이 과자___ 얼마예요?",
+        options: ["는", "은", "가", "이"],
         answer: "는",
-        explanation: "저는 학생이에요 means 'I am a student.' 는 (neun) is a topic marker particle in Korean. It is used to indicate the topic of a sentence."
+        explanation: "이 과자는 얼마예요? means 'How much is this snack?' 과자 ends in a vowel, so it takes 는 (neun)."
       },
       {
-        question: "Choose a correct particle: 이 과자___ 얼마예요?",
-        options: ["는", "에", "가", "이"],
-        answer: "는",
-        explanation: "이 과자는 얼마예요? means 'How much is this snack?' 는 (neun) is a topic marker particle in Korean. It is used to indicate the topic of a sentence."
-      },
-      {
-        question: "Choose a correct particle: 연필___ 싸요.",
+        question: "Choose the correct particle: 연필___ 싸요.",
         options: ["는", "에", "가", "이"],
         answer: "이",
-        explanation: "연필 이 싸요 means 'The pencil is cheap.' 이 (i) is a subject marker particle in Korean. It is used to indicate the subject of a sentence."
+        explanation: "연필이 싸요 means 'The pencil is cheap.' 연필 ends in a consonant, so it takes the subject marker (Subject marker) 이 (i)."
       },
       {
-        question: "Choose a correct answer: 저는 학생___ .",
-        options: ["는", "에", "가", "이에요"],
+        question: "Choose the correct answer: 저는 학생___ .",
+        options: ["예요", "에", "가", "이에요"],
         answer: "이에요",
-        explanation: "저는 학생이에요 means 'I am a student.' 이 (i) is a subject marker particle in Korean. It is used to indicate the subject of a sentence."
+        explanation: "저는 학생이에요 means 'I am a student.' 이에요 (ieyo) is the copula (Copula / 'to be' verb) used after a noun ending in a consonant."
       },
       {
-        question: "Choose a correct answer: 저는 학생___ .",
-        options: ["예요", "에", "해요", "이에요"],
-        answer: "이에요",
-        explanation: "저는 학생이에요 means 'I am a student.' 이 (i) is a subject marker particle in Korean. It is used to indicate the subject of a sentence."
-      },
-      {
-        question: "Choose a correct answer: 학생이 학교에 ___ .",
-        options: ["바빠요", "이에요", "가요", "이에요"],
+        question: "Choose the correct answer: 학생이 학교에 ___ .",
+        options: ["바빠요", "예뻐요", "가요", "매워요"],
         answer: "가요",
-        explanation: "학생이 학교에 가요 means 'The student goes to school.' 가요 (gayo) is a verb indicating movement or action."
+        explanation: "학생이 학교에 가요 means 'The student goes to school.' 가요 (gayo) means 'goes'."
       },
       {
-        question: "Choose a correct answer: 누나가 ___ .",
-        options: ["바빠요", "예뻐요", "가요", "매워요"],
-        answer: "예뻐요",
-        explanation: "누나가 예뻐요 means 'Older sister is pretty.' 예뻐요 (yeppeoyo) is a verb indicating a state or quality."
-      },
-      {
-        question: "Choose a correct answer: 오빠는 의사 ___ .",
-        options: ["바빠요", "예뻐요", "가요", "매워요"],
-        answer: "예뻐요",
-        explanation: "오빠는 의사예요 means 'Older brother is a doctor.' "
-      },
-      {
-        question: "Choose a correct answer: 오빠는 의사 ___ .",
-        options: ["바빠요", "예뻐요", "가요", "매워요"],
-        answer: "예뻐요",
-        explanation: "오빠는 의사예요 means 'Older brother is a doctor.' "
-      },
-      {
-        question: "Choose a correct answer.",
-        options: ["바빠요", "예뻐요", "가요", "매워요"],
-        answer: "예뻐요",
-        explanation: "오빠는 의사예요 means 'Older brother is a doctor.' "
-      },
-
+        question: "Choose the correct answer: 오빠는 의사___ .",
+        options: ["예요", "이에요", "가요", "해요"],
+        answer: "예요",
+        explanation: "오빠는 의사예요 means 'Older brother is a doctor.' 의사 ends in a vowel, so it takes the copula (Copula) 예요 (yeyo)."
+      }
     ]
   }
   ],

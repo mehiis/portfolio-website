@@ -28,8 +28,8 @@ const Footer = () => {
                 <div className='text-center mb-2 text-sm text-[var(--black-color)] font-[LeagueSpartanRegular]'>
                     <Link to="/" className="hover:underline hover:bg-(--secondary-color)">  Homepage  </Link> &#9679;
                     <Link to="/blogs/1" className="hover:underline hover:bg-(--secondary-color)">  Blogs  </Link> &#9679;
-                    <Link to="/korea" className="hover:underline hover:bg-(--secondary-color)">  Learn Korean  </Link>
-
+                    <Link to="/korea" className="hover:underline hover:bg-(--secondary-color)">  Learn Korean  </Link>&#9679;
+                    <Link to="/game-idea-generator" className="hover:underline hover:bg-(--secondary-color)">  Game Generator  </Link>
                 </div>
 
                 <div className='flex justify-center'>
