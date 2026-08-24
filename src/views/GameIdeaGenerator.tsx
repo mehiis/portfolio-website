@@ -133,7 +133,7 @@ return (
             Game Idea Generator
           </h1>
           <p className="text-md 2xl:text-xl font-[LeagueSpartanRegular] text-(--black-color) rounded-lg my-auto  mx-10">
-            This is a game idea generator that I built to help me come up with weekly game ideas for my game development challenge.<br/><br/>You can contribute with your own ideas by submitting them by a simple Google Form.
+            This is a simple game idea generator that I built to help me come up with weekly game ideas for my game development challenge.<br/><br/>You can contribute with your own ideas by submitting them via a simple Google Form.
           </p>
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSfzdV1XMVyNcCM_vNJJg7IZ4btcS2WdNTgQpDPzt7nChE1Z4A/viewform?hl=en" target="_blank" rel="noopener noreferrer" className="bg-(--primary-color) font-[LeagueSpartanBold] text-lg text-(--black-color) inline-block mt-5 px-8 py-2 mx-10 rounded-lg hover:scale-105 transition-transform duration-300 shadow-sm max-h-[80px]">
             Submit Your Idea
