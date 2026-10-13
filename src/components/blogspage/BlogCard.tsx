@@ -15,7 +15,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ currentPosts }) => {
                     <Link to={`/blog/${article.id}`}>
 
                     <div className="text-white shadow-sm rounded-md overflow-hidden flex-col xl:flex-row border border-black/2 mb-11 xl:grid xl:grid-cols-[25%_75%]">
-                        <div className='xl:h-auto flex overflow-hidden h-[240px]'>
+                        <div className='xl:h-auto flex overflow-hidden h-60'>
                             <img
                               src={article?.articleCover}
                               alt={article.title}
@@ -26,14 +26,14 @@ const BlogCard: React.FC<BlogCardProps> = ({ currentPosts }) => {
                         </div>
 
                         <div className="bg-black/4  w-full p-4 h-auto">
-                            <p className='font-[LeagueSpartanRegular] text-sm text-[var(--black-color)] md:text-base line-clamp-1'>{article.date.toLocaleDateString()} | {article.tags.join(', ')}</p>
+                            <p className='font-[LeagueSpartanRegular] text-sm text-(--black-color) md:text-base line-clamp-1'>{article.date.toLocaleDateString()} | {article.tags.join(', ')}</p>
                             <CustomHR />
                             <h2 className='font-[LeagueSpartanBold] text-black text-lg 2xl:text-lg line-clamp-1'>{article.title}</h2>
-                            <p className='text-black font-[LeagueSpartanRegular] text-md 2xl:text-md max-h-[60px] line-clamp-2'>{article.description}</p>
+                            <p className='text-black font-[LeagueSpartanRegular] text-md 2xl:text-md max-h-15 line-clamp-2'>{article.description}</p>
 
                             <div className="flex md:justify-end my-3 md:my-1">
                             <div
-                                className="bg-[var(--secondary-color)] font-[LeagueSpartanRegular] text-sm text-[var(--black-color)] inline-block mt-2 px-4 py-2 rounded-lg hover:scale-110 transition-transform duration-300 shadow-sm flex-none max-h-[40px]">
+                                className="bg-(--secondary-color) font-[LeagueSpartanRegular] text-sm text-(--black-color) inline-block mt-2 px-4 py-2 rounded-lg hover:scale-110 transition-transform duration-300 shadow-sm flex-none max-h-[40px]">
                                 Read more &#10230;
                             </div>
                             </div>

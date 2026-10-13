@@ -25,7 +25,7 @@ const Blog = () => {
           <div className="justify-between min-h-screen flex flex-col">
             <ArticleHeader title={article.title} desc={article.description} author={article.author} date={article.date} resources={article.resources} />
 
-            <article className="mt-6 max-w-[1440px] mx-auto py-4 px-5 md:px-50">
+            <article className="mt-6 max-w-360 mx-auto py-4 px-5 md:px-50">
               <div className="xl:grid xl:grid-cols-[1fr_0.4fr] gap-10">
                 <div className="flex flex-col">
                 {article.chapters.map((article, index) => (
@@ -39,7 +39,7 @@ const Blog = () => {
                     {article.image &&
                       <figure>
                         <img className="mt-4 mx-auto shadow-sm rounded-md" src={article.image} alt={article.imageAlt} />
-                        <figcaption className="text-left text-md text-[var(--black-color)] p-3 font-[LeagueSpartanRegular] 2xl:text-xl italic">{figureIndex += 1}. {article.imageFigcaption}</figcaption>
+                        <figcaption className="text-left text-md text-(--black-color) p-3 font-[LeagueSpartanRegular] 2xl:text-xl italic">{figureIndex += 1}. {article.imageFigcaption}</figcaption>
                       </figure>
 
                     }
@@ -54,13 +54,17 @@ const Blog = () => {
                      <button key={index} className="text-md text-left text-blue-600 hover:underline font-[LeagueSpartanRegular]" onClick={() =>
                       {
                         const element = document.getElementById(`chapter-${index}`);
-                        element?.scrollIntoView({ behavior: 'smooth' });
+
+                        window.scrollTo({
+                          top: element?.offsetTop ? element.offsetTop - 100 : 0,
+                          behavior: 'smooth'
+                        });
                     }}>
                       {chapter.title}
                      </button>
                     ))}
                 </div>
-                <button className="mt-10 bg-[var(--secondary-color)] font-[LeagueSpartanRegular] text-sm text-[var(--black-color)]  px-4 py-2 rounded-lg hover:scale-105 transition-transform duration-200 inline-block shadow-sm"
+                <button className="mt-10 bg-(--secondary-color) font-[LeagueSpartanRegular] text-sm text-(--black-color)  px-4 py-2 rounded-lg hover:scale-105 transition-transform duration-200 inline-block shadow-sm"
                 onClick={() => {
                   window.history.back()
                   }}>&#10229; Back to previous page</button>
