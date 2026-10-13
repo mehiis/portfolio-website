@@ -3,7 +3,7 @@ import h2sm from "@/assets/images/h2/familiar-tools/ft-sm.webp";
 import h2lg from "@/assets/images/h2/familiar-tools/ft-lg.webp";
 
 function Tools(){
-    const tools = ["Machine Learning", "Object-Oriented Programming", "Relational Databases", "Web Development", "Mobile Development", "UI/UX Design", "Game Development", "3D Modeling", "Version Control", "DevOps", "CI/CD", "Information Security"].sort();
+    const tools = ["Machine Learning", "Object-Oriented Programming", "Relational Databases", "Web Development", "UI/UX Design", "Game Development", "3D Modeling", "Version Control", "DevOps", "CI/CD", "Information Security"].sort();
 
     return(
         <div className="max-w-360 min-w-90 mx-auto p-2 md:px-30">
