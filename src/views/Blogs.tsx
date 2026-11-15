@@ -23,7 +23,7 @@ const Blogs = () => {
 
 
      <BlogsHeader />
-     <div className="max-w-[1440px] mx-auto md:px-30">
+     <div className="max-w-360 mx-auto md:px-30">
 
       <ul className="justify-start items-start">
         <BlogCard currentPosts={currentPosts}></BlogCard>
@@ -40,9 +40,9 @@ const Blogs = () => {
 
           }}
             className={`mx-2 px-4 py-2 rounded-lg font-[LeagueSpartanBold]
-              ${currentPage === number ? 'bg-[var(--primary-color)]'
+              ${currentPage === number ? 'bg-(--primary-color)'
                 :
-              'bg-[var(--secondary-color)] text-[var(--black-color)] hover:bg-[var(--primary-color)] hover:scale-105'}
+              'bg-(--secondary-color) text-(--black-color) hover:bg-(--primary-color) hover:scale-105'}
 
               transition-colors duration-300`}
           >

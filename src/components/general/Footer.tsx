@@ -4,11 +4,14 @@ import instagram from "@/assets/images/icons/ig.webp";
 import fullNameLogoLg from "@/assets/images/full-name/nikomehilainen-lg.webp";
 import fullNameLogoSm from "@/assets/images/full-name/nikomehilainen-sm.webp";
 import { Link } from "react-router";
+import Wave from "../homepage/components/Wave";
 
 const Footer = () => {
   return (
         <footer className='mt-0'>
-            <div className='bg-[var(--primary-color)] p-15 justify-center items-center min-w-[360px] pb-25 caret-transparent'>
+            {window.location.pathname !== "/" && ( <Wave waveColor="#FFE063" baseColor="#FAFAFA" flipped={true} /> )}
+            <Wave waveColor="#FFF292" baseColor="#FFE063" flipped={true} />
+            <div className='bg-(--primary-color) p-15 justify-center items-center min-w-90 pb-25 caret-transparent'>
                 <Link to="/">
                   <img
                   src={fullNameLogoLg}
@@ -25,7 +28,7 @@ const Footer = () => {
                   />
                 </Link>
 
-                <div className='text-center mb-2 text-sm text-[var(--black-color)] font-[LeagueSpartanRegular]'>
+                <div className='text-center mb-2 text-sm text-(--black-color) font-[LeagueSpartanRegular]'>
                     <Link to="/" className="hover:underline hover:bg-(--secondary-color)">  Homepage  </Link> &#9679;
                     <Link to="/blogs/1" className="hover:underline hover:bg-(--secondary-color)">  Blogs  </Link> &#9679;
                     <Link to="/korea" className="hover:underline hover:bg-(--secondary-color)">  Learn Korean  </Link>

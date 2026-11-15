@@ -1,13 +1,19 @@
+import Wave from "../homepage/components/Wave";
+
 const Me = () => {
   const month = (new Date().getMonth() + 1) - 8;
   const age = new Date().getFullYear() - 1998;
 
+
   return (
-    <div className="bg-[var(--secondary-color)] justify-end flex flex-col">
-      <section className='max-w-[1440px] min-w-[360px] mx-auto p-2 md:px-10 md:px-30'>
+    <div className="bg-(--secondary-color) justify-end flex flex-col">
+      <div className="bg-(--white-color)">
+        <Wave waveColor="#FAFAFA" baseColor="#FFE063" />
+      </div>
+      <section className='max-w-360 min-w-90 mx-auto p-2 md:px-10'>
 
           <div className='p-4 m-4'>
-            <div className="bg-[var(--white-color)] w-full rounded-lg flex flex-wrap gap-4 lg:px-15 p-8 md:p-15 lg:p-15">
+            <div className="bg-(--white-color) w-full rounded-lg flex flex-wrap gap-4 lg:px-15 p-8 md:p-15 lg:p-15">
                 <h3 className="font-[LeagueSpartanBold] md:text-xl text-2xl">Moi, I'm Niko</h3>
                 <p className="text-lg md:text-xl font-[LeagueSpartanRegular]">
 

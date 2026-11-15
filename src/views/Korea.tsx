@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import Quiz from '../data/koreaquiz';
 import { Helmet } from 'react-helmet-async';
+import Wave from '../components/homepage/components/Wave';
 
 const Korea = () => {
   return (
@@ -11,7 +12,7 @@ const Korea = () => {
     </Helmet>
 
     <div className='items-start flex flex-col min-h-screen'>
-      <div className='flex flex-col gap-4 bg-(--secondary-color) w-full py-5 shadow-sm px-5 md:px-30 xl:px-80'>
+      <div className='flex flex-col gap-4 bg-(--secondary-color) w-full py-5 px-5 md:px-30 xl:px-80'>
         <div className='flex flex-col gap-2 xl:max-w-260 mx-auto'>
           <h1 className='font-[LeagueSpartanBold] text-2xl'>Simple Quizzes for Learning Korean</h1>
           <p>
@@ -19,7 +20,9 @@ const Korea = () => {
             <br/><br/> With writing exercises, you can find virtual korean keyboard options from various websites.
           </p>
         </div>
+
       </div>
+      <Wave waveColor="#FFE063" baseColor="#FAFAFA" />
     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full mt-8 px-10 xl:px-80 w-[1440px] max-w-[1440px] mx-auto'>
         {Quiz.map((chapter, index) => (
           chapter[0]?.write ? (

@@ -24,6 +24,7 @@ const MobileMenu = ({ mobileMenuOpen, setMobileMenuOpen }: MobileMenuProps) => {
                         overflow-y-auto
                         overscroll-behavior-contain
                         z-100
+                        lg:hidden
                         '
             style={{ transform: mobileMenuOpen ? 'translateX(0%)' : 'translateX(100%)' }}>
 

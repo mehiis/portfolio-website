@@ -1,9 +1,11 @@
+import Wave from "./components/Wave";
+
 function Hero() {
   return (
     <>
-      <section className="py-10 items-center bg-(--primary-color) px-0 shadow-sm 2xl:py-20">
+      <section className="items-center bg-(--primary-color)">
         <div
-          className="max-w-[1440px] min-w-[360px] m-auto md:flex md:justify-between sm:center items-center justify-center md:px-10 lg:px-25">
+          className="max-w-360 min-w-90 m-auto md:flex md:justify-between sm:center items-center justify-center md:px-10 lg:px-25 pb-10 lg:pb-5">
           <img
             className="w-2/3 sm:w-1/2 md:w-1/4 mx-auto md:mx-0 mb-6 md:mb-0 object-contain aspect-square"
             alt="Hero Image 2025"
@@ -24,7 +26,9 @@ function Hero() {
             What I love most about programming is its <b>creative power</b> to turn ideas into immersive, meaningful experiences. <br></br> <br></br>It brings together various forms of art and has the <b>unique ability to connect people</b>.
           </p>
         </div>
+      <Wave />
       </section>
+
     </>
   );
 }

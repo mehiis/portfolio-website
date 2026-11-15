@@ -90,7 +90,6 @@ const Layout = () => {
         <BackToTop bttVisible={bttVisible} />
 
         <MobileMenu mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} />
-
         <Footer />
     </>
   )
