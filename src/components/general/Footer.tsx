@@ -9,7 +9,6 @@ import Wave from "../homepage/components/Wave";
 const Footer = () => {
   return (
         <footer className='mt-0'>
-            {window.location.pathname !== "/" && ( <Wave waveColor="#FFE063" baseColor="#FAFAFA" flipped={true} /> )}
             <Wave waveColor="#FFF292" baseColor="#FFE063" flipped={true} />
             <div className='bg-(--primary-color) p-15 justify-center items-center min-w-90 pb-25 caret-transparent'>
                 <Link to="/">
