@@ -1,12 +1,15 @@
 import { Link } from 'react-router-dom'
 import Articles from '../../data/articles'
 import type BlogPost from '../../types/BlogPost';
+import Wave from '../homepage/components/Wave';
 
 const LatestBlogs = () => {
   const latestBlogsDesktop:BlogPost[] = Articles.slice(0,4);
   const latestBlogsMobile:BlogPost[] = latestBlogsDesktop.slice(0,2);
 
   return (
+    <>
+    <Wave baseColor="var(--white-color)" waveColor='var(--secondary-color)' flipped={true}/>
     <section className=' bg-[var(--secondary-color)]'>
       <div className='mt-6 max-w-[1440px] mx-auto py-4 px-5 md:px-50'>
       <h2 className='my-5 font-[LeagueSpartanBold] text-xl'>Latest Blogs</h2>
@@ -60,6 +63,7 @@ const LatestBlogs = () => {
       </ul>
       </div>
     </section>
+    </>
   )
 }
 

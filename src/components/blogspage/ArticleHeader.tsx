@@ -1,4 +1,5 @@
 import CustomHR from "../misc/CustomHR"
+import Wave from "../homepage/components/Wave"
 
 type Props = {
     title: string,
@@ -10,7 +11,8 @@ type Props = {
 
 const ArticleHeader = (props: Props) => {
   return (
-    <header className="py-5 items-center bg-(--secondary-color) text-(--black-color) shadow-sm">
+    <>
+    <header className="py-5 items-center bg-(--secondary-color) text-(--black-color)">
       <div className="max-w-360 min-w-90 m-auto px-10 py-10 md:px-50">
 
         <h1 className="text-xl font-bold font-[LeagueSpartanBold]">{props.title}</h1>
@@ -33,7 +35,10 @@ const ArticleHeader = (props: Props) => {
 
         </div>
       </div>
+
     </header>
+    <Wave baseColor="var(--white-color)" waveColor='var(--secondary-color)'/>
+    </>
   )
 }
 

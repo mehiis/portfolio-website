@@ -3,8 +3,10 @@ import Quiz from '../data/koreaquiz';
 import { Helmet } from 'react-helmet-async';
 import Wave from '../components/homepage/components/Wave';
 
+
 const Korea = () => {
   return (
+    <>
     <div className='mb-8'>
     <Helmet>
         <title>Niko Mehiläinen - Learn Korean</title>
@@ -41,6 +43,8 @@ const Korea = () => {
       </div>
     </div>
     </div>
+    <Wave baseColor="var(--white-color)" waveColor='var(--secondary-color)' flipped={true}/>
+    </>
   )
 }
 

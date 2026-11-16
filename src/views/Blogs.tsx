@@ -3,6 +3,7 @@ import BlogsHeader from '../components/blogspage/BlogsHeader'
 import Articles from '../data/articles'
 import BlogCard from '../components/blogspage/BlogCard';
 import { Helmet } from 'react-helmet-async';
+import { Wave } from '../components/homepage/components/Wave';
 
 const Blogs = () => {
   const { id } = useParams<{ id: string }>();
@@ -51,6 +52,7 @@ const Blogs = () => {
         ))}
       </div>
     </div>
+    <Wave baseColor="var(--white-color)" waveColor='var(--secondary-color)' flipped={true}/>
     </>
   )
 }

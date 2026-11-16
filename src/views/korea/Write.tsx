@@ -2,6 +2,7 @@ import { Link, useParams } from 'react-router-dom';
 import Quiz from '../../data/koreaquiz';
 import { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
+import Wave from '../../components/homepage/components/Wave';
 
 interface QuizQuestion {
   question: string;
@@ -204,6 +205,7 @@ const Write = () => {
         &#10229; Back to Chapters
       </Link>
     </div>
+    <Wave baseColor="var(--white-color)" waveColor='var(--secondary-color)' flipped={true}/>
     </>
   );
 };
