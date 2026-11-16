@@ -7,7 +7,7 @@ function Loading() {
         <img
         src={flower}
         alt="Spinning flower indicating loading state."
-        className="h-14 w-14 object-contain animate-spin [animation-duration:2s] m-0"
+        className="h-9 w-9 object-contain animate-spin [animation-duration:2s] m-0"
     />
 
     <img
