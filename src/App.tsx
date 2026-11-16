@@ -18,23 +18,67 @@ const baseName = import.meta.env.BASE_URL;
 
 function App() {
   return (
-    <HelmetProvider>
-      <BrowserRouter basename={baseName}>
-        <Suspense fallback={<Loading />}>
-          <Routes>
-            <Route element={<Layout />}>
-              <Route path="/" element={<Home />} />
-              <Route path="/blog/:id" element={<Blog />} />
-              <Route path="/blogs/:id" element={<Blogs />} />
-              <Route path="/korea" element={<Korea />} />
-              <Route path="/korea/chapter/:id" element={<Chapter />} />
-              <Route path="/korea/write/:id" element={<Write />} />
-              <Route path="*" element={<NotFound />} />
-            </Route>
-          </Routes>
-        </Suspense>
-      </BrowserRouter>
-    </HelmetProvider>
+
+<HelmetProvider>
+  <BrowserRouter basename={baseName}>
+    <Routes>
+      <Route element={<Layout />}>
+        <Route
+          path="/"
+          element={<Home />}
+        />
+
+        <Route
+          path="/blog/:id"
+          element={
+            <Suspense fallback={<Loading />}>
+              <Blog />
+            </Suspense>
+          }
+        />
+
+        <Route
+          path="/blogs/:id"
+          element={
+            <Suspense fallback={<Loading />}>
+              <Blogs />
+            </Suspense>
+          }
+        />
+
+        <Route
+          path="/korea"
+          element={
+            <Suspense fallback={<Loading />}>
+              <Korea />
+            </Suspense>
+          }
+        />
+
+        <Route
+          path="/korea/chapter/:id"
+          element={
+            <Suspense fallback={<Loading />}>
+              <Chapter />
+            </Suspense>
+          }
+        />
+
+        <Route
+          path="/korea/write/:id"
+          element={
+            <Suspense fallback={<Loading />}>
+              <Write />
+            </Suspense>
+          }
+        />
+
+        <Route path="*" element={<NotFound />} />
+      </Route>
+    </Routes>
+  </BrowserRouter>
+</HelmetProvider>
+
   );
 }
 
