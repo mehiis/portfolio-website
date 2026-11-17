@@ -52,8 +52,12 @@ const Blogs = () => {
         ))}
       </div>
     </div>
-    <div className="flex flex-col justify-end h-full">
-      <Wave baseColor="var(--white-color)" waveColor='var(--secondary-color)' flipped={true}/>
+    <div className="flex flex-col justify-end min-h-screen">
+      <Wave
+        baseColor="var(--white-color)"
+        waveColor="var(--secondary-color)"
+        flipped={true}
+      />
     </div>
     </>
   )
